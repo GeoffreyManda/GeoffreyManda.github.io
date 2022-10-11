@@ -11,54 +11,48 @@ redirect_from:
 
 Education
 ======
-* 2019: Ph.D in Epidemiology
-	* University Basel and Swiss Tropical and Public Health Institute, Switzerland
-	* Thesis: Mathematical modelling of malaria control interventions to support strategic planning in Tanzania
-* 2016: M.Sc. in Epidemiology
-	* University Basel and Swiss Tropical and Public Health Institute, Switzerland
-	* Thesis: The Use of Public Primary Schools for Malaria Surveillance in Tanzania
-* 2014: B.Sc. in Health Sciences
-	* University of Applied Sciences Hamburg, Germany
-	* Thesis: Der Einfluss der menopausalen Hormontherapie auf die Gesamtmortalitat
+* 2021: M.Sc., in Public Health for Development.
+	* London School of Hygiene and Tropical Medicine (LSHTM), United Kingdom.
+	* Thesis: Spatial modelling and determinants of neonatal mortality in Malawi.
+
+* 2015: Bachelor of Medicine, Bachelor of Surgery (M.B.B.S).
+	* Kamuzu University of Health Sciences, Malawi.
+	* Thesis: Cancer survival in Malawi: A retrospective cohort study.
 	
 Work experience
 ======
-* Since Jan 2020: Postdoctoral Fellow
-  * Northwestern University
-  * Department of Preventive Medicine, Chicago IL
-  * Malaria modelling and COVID-19 modelling
-  * https://www.numalariamodeling.org/
+* Since March 2022: Doctoral Fellow (full time).
+  * Global Health Institute, Universiteit Antwerpen, Belgium.
+  * Intermittent preventive treatment of malaria in school children: from research into policy.
+  * https://www.uantwerpen.be/en/research-groups/global-health-institute/research/research-projects/.
 
-* 2016: Scientific Assistant
-  * Swiss Tropical and Public Health Institute
-  * Health Interventions Unit, Basel Switzerland
-  * SOP for data management for the nationwide school survey in Tanzania
-  * Preparation of manuscript publication 
+* September 2021 - March 2022: Scientific Assistant (part-time, remote).
+  * The Centre for Maternal, Adolescent, Reproductive, & Child Health, LSHTM, United Kingdom.
+  * Data management and analysis for the Newborn Essential Solutions and Technologies (NEST360°) Project.
+  * Policy reports and data visualisations.
  
-* 2015: Student Intern
-  * NETCELL Project in collaboration with the National Malaria Control Programme, Tanzania
-  * Supervision data collection of the School Malaria Parasitaemia Survey in Arusha Region 
-  * Lead data entry, data management and analysis of whole survey 
+* March 2021 - September 2021: Student reserch Intern (part-time).
+  * Agriculture and Infectious Disease Group, LSHTM.
+  * Remote sensed data labelling for AI research on malaria in differeing agriculture landscapes.
   
-* 2014 - 2016: Medical Data Manager (part-time, remote)
-  * University hospital Hamburg-Eppendorf
-  * Department of Medical Biometry and Epidemiology, Hamburg Germany
-  * Data cleaning and preparation of automated data analysis reports
+* September 2017 - October 2020: Medical Doctor and clinical researcher (full time).
+  * Texas Children's Hospital - Global Haematology Oncology Paediatric Excellence, Malawi.
+  * Clinical care of patients and clinical research project management.
+  * Manuscript writing and research dissemination. 
 	
-* 2014: Assistant Lecturer (1 semester)
-  * University of Applied Sciences Hamburg
-  * B.Sc module Health Reporting and Surveillance
-  * Lectures and supervision of group works
+* January 2016 - September 2017 : Medical officer  (1 semester)
+  * Ministry of Health, Queen Elizabeth Central Hospital, Malawi
+  * Clinical care of patients 
+  * Clinical research and other administrative duties.
    
-* 2010-2014: Patient care student jobs and volunteering 
-  * Praxis-Klinik Bergedorf, Germany (Rehabilitation)
-  * Bethesda Krankenhaus Bergedorf, Germany (Internal Medicne)
-  * Marienhospital Stuttgart, Germany (Pneumology)
-   
+* July 2015 - December 2015: Volunteer research assistant 
+  * Malawi Liverpool Wellcome Trust clinical Research Programme, Malawi.
+  * Data management a systematic review writing.   
    
 Skills
 ======
 * Malaria research
+* Cancer research
 * Statistical Programming
   * R
   * Python
@@ -71,26 +65,20 @@ Skills
   * MS office
   * LaTeX
 * Languages
-  * German (native)
   * English (fluent)
+  * Dutch (intermediate)
   * Swahili (basics)
   
 Service and leadership
 ======
-* 2015-2019: Active participant in multiple stakeholder workshops of the National Malaria Control Programme, Tanzania
-* 2018, 2020: MESA correspondent 
-* 2017-2018: PhD Student representative
-* 2012-2014: Tutoring of group works during B.Sc studies
-
+* 2022: Active participant in PhD research meetings University of Antwerp, Belgium.
+* 2022: Tutoring of statistical modelling classes of master of epidemiology students.
 
 Country experience
 ======
-* US (current position)
-* Switzerland (M.Sc and Ph.D studies)
-* Tanzania (M.Sc and Ph.D studies)
-* Scotland (exchange semester during B.Sc studies)
-* Germany (home country)
-
+* Belgium and Tanzania (current position)
+* United Kingdom (M.Sc studies and research and exchange semester during M.B.B.S studies)
+* Malawi (Home country)
 
 Publications
 ======
