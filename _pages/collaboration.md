@@ -1,6 +1,6 @@
 ---
 permalink: /collaboration/
-title: "Let's work together!"
+title: "If you want to go fast, go alone, if you want to go far, go together"
 excerpt: ""
 author_profile: true
 ---
@@ -10,8 +10,7 @@ author_profile: true
 <br/>  
 
 ### My Mission
-- To support program oriented research activities in the field of infectious disease epidemiology, with primary focus on applied mathematical 
-modeling and strategic planning of malaria interventions in Sub-Saharan Africa.
+- To support program oriented research activities in the area of child health especially in areas of infectious disease, malnutrition and cancers with primary focus on applied mathematical and statistical modeling and strategic planning of disease control interventions in resource limited settings.
 
 ### My Vision
 - Maximized intervention impact to reduce burden of infectious diseases based on best-informed decision-making processes in a given setting.
