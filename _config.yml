@@ -13,7 +13,7 @@ name                     : &name "Geoffrey Manda"
 description              : &description "personal description"
 url                      : https://geoffreymanda.github.io/
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "geoffreymanda/geoffreymanda.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
