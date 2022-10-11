@@ -9,9 +9,9 @@
 locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
-name                     : &name "Manuela Runge"
+name                     : &name "Geoffrey Manda"
 description              : &description "personal description"
-url                      : https://manuelarunge.github.io/
+url                      : https://geoffreymanda.github.io/
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Manuela Runge, PhD"
+  name             : "Geoffrey Manda, M.Sc, MD"
   avatar           : "profile.png"
-  bio              : "Infectious disease epidemiologist"
-  location         : "Switzerland & United States"
-  employer         : "Manuela Runge GmbH"
+  bio              : "Infectious disease modeller and epidemiologist"
+  location         : "Malawi, tanzania & Belgium"
+  employer         : "University of Antwerp"
   pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=Runge+Manuela"
-  googlescholar    : "https://scholar.google.com/citations?hl=en&authuser=1&user=XhVEFQQAAAAJ"
-  email            : "manuelarunge10@gmail.com"
-  researchgate     : "https://www.researchgate.net/profile/Manuela_Runge"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=7-Sy11kAAAAJ"
+  email            : "gmanda@outlook.com"
+  researchgate     : "https://www.researchgate.net/profile/Geoffrey-Manda"
   uri              :
   bitbucket        : 
   codepen          :
@@ -97,23 +97,23 @@ author:
   facebook         : 
   foursquare       :
   foursquare       :
-  github           : "ManuelaRunge"
+  github           : "GeoffreyManda"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "manuelarunge"
-  orcid            : "https://orcid.org/0000-0001-9918-760X"
+  linkedin         : "GeoffreyManda"
+  orcid            : "https://orcid.org/0000-0001-8104-5021"
   pinterest        :
   soundcloud       :
-  stackoverflow    : "5513271/manuela-r"
+  stackoverflow    : "https://stackoverflow.com/users/20216628/geoffrey-manda"
   steam            :
   tumblr           :
-  twitter          : "@RungeManuela"
+  twitter          : "@gmandaMD"
   vine             :
   weibo            :
-  xing             : "Manuela_Runge7"
+  xing             : 
   youtube          : 
   wikipedia        :
 
