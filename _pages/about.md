@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Strategic thinker, problem solver, motivated"
+title: "Enthusiastic traveller, Strategic thinker and problem solver"
 excerpt: "Short biography"
 author_profile: true
 redirect_from: 
