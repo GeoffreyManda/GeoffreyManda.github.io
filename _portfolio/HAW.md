@@ -1,7 +1,10 @@
 ---
-title: "School Malaria Parasitaemia Survey "
-excerpt: "During my master studies I spent 6 months in Tanzania to support data collection and analysis of the school survey, conducted by the National Malaria Control Programme. <br/><img src='/images/20150521_125337.jpg'>"
+title: "Assessment of 64 health health facilities in subsaharan africa for system readiness in managing hewborn health"
+excerpt: "After my M.Sc study, I spent 6 months managing data for the NEST360 data and developing the newborn toolkit in collaboration with UNICEF. 
+This toolkit brings together knowledge, experiences, resources, and learnings for implementing small and sick newborn care services. This toolkit can be found [here](https://www.newborntoolkit.org/).
+<br/>
+<img src='/images/newborn_toolkit.png'>"
+
+
 collection: portfolio
 ---
-
-Here comes some text describing my experience of the SMPS survey more in detail
