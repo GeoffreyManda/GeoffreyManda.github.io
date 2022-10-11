@@ -12,16 +12,12 @@ redirect_from:
 Hello, thank you for stopping by. 
 <br/>
 
-My name is Geoffrey Manda, I am an infectious disease modeller and epidemiologist and passionate about data analysis in health-related research.
-Many diseases and advserse health outcomes are preventable and, or treatable - that is what drives me in my work. 
-I am widely interested in using quantitative tools, from data analysis to find influencing factors for a health/disease outcome, 
-to simulation modeling to project likely impact of interventions in a population. 
+My name is Geoffrey Manda. I am a passionate and inquisitive team player who has great initiative and a willing learner. My true passion is travelling, and I love learning about other cultures and languages. My professional interests lie in paediatric and child health research specifically infectious diseases, undernutrition and childhood cancers. I passionate about health-related research as it is a critical tool that generates empirical data for informing health policy for the betterment of all. 
 
-Most of my experience has been in child health specifically in paediatric cancer. Recently I have shifted my attention to malaria research in Sub-Saharan Africa. My international (in-country) work experience includes Belgium, Malawi and Tanzania.
+My international (in-country) work experience includes Belgium, Malawi, the United Kingdom, and Tanzania. I am widely interested in using quantitative tools, from data analysis to find influencing factors for a health/disease outcome, to simulation modeling to project likely impact of interventions in a population. Most of my prior experience has been in child health specifically in paediatric cancer and recently I have shifted my attention to malaria research in Sub-Saharan Africa. I am currently, a doctoral fellow focusing on infectious disease modelling and epidemiology within the [Malaria research group in the Global health Institute](https://www.uantwerpen.be/en/research-groups/global-health-institute/)) at [the University of Antwerp](https://www.uantwerpen.be/en/)in Belgium.
 
-Currently I continue my doctoral research at the [Malaria research group](https://www.uantwerpen.be/en/research-groups/global-health-institute/)) within the Global health Institute at the University of Antwerp in Belgium. I hold an M.Sc.'s degree in Public Health from the [London School of Hygiene and tropical Medicine](https://www.lshtm.ac.uk) and a bachelor degree in Medicine and Surgery from [the university of malawi, College of Medicine](https://www.kuhes.ac.mw)
-
-. 
+Importantly I am a passionate educator and together with a fellow PhD fellow I have conducted R workshops in for master of epidemiology students at at [the University of Antwerp](https://www.uantwerpen.be/en/) and I am a volunteer data analyst at [frontier innovators global](https://www.frontier-innovators-global.github.io), a health focused think tank based in Lilongwe, Malawi. I hold an M.Sc.'s degree in Public Health from the [London School of Hygiene and tropical Medicine](https://www.lshtm.ac.uk) and a bachelor degree in Medicine and Surgery from [the university of malawi, College of Medicine](https://www.kuhes.ac.mw)
+ 
 <br/>
 
 - <a href="/resume_GeoffreyManda.docx" download>Download resume</a> 
