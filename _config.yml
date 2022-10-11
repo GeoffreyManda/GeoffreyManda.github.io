@@ -82,10 +82,10 @@ analytics:
 author:
   name             : "Geoffrey Manda, M.Sc, MD"
   avatar           : "profile.png"
-  bio              : "Infectious disease modeller and epidemiologist"
-  location         : "Malawi, tanzania & Belgium"
+  bio              : "Disease modeller and epidemiologist"
+  location         : "Malawi, Tanzania & Belgium"
   employer         : "University of Antwerp"
-  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=Runge+Manuela"
+  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=Geoffrey+Manda"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=7-Sy11kAAAAJ"
   email            : "gmanda@outlook.com"
   researchgate     : "https://www.researchgate.net/profile/Geoffrey-Manda"
@@ -103,7 +103,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "GeoffreyManda"
+  linkedin         : "https://www.linkedin.com/in/geoffrey-manda-4448261a4/"
   orcid            : "https://orcid.org/0000-0001-8104-5021"
   pinterest        :
   soundcloud       :
@@ -123,6 +123,8 @@ include:
   - .htaccess
   - _pages
   - files
+  - _blogs
+  - _tutorials
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
