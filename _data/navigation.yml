@@ -1,25 +1,25 @@
 # main links links
 main:
   - title: "Publications"
-    url: https://manuelarunge.github.io/publications/
+    url: https://geoffreymanda.github.io/publications/
 
   - title: "Talks"
-    url: https://manuelarunge.github.io/talks/    
+    url: https://geoffreymanda.github.io/talks/    
   
   - title: "Portfolio"
-    url: https://manuelarunge.github.io/portfolio/
+    url: https://geoffreymanda.github.io/portfolio/
     
   - title: "CV"
-    url: /CV_ManuelaRunge.pdf #https://manuelarunge.github.io/cv/
+    url: /CV_GeoffreyManda.pdf #https://geoffreymanda.github.io/cv/
     
   - title: "Collaboration"
-    url: https://manuelarunge.github.io/collaboration/
+    url: https://geoffreymanda.github.io/collaboration/
     
   #- title: "Research resources"
-  #  url: https://manuelarunge.github.io/research_resources/
+  #  url: https://geoffreymanda.github.io/research_resources/
 
   #- title: "Blog"
-  #  url: https://manuelarunge.github.io/blog/
+  #  url: https://geoffreymanda.github.io/blog/
     
   #- title: "Guide"
   #  url: /markdown/
