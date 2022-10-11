@@ -103,7 +103,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/geoffrey-manda-4448261a4/"
+  linkedin         : "geoffrey-manda"
   orcid            : "https://orcid.org/0000-0001-8104-5021"
   pinterest        :
   soundcloud       :
@@ -123,7 +123,6 @@ include:
   - .htaccess
   - _pages
   - files
-  - _blogs
   - _tutorials
 exclude:
   - "*.sublime-project"
