@@ -13,10 +13,10 @@ author_profile: true
 ======
 
 Featured Zotero collections:
-- [malaria collection](https://www.zotero.org/manuela.runge/collections/WEB7E7VT/items/GBULK39D/collection) (updated weekly)
-  - [malaria research by geography](https://www.zotero.org/manuela.runge/collections/JIJIGU46) (example TZA)
-- [COVID-19 collection](https://www.zotero.org/manuela.runge/collections/6SAP6469) (building up)
-- [academic thesis collection](https://www.zotero.org/manuela.runge/collections/CYEWGAN8) (117 items)
+- [malaria collection]() (updated weekly)
+- [malaria research by geography]() (example TZA)
+- [COVID-19 collection]() (building up)
+- [academic thesis collection]() (117 items)
 
 <br/><br/><img src='/images/zotero.jpg'> 
 
