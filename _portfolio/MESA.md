@@ -1,29 +1,17 @@
 ---
-title: "Volunteer at MESA's correspondent program"
-excerpt: "During the MIM 2018, BioMalPar 2020, and ASTMH 2020 Manuela Runge reported from the conference as MESA correspondent (image from: [mesamalaria.org/resource-hub/mim-2018-day-1](https://mesamalaria.org/resource-hub/mim-2018-day-1)) (<br/><img src='/images/2020-12-13 07_09_17-MIM 2018_ Day 1 _ Mesa.png'>"
+title: "Clinical Researcher Texas Children’s Hospital-Global HOPE Program, malawi"
+excerpt: "Between 2017 and 2020 I worked as a clinical researcher focusing on childhood cancer"
+
 collection: portfolio
 ---
 
-
-
-<i>"This volunteering opportunity at MESA caught my immediate attention and excitement. As a young researcher it is of great importance to seek out such opportunities, which will facilitate networking, recognition, and skill development .
- My PhD research focuses on the modeling of malaria interventions to support strategic planning"<i>  (Motivation statement in 2018) 
-
-
+Launched in 2017 in partnership with the Baylor College of Medicine International Pediatric AIDS Initiative Network and supported by a $50 million foundational investment from Bristol Myers Squibb Foundation, the [Texas Children’s Global HOPE (Hematology-Oncology Pediatric Excellence)](https://www.texaschildrensglobalhealth.org/global-hope) program is strengthening local healthcare infrastructure, in partnership with local Ministries of Health, and building capacity to effectively provide the multi-disciplinary care that is needed to optimally care for children with cancer. Between 2018 and 2020, I worked as a clinical researcher and had important professional development opportunities.
 
 Participated conferences: 
-- ASTMH 2020 (virtual)
-  - [Report](http://www.mesamalaria.org/resource-hub/astmh-2020-annual-meeting-virtual-complete-series)
-  - [Correspondents](https://mesamalaria.org/updates/meet-mesa-correspondents-will-cover-virtual-astmh-2020-annual-meeting)
-- BioMalPar 2020 (virtual)
-  - [BioMalPar 2020](http://www.mesamalaria.org/resource-hub/biology-and-pathology-malaria-parasite-biomalpar-xvi-virtual-conference-complete)
-  - [Correspondents](https://mesamalaria.org/updates/meet-mesa-correspondents-will-cover-virtual-biomalpar-conference-biology-and-pathology)
-- MIM 2018 (Senegal)
-  - [Report](http://www.mesamalaria.org/resource-hub/mim-2018-complete-series)
-  - [Correspondents](https://malariaworld.org/blog/malariaworld-and-mesa-join-hands-deliver-live-reports-mim)
+- 7th ESO-SIOP Europe Masterclass in Paediatric Oncology 2018
+  - [Link](https://www.eso.net/en/what%2dwe%2ddo/past%2devents/events%2d2018/7th-eso-siop-europe-masterclass-in-paediatric-oncology/3-1506-0-)
+  
+- Attended Annual Société Internationale d’Oncologie Pédiatrique/International Society of Paediatric Oncology (SIOP) COnferences.
+ -  [Link](https://siop-online.org)
 
-Find more about [MESA's correspondence program](http://www.mesamalaria.org/resource-hub/correspondents) in this interview: [The MESA Correspondents Program behind the scenes](http://www.mesamalaria.org/updates/mesa-correspondents-program-behind-scenes)
-
-
-
- 
+<br/><img src='/images/World Cancer Day 2019-373.jpg'>"
