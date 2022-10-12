@@ -122,6 +122,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _blog
   - files
   - _tutorials
 exclude:
