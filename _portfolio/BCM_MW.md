@@ -1,7 +1,6 @@
 ---
 title: "Clinical Researcher Texas Children’s Hospital-Global HOPE Program, malawi"
-excerpt: "Between 2017 and 2020 I worked as a clinical researcher focusing on childhood cancer"
-<br/><img src='/images/World Cancer Day 2019-373.jpg'>"
+excerpt: "Between 2017 and 2020 I worked as a clinical researcher focusing on childhood cancer <br/><img src='/images/World Cancer Day 2019-373.jpg'>"
 collection: portfolio
 ---
 
