@@ -12,6 +12,6 @@ Participated conferences:
   - [Link](https://www.eso.net/en/what%2dwe%2ddo/past%2devents/events%2d2018/7th-eso-siop-europe-masterclass-in-paediatric-oncology/3-1506-0-)
   
 - Attended Annual Société Internationale d’Oncologie Pédiatrique/International Society of Paediatric Oncology (SIOP) COnferences.
- -  [Link](https://siop-online.org)
+  -  [Link](https://siop-online.org)
 
 <br/><img src='/images/World Cancer Day 2019-373.jpg'>"
