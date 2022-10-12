@@ -1,6 +1,6 @@
 ---
 title: "Clinical Researcher Texas Children’s Hospital-Global HOPE Program, malawi"
-excerpt: "Between 2017 and 2020 I worked as a clinical researcher focusing on childhood cancer <br/><img src='/images/World Cancer Day 2019-373.jpg'>"
+excerpt: "Between 2017 and 2020 I worked as a clinical researcher focusing on childhood cancer <br/><img src='/images/iccd.jpg'>"
 collection: portfolio
 ---
 
@@ -10,5 +10,3 @@ Participated conferences:
 - 7th ESO-SIOP Europe Masterclass in Paediatric Oncology 2018 [Link here](https://www.eso.net/en/what%2dwe%2ddo/past%2devents/events%2d2018/7th-eso-siop-europe-masterclass-in-paediatric-oncology/3-1506-0-).
   
 - Attended Annual Société Internationale d’Oncologie Pédiatrique/International Society of Paediatric Oncology (SIOP) COnferences [Link here](https://siop-online.org).
-
-
