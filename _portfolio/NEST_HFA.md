@@ -1,7 +1,6 @@
 ---
 title: "[NEST360 project](https://nest360.org/) professional assistant role."
-excerpt:"Service readiness for inpatient small and sick newborn care: Evaluation of health facility assessment data from a standard tool used in 65 hospitals in Malawi, Kenya, Tanzania, and Nigeria."
-<br/><img src='/images/newborn_toolkit.png'>
+excerpt:"Service readiness for inpatient small and sick newborn care: Evaluation of health facility assessment data from a standard tool used in 65 hospitals in Malawi, Kenya, Tanzania, and Nigeria <br/><img src='/images/newborn_toolkit.png'>"
 collection: portfolio
 ---
 
