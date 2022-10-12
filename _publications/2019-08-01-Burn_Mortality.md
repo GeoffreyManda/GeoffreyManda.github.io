@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2019-08-01-Burn_Mortality
 excerpt: ''
 date: 2019-08-01
-venue: 'Malaria Journal'
+venue: 'East and Central African Journal of Surgery'
 paperurl: 'https://journal.cosecsa.org/index.php/ECAJS/article/view/20190010'
 
 citation: 'Kasenda, S., Mategula, D., Manda, G. E. & Chokotho, T. K. Risk factors for mortality among hospitalised adult burn patients in a Malawian tertiary hospital burns unit. East Cent Afr J Surg 24, 124–132 (2019).https://dx.doi.org/10.4314/ecajs.v24i2.9'
