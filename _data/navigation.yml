@@ -15,11 +15,14 @@ main:
   - title: "Collaboration"
     url: https://geoffreymanda.github.io/collaboration/
     
-  #- title: "Research resources"
-  #  url: https://geoffreymanda.github.io/research_resources/
+  - title: "Research resources"
+    url: https://geoffreymanda.github.io/research_resources/
 
-  #- title: "Blog"
-  #  url: https://geoffreymanda.github.io/blog/
+  - title: "Blog"
+    url: https://geoffreymanda.github.io/blog/
+    
+  - title: "Tutorials"
+    url: https://geoffreymanda.github.io/tutorials/
     
   #- title: "Guide"
-  #  url: /markdown/
+    #url: /markdown/
