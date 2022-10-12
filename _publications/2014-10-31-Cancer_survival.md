@@ -1,5 +1,5 @@
 ---
-title: "Simulating the council-specific impact of anti-malaria interventions: a tool to support malaria strategic planning in Tanzania"
+title: "Cancer survival in Malawi: a retrospective cohort study"
 collection: publications
 permalink: /publication/2014-10-31-Cancer_survival
 excerpt: ''
@@ -11,4 +11,3 @@ citation: 'Msyamboza KP, Manda G, Tembo B, Thambo C, Chitete L, Mindiera C, Finc
 This study demonstrated that cancer survival from the time of diagnosis in Malawi was poor with median survival time of about 9 months and only 6% of patients survived for 5 years or more. Improvement of early detection, diagnostic capability, access to treatment and palliative care services could improve cancer survival.
 
 [Download paper here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4377240/)
-
