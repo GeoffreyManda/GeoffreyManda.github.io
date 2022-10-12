@@ -1,7 +1,7 @@
 ---
 title: "Spatial modelling of neonatal mortality in Malawi"
 excerpt: "Objectives of this project were to explore spatial distribution of neonatal mortality in Malawi.
-<br/><img src='/images/morans_i.jpeg'>"
+<br/><img src='/images/nest_baby_map.jpeg'>"
 collection: portfolio
 ---
 
