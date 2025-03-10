@@ -1,4 +1,4 @@
-# Geoffrey Manda's Personal Website
+# HOME
 
 This repository contains the source code for my personal website, hosted on GitHub Pages. The site serves as a central hub for my data analysis projects, research, and professional information.
 
@@ -26,11 +26,12 @@ To run this site locally:
 5. Visit `http://localhost:4000` in your browser
 
 ## Project Repositories
-
+### Biostatistsics Repositories
 This website links to my individual project repositories:
+- [Survival Analysis](https://github.com/GeoffreyManda/Survival-Analysis)
+### Artificial Intelligence Repositories
 
-- [COVID-19 Survival Analysis](https://github.com/GeoffreyManda/covid-survival-analysis)
-- [Future Project Name](https://github.com/GeoffreyManda/future-project)
+### Geospatial Analaysis Repositories
 
 ## License
 
