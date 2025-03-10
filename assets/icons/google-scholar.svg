@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="google-scholar-icon">
+  <style>
+    .google-scholar-icon {
+      color: #4285F4;
+    }
+    @media (prefers-color-scheme: dark) {
+      .google-scholar-icon {
+        color: #80b0ff;
+      }
+    }
+  </style>
+  <!-- Book base -->
+  <path d="M4,18 L20,18 C20,16 20,15 19,14 L5,14 C4,15 4,16 4,18 Z" fill="currentColor" stroke="none"/>
+  <!-- Book top -->
+  <path d="M5,14 L5,7 C5,6.5 5.5,6 6,6 L18,6 C18.5,6 19,6.5 19,7 L19,14" fill="none"/>
+  <!-- Graduation cap -->
+  <path d="M7,6 L17,6 L12,3 L7,6 Z" fill="currentColor" stroke="none"/>
+  <!-- Pages mark -->
+  <path d="M8,10 L16,10 M8,12 L16,12" stroke-width="1.5"/>
+</svg>
+

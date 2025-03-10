@@ -1,6 +1,6 @@
 theme: minima
-title: Geoffrey Manda | Data Analysis
-description: Statistical analysis projects and research
+title: Geoffrey Manda | Data Scientist
+description: Statistical analysis, AI research, and epidemiological studies
 show_downloads: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,6 +9,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: Geoffrey Manda
   github: GeoffreyManda
+  email: your.email@example.com # Replace with your actual email
 
 # Build settings
 markdown: kramdown
@@ -18,8 +19,12 @@ kramdown:
 
 # Navigation
 header_pages:
-  - projects.md
+  - index.md
   - about.md
+  - ai-projects.md
+  - biostatistics.md
+  - epidemiology.md
+  - contact.md
 
 # Plugins
 plugins:

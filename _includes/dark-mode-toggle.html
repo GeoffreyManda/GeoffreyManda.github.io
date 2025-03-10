@@ -1,0 +1,165 @@
+<div class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <input type="checkbox" id="dark-mode-toggle-checkbox" class="dark-mode-toggle-checkbox">
+  <label for="dark-mode-toggle-checkbox" class="dark-mode-toggle-label">
+    <div class="dark-mode-toggle-track">
+      <div class="dark-mode-toggle-icons">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <circle cx="12" cy="12" r="5" fill="currentColor" />
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="dark-mode-toggle-thumb"></div>
+    </div>
+  </label>
+</div>
+
+<style>
+  .dark-mode-toggle {
+    position: relative;
+    display: inline-block;
+    margin: 0 0.5rem;
+    --toggle-size: 24px;
+    --toggle-padding: 3px;
+    --toggle-width: calc(var(--toggle-size) * 2.5);
+    --toggle-height: calc(var(--toggle-size) * 1.3);
+    --thumb-size: calc(var(--toggle-size) - var(--toggle-padding) * 2);
+    --icon-size: 14px;
+  }
+
+  .dark-mode-toggle-checkbox {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  .dark-mode-toggle-label {
+    display: block;
+    cursor: pointer;
+    font-size: 0;
+  }
+
+  .dark-mode-toggle-track {
+    position: relative;
+    display: inline-block;
+    width: var(--toggle-width);
+    height: var(--toggle-height);
+    background: linear-gradient(to right, #72aaed, #3a73c9);
+    border-radius: calc(var(--toggle-height) / 2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  /* Background change for dark mode */
+  .dark-mode-toggle-checkbox:checked + .dark-mode-toggle-label .dark-mode-toggle-track {
+    background: linear-gradient(to right, #384d70, #121f35);
+  }
+
+  .dark-mode-toggle-thumb {
+    position: absolute;
+    top: var(--toggle-padding);
+    left: var(--toggle-padding);
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(.45,.05,.55,.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  .dark-mode-toggle-checkbox:checked + .dark-mode-toggle-label .dark-mode-toggle-thumb {
+    transform: translateX(calc(var(--toggle-width) - var(--toggle-size)));
+    background: #ffda85;
+  }
+
+  /* Icon styles */
+  .dark-mode-toggle-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc(var(--toggle-padding) * 2);
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  .sun-icon, .moon-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    transition: opacity 0.3s ease, transform 0.5s ease;
+  }
+
+  .sun-icon {
+    color: #f2c94c;
+    opacity: 1;
+    transform-origin: center center;
+    transform: translateX(calc(var(--icon-size) * -1)) scale(1) rotate(0);
+  }
+
+  .moon-icon {
+    color: #dbeafe;
+    opacity: 0;
+    transform-origin: center center;
+    transform: translateX(var(--icon-size)) scale(0) rotate(-45deg);
+  }
+
+  .dark-mode-toggle-checkbox:checked + .dark-mode-toggle-label .sun-icon {
+    opacity: 0;
+    transform: translateX(calc(var(--icon-size) * -1)) scale(0) rotate(45deg);
+  }
+
+  .dark-mode-toggle-checkbox:checked + .dark-mode-toggle-label .moon-icon {
+    opacity: 1;
+    transform: translateX(0) scale(1) rotate(0);
+  }
+
+  /* Focus styles for accessibility */
+  .dark-mode-toggle-checkbox:focus + .dark-mode-toggle-label .dark-mode-toggle-track {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5), 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Hover effect */
+  .dark-mode-toggle-label:hover .dark-mode-toggle-track {
+    opacity: 0.9;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the toggle checkbox element
+    const darkModeToggle = document.getElementById('dark-mode-toggle-checkbox');
+    
+    // Set initial state based on current theme
+    if (document.documentElement.classList.contains('dark-theme') || 
+        localStorage.getItem('darkMode') === 'true') {
+      darkModeToggle.checked = true;
+    }
+    
+    // Add event listener for toggle change
+    darkModeToggle.addEventListener('change', function() {
+      // If the main.js toggleDarkMode function exists, use it
+      if (typeof toggleDarkMode === 'function') {
+        toggleDarkMode();
+      } else {
+        // Fallback toggle functionality
+        if (this.checked) {
+          document.documentElement.classList.add('dark-theme');
+          localStorage.setItem('darkMode', 'true');
+        } else {
+          document.documentElement.classList.remove('dark-theme');
+          localStorage.setItem('darkMode', 'false');
+        }
+      }
+    });
+  });
+</script>
+

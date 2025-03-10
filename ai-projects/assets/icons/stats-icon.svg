@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#4285F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Simple bar chart design -->
+  <rect x="3" y="14" width="3" height="6" fill="#4285F4" stroke="none" />
+  <rect x="8" y="9" width="3" height="11" fill="#4285F4" stroke="none" />
+  <rect x="13" y="4" width="3" height="16" fill="#4285F4" stroke="none" />
+  <rect x="18" y="7" width="3" height="13" fill="#4285F4" stroke="none" />
+  
+  <!-- Base line representing x-axis -->
+  <line x1="2" y1="20" x2="22" y2="20" stroke="#333" stroke-width="1" />
+</svg>
+

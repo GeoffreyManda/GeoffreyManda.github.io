@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Geoffrey Manda | Geoffrey Manda Data Scientist</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Geoffrey Manda" />
+<meta name="author" content="Geoffrey Manda" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Statistical analysis, AI research, and epidemiological studies" />
+<meta property="og:description" content="Statistical analysis, AI research, and epidemiological studies" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Geoffrey Manda Data Scientist" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Geoffrey Manda" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Geoffrey Manda"},"description":"Statistical analysis, AI research, and epidemiological studies","headline":"Geoffrey Manda","name":"Geoffrey Manda Data Scientist","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Geoffrey Manda | Data Scientist" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Geoffrey Manda | Data Scientist</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/">Geoffrey Manda</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/ai-projects/">AI Projects</a><a class="page-link" href="/biostatistics/">Biostatistics</a><a class="page-link" href="/epidemiology/">Epidemiology</a><a class="page-link" href="/contact/">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <section class="hero-section">
+  <div class="hero-animation-container">
+    <div id="particle-container"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span class="hero-word">Exploring</span>
+            <span class="hero-word">the</span>
+            <span class="hero-word">Frontiers</span>
+            <span class="hero-word">of</span>
+            <span class="hero-word">Knowledge</span>
+        </h1>
+        <p class="hero-subtitle">
+            <span class="hero-char-wrapper">
+                <span class="hero-chars">A journey through research, innovation, and discovery</span>
+            </span>
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="hero-button primary">Explore Projects</a>
+            <a href="#about" class="hero-button secondary">Learn More</a>
+        </div>
+    </div>
+    <div class="hero-scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <div class="scroll-text">Scroll to explore</div>
+    </div>
+</div>
+
+<style>
+    :root {
+        --hero-bg: #0a0a14;
+        --hero-text: #e4e4e9;
+        --hero-accent: #64ffda;
+        --hero-secondary: #7d56f4;
+        --hero-tertiary: #ff6492;
+        --hero-depth: #141424;
+        --transition-ease: cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    .dark-mode {
+        --hero-bg: #0a0a14;
+        --hero-text: #e4e4e9;
+        --hero-accent: #64ffda;
+    }
+
+    .light-mode {
+        --hero-bg: #f4f4f8;
+        --hero-text: #121220;
+        --hero-accent: #0a6b5c;
+    }
+
+    .hero-animation-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+        overflow: hidden;
+        background: var(--hero-bg);
+        color: var(--hero-text);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    #particle-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 800px;
+        padding: 0 20px;
+        opacity: 0;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-word {
+        display: inline-block;
+        margin: 0 0.5rem;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+        opacity: 0;
+    }
+
+    .hero-char-wrapper {
+        display: block;
+        overflow: hidden;
+    }
+
+    .hero-chars {
+        display: block;
+        transform: translateY(100%);
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        opacity: 0;
+    }
+
+    .hero-button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        transition: all 0.3s var(--transition-ease);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-button:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s ease, height 0.6s ease;
+    }
+
+    .hero-button:hover:before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-button.primary {
+        background: var(--hero-accent);
+        color: var(--hero-bg);
+    }
+
+    .hero-button.secondary {
+        background: transparent;
+        border: 1px solid var(--hero-accent);
+        color: var(--hero-accent);
+    }
+
+    .hero-scroll-indicator {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .scroll-arrow {
+        width: 20px;
+        height: 20px;
+        border-right: 2px solid var(--hero-accent);
+        border-bottom: 2px solid var(--hero-accent);
+        transform: rotate(45deg);
+        margin-bottom: 8px;
+        animation: scrollArrow 2s infinite;
+    }
+
+    .scroll-text {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        color: var(--hero-accent);
+    }
+
+    @keyframes scrollArrow {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-5px, -5px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+        .hero-subtitle {
+            font-size: 1rem;
+        }
+        .hero-buttons {
+            flex-direction: column;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    .particle {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        pointer-events: none;
+    }
+</style>
+
+<!-- Include GSAP at the end of the body -->
+<script>
+    // Wait for GSAP to be loaded
+    function waitForGSAP() {
+        if (window.gsap) {
+            initHeroAnimation();
+        } else {
+            setTimeout(waitForGSAP, 100);
+        }
+    }
+
+    // Create particles
+    function createParticles() {
+        const container = document.getElementById('particle-container');
+        const particleCount = window.innerWidth < 768 ? 50 : 100;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            // Random properties
+            const size = Math.random() * 4 + 1;
+            const posX = Math.random() * 100;
+            const posY = Math.random() * 100;
+            const opacity = Math.random() * 0.5 + 0.1;
+            const duration = Math.random() * 60 + 30;
+            const delay = Math.random() * 10;
+            
+            // Apply styles
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${posX}%`;
+            particle.style.top = `${posY}%`;
+            particle.style.opacity = opacity;
+            
+            container.appendChild(particle);
+            
+            // Animate with GSAP
+            gsap.to(particle, {
+                x: `random(-100, 100)`,
+                y: `random(-100, 100)`,
+                opacity: `random(0.1, 0.5)`,
+                duration: duration,
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut",
+                delay: delay
+            });
+        }
+    }
+
+    function initHeroAnimation() {
+        // Initialize GSAP animations
+        const tl = gsap.timeline({defaults: {ease: "power3.out"}});
+        
+        // Create particles
+        createParticles();
+        
+        // Make content visible first
+        gsap.set(".hero-content", {opacity: 1});
+        
+        // Animate title words
+        tl.to(".hero-word", {
+            opacity: 1, 
+            y: 0, 
+            duration: 0.8, 
+            stagger: 0.1
+        });
+        
+        // Animate subtitle
+        tl.to(".hero-chars", {
+            y: 0, 
+            duration: 0.8, 
+            stagger: 0.05
+        }, "-=0.4");
+        
+        // Animate buttons
+        tl.to(".hero-buttons", {
+            opacity: 1, 
+            duration: 0.6
+        }, "-=0.2");
+        
+        // Animate scroll indicator
+        tl.to(".hero-scroll-indicator", {
+            opacity: 1, 
+            duration: 0.6
+        }, "-=0.2");
+        
+        // Floating effect for the content
+        gsap.to(".hero-content", {
+            y: 10,
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+        
+        // Interactive hover effect for buttons
+        const buttons = document.querySelectorAll('.hero-button');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                gsap.to(button, {
+                    scale: 1.05,
+                    duration: 0.3
+                });
+            });
+            
+            button.addEventListener('mouseleave', () => {
+                gsap.to(button, {
+                    scale: 1,
+                    duration: 0.3
+                });
+            });
+        });
+        
+        // Interactive effect for hero container
+        const heroContainer = document.querySelector('.hero-animation-container');
+        heroContainer.addEventListener('mousemove', (e) => {
+            const xPos = (e.clientX / window.innerWidth - 0.5) * 20;
+            const yPos = (e.clientY / window.innerHeight - 0.5) * 20;
+            
+            gsap.to(".hero-content", {
+                x: xPos,
+                y: yPos,
+                duration: 1,
+                ease: "power1.out"
+            });
+            
+            gsap.to("#particle-container", {
+                x: xPos * 0.5,
+                y: yPos * 0.5,
+                duration: 2,
+                ease: "power1.out"
+            });
+        });
+    }
+
+    // Check if we need to load GSAP
+    function loadGSAP() {
+        if (!window.gsap) {
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js';
+            script.onload = waitForGSAP;
+            document.body.appendChild(script);
+        } else {
+            waitForGSAP();
+        }
+    }
+
+    // Initialize when document is loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadGSAP);
+    } else {
+        loadGSAP();
+    }
+</script>
+
+
+</section>
+
+<div class="home-content">
+  <div class="hero-section">
+  <div class="hero-content">
+    <h1>Geoffrey Manda</h1>
+    <h2>Data Science &amp; AI Research</h2>
+    <p>Advancing healthcare analytics through statistical innovation</p>
+    <div class="hero-cta">
+      <a href="#featured-work" class="btn-primary">Explore My Work</a>
+      <a href="contact" class="btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <!-- Placeholder for hero image -->
+    <img src="assets/images/hero-placeholder.jpg" alt="Data visualization concept" />
+  </div>
+</div>
+
+<section id="featured-work" class="featured-section">
+  <h2>Featured Work</h2>
+  <div class="feature-grid">
+    <!-- Feature Card 1 -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <img src="assets/icons/ai-icon.svg" alt="AI Icon" />
+      </div>
+      <h3>AI in Climate Modeling</h3>
+      <p>Leveraging deep learning to improve climate prediction accuracy</p>
+      <a href="ai-projects#climate-modeling" class="feature-link">View Project →</a>
+    </div>
+    
+    <!-- Feature Card 2 -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <img src="assets/icons/stats-icon.svg" alt="Statistics Icon" />
+      </div>
+      <h3>Survival Analysis</h3>
+      <p>Statistical models for time-to-event data in healthcare outcomes</p>
+      <a href="biostatistics#survival-analysis" class="feature-link">View Project →</a>
+    </div>
+    
+    <!-- Feature Card 3 -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <img src="assets/icons/research-icon.svg" alt="Research Icon" />
+      </div>
+      <h3>Epidemiology Research</h3>
+      <p>Disease pattern analysis and population health metrics</p>
+      <a href="epidemiology" class="feature-link">View Project →</a>
+    </div>
+  </div>
+</section>
+
+<section class="expertise-section">
+  <h2>Areas of Expertise</h2>
+  <div class="expertise-grid">
+    <div class="expertise-area">
+      <h3>Artificial Intelligence</h3>
+      <p>Machine learning applications in healthcare and climate science, policy development for responsible AI</p>
+    </div>
+    <div class="expertise-area">
+      <h3>Biostatistics</h3>
+      <p>Survival analysis, time-series modeling, and mixed-effects approaches for clinical research</p>
+    </div>
+    <div class="expertise-area">
+      <h3>Epidemiology</h3>
+      <p>Research design, causal inference, and statistical methods for population health studies</p>
+    </div>
+  </div>
+</section>
+
+<section class="recent-section">
+  <h2>Recent Updates</h2>
+  <div class="update-timeline">
+    <div class="update-item">
+      <div class="update-date">April 2023</div>
+      <div class="update-content">
+        <h3>AI Climate Modeling Paper Published</h3>
+        <p>New research on neural network applications in climate prediction</p>
+        <a href="#" class="update-link">Read More →</a>
+      </div>
+    </div>
+    <div class="update-item">
+      <div class="update-date">March 2023</div>
+      <div class="update-content">
+        <h3>COVID-19 Survival Analysis Project</h3>
+        <p>Analyzing factors affecting hospital outcomes using survival models</p>
+        <a href="https://github.com/GeoffreyManda/covid-survival-analysis" class="update-link">View Project →</a>
+      </div>
+    </div>
+    <div class="update-item">
+      <div class="update-date">February 2023</div>
+      <div class="update-content">
+        <h3>Website Redesign Launched</h3>
+        <p>Modern interface with improved navigation and content organization</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-preview">
+  <h2>Let's Collaborate</h2>
+  <p>Interested in working together on research, data analysis, or AI projects?</p>
+  <a href="contact" class="btn-primary">Contact Me</a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="copyright">
+      © 2023 Geoffrey Manda
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/GeoffreyManda" aria-label="GitHub">
+        <img src="assets/icons/github-icon.svg" alt="GitHub" class="footer-icon" />
+      </a>
+      <a href="https://linkedin.com/" aria-label="LinkedIn">
+        <img src="assets/icons/linkedin-icon.svg" alt="LinkedIn" class="footer-icon" />
+      </a>
+      <a href="https://twitter.com/" aria-label="Twitter">
+        <img src="assets/icons/twitter-icon.svg" alt="Twitter" class="footer-icon" />
+      </a>
+    </div>
+  </div>
+  <div class="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+      <img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg" alt="License: CC BY-NC-ND 4.0" />
+    </a>
+  </div>
+</footer>
+
+</div>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Geoffrey Manda | Data Scientist</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">{&quot;name&quot;=&gt;&quot;Geoffrey Manda&quot;, &quot;github&quot;=&gt;&quot;GeoffreyManda&quot;, &quot;email&quot;=&gt;&quot;your.email@example.com&quot;}</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Statistical analysis, AI research, and epidemiological studies</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

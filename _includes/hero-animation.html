@@ -1,0 +1,388 @@
+<div class="hero-animation-container">
+    <div id="particle-container"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span class="hero-word">Exploring</span>
+            <span class="hero-word">the</span>
+            <span class="hero-word">Frontiers</span>
+            <span class="hero-word">of</span>
+            <span class="hero-word">Knowledge</span>
+        </h1>
+        <p class="hero-subtitle">
+            <span class="hero-char-wrapper">
+                <span class="hero-chars">A journey through research, innovation, and discovery</span>
+            </span>
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="hero-button primary">Explore Projects</a>
+            <a href="#about" class="hero-button secondary">Learn More</a>
+        </div>
+    </div>
+    <div class="hero-scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <div class="scroll-text">Scroll to explore</div>
+    </div>
+</div>
+
+<style>
+    :root {
+        --hero-bg: #0a0a14;
+        --hero-text: #e4e4e9;
+        --hero-accent: #64ffda;
+        --hero-secondary: #7d56f4;
+        --hero-tertiary: #ff6492;
+        --hero-depth: #141424;
+        --transition-ease: cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    .dark-mode {
+        --hero-bg: #0a0a14;
+        --hero-text: #e4e4e9;
+        --hero-accent: #64ffda;
+    }
+
+    .light-mode {
+        --hero-bg: #f4f4f8;
+        --hero-text: #121220;
+        --hero-accent: #0a6b5c;
+    }
+
+    .hero-animation-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+        overflow: hidden;
+        background: var(--hero-bg);
+        color: var(--hero-text);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    #particle-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 800px;
+        padding: 0 20px;
+        opacity: 0;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-word {
+        display: inline-block;
+        margin: 0 0.5rem;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+        opacity: 0;
+    }
+
+    .hero-char-wrapper {
+        display: block;
+        overflow: hidden;
+    }
+
+    .hero-chars {
+        display: block;
+        transform: translateY(100%);
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        opacity: 0;
+    }
+
+    .hero-button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        transition: all 0.3s var(--transition-ease);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-button:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s ease, height 0.6s ease;
+    }
+
+    .hero-button:hover:before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-button.primary {
+        background: var(--hero-accent);
+        color: var(--hero-bg);
+    }
+
+    .hero-button.secondary {
+        background: transparent;
+        border: 1px solid var(--hero-accent);
+        color: var(--hero-accent);
+    }
+
+    .hero-scroll-indicator {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .scroll-arrow {
+        width: 20px;
+        height: 20px;
+        border-right: 2px solid var(--hero-accent);
+        border-bottom: 2px solid var(--hero-accent);
+        transform: rotate(45deg);
+        margin-bottom: 8px;
+        animation: scrollArrow 2s infinite;
+    }
+
+    .scroll-text {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        color: var(--hero-accent);
+    }
+
+    @keyframes scrollArrow {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-5px, -5px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+        .hero-subtitle {
+            font-size: 1rem;
+        }
+        .hero-buttons {
+            flex-direction: column;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    .particle {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        pointer-events: none;
+    }
+</style>
+
+<!-- Include GSAP at the end of the body -->
+<script>
+    // Wait for GSAP to be loaded
+    function waitForGSAP() {
+        if (window.gsap) {
+            initHeroAnimation();
+        } else {
+            setTimeout(waitForGSAP, 100);
+        }
+    }
+
+    // Create particles
+    function createParticles() {
+        const container = document.getElementById('particle-container');
+        const particleCount = window.innerWidth < 768 ? 50 : 100;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            // Random properties
+            const size = Math.random() * 4 + 1;
+            const posX = Math.random() * 100;
+            const posY = Math.random() * 100;
+            const opacity = Math.random() * 0.5 + 0.1;
+            const duration = Math.random() * 60 + 30;
+            const delay = Math.random() * 10;
+            
+            // Apply styles
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${posX}%`;
+            particle.style.top = `${posY}%`;
+            particle.style.opacity = opacity;
+            
+            container.appendChild(particle);
+            
+            // Animate with GSAP
+            gsap.to(particle, {
+                x: `random(-100, 100)`,
+                y: `random(-100, 100)`,
+                opacity: `random(0.1, 0.5)`,
+                duration: duration,
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut",
+                delay: delay
+            });
+        }
+    }
+
+    function initHeroAnimation() {
+        // Initialize GSAP animations
+        const tl = gsap.timeline({defaults: {ease: "power3.out"}});
+        
+        // Create particles
+        createParticles();
+        
+        // Make content visible first
+        gsap.set(".hero-content", {opacity: 1});
+        
+        // Animate title words
+        tl.to(".hero-word", {
+            opacity: 1, 
+            y: 0, 
+            duration: 0.8, 
+            stagger: 0.1
+        });
+        
+        // Animate subtitle
+        tl.to(".hero-chars", {
+            y: 0, 
+            duration: 0.8, 
+            stagger: 0.05
+        }, "-=0.4");
+        
+        // Animate buttons
+        tl.to(".hero-buttons", {
+            opacity: 1, 
+            duration: 0.6
+        }, "-=0.2");
+        
+        // Animate scroll indicator
+        tl.to(".hero-scroll-indicator", {
+            opacity: 1, 
+            duration: 0.6
+        }, "-=0.2");
+        
+        // Floating effect for the content
+        gsap.to(".hero-content", {
+            y: 10,
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+        
+        // Interactive hover effect for buttons
+        const buttons = document.querySelectorAll('.hero-button');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                gsap.to(button, {
+                    scale: 1.05,
+                    duration: 0.3
+                });
+            });
+            
+            button.addEventListener('mouseleave', () => {
+                gsap.to(button, {
+                    scale: 1,
+                    duration: 0.3
+                });
+            });
+        });
+        
+        // Interactive effect for hero container
+        const heroContainer = document.querySelector('.hero-animation-container');
+        heroContainer.addEventListener('mousemove', (e) => {
+            const xPos = (e.clientX / window.innerWidth - 0.5) * 20;
+            const yPos = (e.clientY / window.innerHeight - 0.5) * 20;
+            
+            gsap.to(".hero-content", {
+                x: xPos,
+                y: yPos,
+                duration: 1,
+                ease: "power1.out"
+            });
+            
+            gsap.to("#particle-container", {
+                x: xPos * 0.5,
+                y: yPos * 0.5,
+                duration: 2,
+                ease: "power1.out"
+            });
+        });
+    }
+
+    // Check if we need to load GSAP
+    function loadGSAP() {
+        if (!window.gsap) {
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js';
+            script.onload = waitForGSAP;
+            document.body.appendChild(script);
+        } else {
+            waitForGSAP();
+        }
+    }
+
+    // Initialize when document is loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadGSAP);
+    } else {
+        loadGSAP();
+    }
+</script>
+

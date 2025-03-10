@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Hero Image Placeholder</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Placeholder container styles */
+        .placeholder-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .placeholder-container {
+                padding-bottom: 75%; /* 4:3 aspect ratio for mobile */
+            }
+        }
+
+        /* Decorative elements */
+        .geometric-shape {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .shape-1 {
+            width: 150px;
+            height: 150px;
+            top: 15%;
+            left: 10%;
+            animation-delay: 0s;
+            background: linear-gradient(45deg, rgba(230, 230, 250, 0.1), rgba(230, 230, 250, 0.03));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            bottom: 10%;
+            right: 5%;
+            animation-delay: -5s;
+            background: linear-gradient(135deg, rgba(176, 196, 222, 0.1), rgba(176, 196, 222, 0.03));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .shape-3 {
+            width: 80px;
+            height: 80px;
+            top: 60%;
+            left: 30%;
+            animation-delay: -8s;
+            background: linear-gradient(225deg, rgba(240, 248, 255, 0.1), rgba(240, 248, 255, 0.03));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Sacred geometry patterns */
+        .sacred-geometry {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            animation: rotate 30s infinite linear;
+        }
+
+        .sacred-geometry::before,
+        .sacred-geometry::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+        }
+
+        .sacred-geometry::before {
+            transform: rotate(45deg);
+        }
+
+        .sacred-geometry::after {
+            transform: rotate(15deg);
+        }
+
+        /* Text content */
+        .placeholder-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Georgia', serif;
+            text-align: center;
+            width: 80%;
+            z-index: 2;
+        }
+
+        .placeholder-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            animation: fadeInUp 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+        }
+
+        .placeholder-subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.8;
+            letter-spacing: 1px;
+            animation: fadeInUp 1.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+        }
+
+        /* Particles and stars background */
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0;
+            animation: twinkle 5s infinite linear;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive font sizes */
+        @media (max-width: 768px) {
+            .placeholder-title {
+                font-size: 1.8rem;
+            }
+            .placeholder-subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="placeholder-container">
+        <!-- Geometric shapes -->
+        <div class="geometric-shape shape-1"></div>
+        <div class="geometric-shape shape-2"></div>
+        <div class="geometric-shape shape-3"></div>
+        
+        <!-- Sacred geometry pattern -->
+        <div class="sacred-geometry"></div>
+        
+        <!-- Text content -->
+        <div class="placeholder-content">
+            <h1 class="placeholder-title">Connect With Us</h1>
+            <p class="placeholder-subtitle">Bridging the gap between reality and the mystical realm of possibilities</p>
+        </div>
+        
+        <!-- Stars/particles background -->
+        <div class="stars" id="stars"></div>
+    </div>
+
+    <script>
+        // Create twinkling stars
+        document.addEventListener('DOMContentLoaded', function() {
+            const starsContainer = document.getElementById('stars');
+            const starCount = 50;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Random positioning
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.left = `${Math.random() * 100}%`;
+                
+                // Random size
+                const size = Math.random() * 2 + 1;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                
+                // Random animation delay
+                star.style.animationDelay = `${Math.random() * 5}s`;
+                
+                starsContainer.appendChild(star);
+            }
+        });
+    </script>
+</body>
+</html>
+
