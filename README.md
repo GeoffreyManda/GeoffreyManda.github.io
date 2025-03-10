@@ -1,4 +1,4 @@
-# Geoffrey Manda's Personal Website
+# Welcome to my Personal Website
 
 This repository contains the source code for my personal website, hosted on GitHub Pages. The site serves as a central hub for my data analysis projects, research, and professional information.
 
@@ -43,4 +43,4 @@ The content of this website is licensed under a [Creative Commons Attribution-No
 
 ## Contact
 
-For questions or suggestions about this website, please [open an issue](https://github.com/GeoffreyManda/geoffreymanda.github.io/issues) or contact me directly.
+For questions or suggestions about this website, please [open an issue](https://github.com/GeoffreyManda/GeoffreyManda.github.io/issues) or contact me directly.
