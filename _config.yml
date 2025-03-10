@@ -1,0 +1,44 @@
+theme: minima
+title: Geoffrey Manda | Data Analysis
+description: Statistical analysis projects and research
+show_downloads: false
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Author information
+author:
+  name: Geoffrey Manda
+  github: GeoffreyManda
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Navigation
+header_pages:
+  - projects.md
+  - about.md
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - LICENSE.md
+  - README.md
+
+# Social media links
+social:
+  github: GeoffreyManda
+
+# Google Analytics (uncomment and add your ID if needed)
+# google_analytics: UA-XXXXXXXX-X
