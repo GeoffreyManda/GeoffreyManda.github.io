@@ -26,25 +26,25 @@
 
 <style>
     :root {
-        --hero-bg: #0a0a14;
-        --hero-text: #e4e4e9;
-        --hero-accent: #64ffda;
-        --hero-secondary: #7d56f4;
-        --hero-tertiary: #ff6492;
-        --hero-depth: #141424;
-        --transition-ease: cubic-bezier(0.65, 0, 0.35, 1);
+        --hero-bg: linear-gradient(120deg, #ff7e5f 0%, #6a82fb 100%);
+        --hero-text: #fff;
+        --hero-accent: #feb47b;
+        --hero-secondary: #6a82fb;
+        --hero-tertiary: #ff7e5f;
+        --hero-depth: #1a1a2a;
+        --transition-ease: var(--ease-in-out);
     }
 
     .dark-mode {
-        --hero-bg: #0a0a14;
-        --hero-text: #e4e4e9;
-        --hero-accent: #64ffda;
+        --hero-bg: linear-gradient(120deg, #23243a 0%, #6a82fb 100%);
+        --hero-text: #fff;
+        --hero-accent: #feb47b;
     }
 
     .light-mode {
-        --hero-bg: #f4f4f8;
-        --hero-text: #121220;
-        --hero-accent: #0a6b5c;
+        --hero-bg: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);
+        --hero-text: #23243a;
+        --hero-accent: #ff7e5f;
     }
 
     .hero-animation-container {
@@ -60,6 +60,17 @@
         justify-content: center;
         align-items: center;
         z-index: 1;
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+    }
+
+    /* Add a dark overlay for contrast */
+    .hero-animation-container::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(20, 20, 40, 0.45);
+        z-index: 0;
     }
 
     #particle-container {
@@ -78,17 +89,21 @@
         max-width: 800px;
         padding: 0 20px;
         opacity: 0;
+        color: #fff;
+        text-shadow: 0 2px 16px rgba(0,0,0,0.7);
     }
 
     .hero-title {
         font-size: 3.5rem;
-        font-weight: 700;
+        font-weight: 800;
         line-height: 1.2;
         margin-bottom: 1.5rem;
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        font-family: 'Inter', 'SF Pro Display', Arial, sans-serif;
+        letter-spacing: -1px;
     }
 
     .hero-word {
@@ -96,6 +111,12 @@
         margin: 0 0.5rem;
         opacity: 0;
         transform: translateY(100%);
+        background: linear-gradient(90deg, #ff7e5f, #feb47b, #6a82fb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% auto;
+        animation: gradient-shift 8s linear infinite;
     }
 
     .hero-subtitle {
@@ -104,6 +125,8 @@
         line-height: 1.6;
         margin-bottom: 2.5rem;
         opacity: 0;
+        color: #fff;
+        text-shadow: 0 1px 8px rgba(0,0,0,0.5);
     }
 
     .hero-char-wrapper {
@@ -126,13 +149,27 @@
     .hero-button {
         display: inline-block;
         padding: 0.75rem 1.5rem;
-        border-radius: 4px;
-        font-weight: 500;
+        border-radius: 8px;
+        font-weight: 600;
         letter-spacing: 0.5px;
         text-decoration: none;
         transition: all 0.3s var(--transition-ease);
         position: relative;
         overflow: hidden;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    }
+
+    .hero-button.primary {
+        background: linear-gradient(90deg, #ff7e5f, #feb47b);
+        color: #fff;
+        border: none;
+    }
+
+    .hero-button.secondary {
+        border: 2px solid #fff;
+        color: #fff;
+        background: transparent;
     }
 
     .hero-button:before {
@@ -153,15 +190,9 @@
         height: 300px;
     }
 
-    .hero-button.primary {
-        background: var(--hero-accent);
-        color: var(--hero-bg);
-    }
-
-    .hero-button.secondary {
-        background: transparent;
-        border: 1px solid var(--hero-accent);
-        color: var(--hero-accent);
+    .hero-button:hover {
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 8px 32px rgba(249, 115, 22, 0.2);
     }
 
     .hero-scroll-indicator {
@@ -224,8 +255,19 @@
     .particle {
         position: absolute;
         border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
+        background: linear-gradient(45deg, 
+            rgba(249, 115, 22, 0.1) 0%,
+            rgba(168, 85, 247, 0.1) 100%);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
         pointer-events: none;
+    }
+
+    @keyframes gradient-shift {
+        to {
+            background-position: 200% center;
+        }
     }
 </style>
 

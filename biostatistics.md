@@ -23,8 +23,8 @@ permalink: /biostatistics/
     
     <div class="feature-cards">
       <div class="feature-card">
-        <div class="card-icon">
-          <img src="/assets/icons/survival-analysis.svg" alt="Survival Analysis icon">
+        <div class="card-icon icon-ios">
+          <img src="/assets/icons/survival-analysis.svg" alt="Survival Analysis Icon">
         </div>
         <h3>Survival Analysis</h3>
         <p>Developing novel approaches to time-to-event data analysis with applications in clinical trials and observational studies.</p>
@@ -32,8 +32,8 @@ permalink: /biostatistics/
       </div>
       
       <div class="feature-card">
-        <div class="card-icon">
-          <img src="/assets/icons/cardiology.svg" alt="Cardiology icon">
+        <div class="card-icon icon-ios">
+          <img src="/assets/icons/cardiology.svg" alt="Cardiology Research Icon">
         </div>
         <h3>Cardiology Research</h3>
         <p>Statistical modeling of cardiovascular outcomes and risk factors to improve treatment strategies and prevention.</p>
@@ -41,8 +41,8 @@ permalink: /biostatistics/
       </div>
       
       <div class="feature-card">
-        <div class="card-icon">
-          <img src="/assets/icons/clinical-trials.svg" alt="Clinical Trials icon">
+        <div class="card-icon icon-ios">
+          <img src="/assets/icons/clinical-trials.svg" alt="Clinical Trials Icon">
         </div>
         <h3>Clinical Trials</h3>
         <p>Design and analysis of clinical trials, including sample size calculation, interim analyses, and adaptive designs.</p>

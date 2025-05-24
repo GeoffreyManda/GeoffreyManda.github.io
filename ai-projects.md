@@ -17,8 +17,8 @@ permalink: /ai-projects/
 
 <section id="climate-modeling" class="project-section">
   <div class="section-header">
-    <div class="section-icon">
-      <img src="assets/icons/climate-icon.svg" alt="Climate icon" />
+    <div class="section-icon icon-ios">
+      <img src="/assets/icons/ai-icon.svg" alt="AI Icon" />
     </div>
     <h2>AI in Climate Modeling</h2>
   </div>
@@ -72,8 +72,8 @@ permalink: /ai-projects/
 
 <section id="ai-policy" class="project-section">
   <div class="section-header">
-    <div class="section-icon">
-      <img src="assets/icons/policy-icon.svg" alt="Policy icon" />
+    <div class="section-icon icon-ios">
+      <img src="/assets/icons/policy-icon.svg" alt="Policy Icon" />
     </div>
     <h2>AI Policy Research</h2>
   </div>
@@ -118,15 +118,15 @@ permalink: /ai-projects/
   <h2>Explore Related Areas</h2>
   <div class="related-grid">
     <a href="biostatistics" class="related-card">
-      <div class="related-icon">
-        <img src="assets/icons/stats-icon.svg" alt="Statistics icon" />
+      <div class="related-icon icon-ios">
+        <img src="/assets/icons/research-icon.svg" alt="Research Icon" />
       </div>
       <h3>Biostatistics</h3>
       <p>Statistical methods for clinical and healthcare research</p>
     </a>
     <a href="epidemiology" class="related-card">
-      <div class="related-icon">
-        <img src="assets/icons/epidemiology-icon.svg" alt="Epidemiology icon" />
+      <div class="related-icon icon-ios">
+        <img src="/assets/icons/epidemiology-icon.svg" alt="Epidemiology Icon" />
       </div>
       <h3>Epidemiology</h3>
       <p>Population health studies and disease pattern analysis</p>

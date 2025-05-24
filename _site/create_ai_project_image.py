@@ -2,9 +2,106 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 import random
 import math
+import numpy as np
+from PIL import ImageFilter
 
 # Create directory if it doesn't exist
 os.makedirs("ai-projects/assets/images", exist_ok=True)
+
+def create_gradient_background(width, height, start_color, end_color, angle=45):
+    """Create a gradient background image."""
+    image = Image.new('RGB', (width, height))
+    draw = ImageDraw.Draw(image)
+    
+    # Convert hex colors to RGB
+    def hex_to_rgb(hex_color):
+        hex_color = hex_color.lstrip('#')
+        return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+    
+    start_rgb = hex_to_rgb(start_color)
+    end_rgb = hex_to_rgb(end_color)
+    
+    # Create gradient
+    for y in range(height):
+        for x in range(width):
+            # Calculate gradient position
+            pos = (x * np.cos(np.radians(angle)) + y * np.sin(np.radians(angle))) / (width + height)
+            pos = max(0, min(1, pos))
+            
+            # Interpolate color
+            r = int(start_rgb[0] * (1 - pos) + end_rgb[0] * pos)
+            g = int(start_rgb[1] * (1 - pos) + end_rgb[1] * pos)
+            b = int(start_rgb[2] * (1 - pos) + end_rgb[2] * pos)
+            
+            draw.point((x, y), fill=(r, g, b))
+    
+    return image
+
+def add_glass_effect(image, blur_radius=20, opacity=0.7):
+    """Add a glass morphism effect to the image."""
+    # Create a blurred copy
+    blurred = image.filter(ImageFilter.GaussianBlur(blur_radius))
+    
+    # Create a semi-transparent overlay
+    overlay = Image.new('RGBA', image.size, (255, 255, 255, int(255 * opacity)))
+    
+    # Blend the images
+    return Image.alpha_composite(image.convert('RGBA'), overlay)
+
+def create_placeholder_image(filename, width=1200, height=600, text="AI Project"):
+    """Create a placeholder image with gradient background and glass effect."""
+    # Create gradient background
+    image = create_gradient_background(
+        width, height,
+        start_color='#f97316',  # Orange
+        end_color='#a855f7'    # Purple
+    )
+    
+    # Add glass effect
+    image = add_glass_effect(image)
+    
+    # Add text
+    draw = ImageDraw.Draw(image)
+    try:
+        font = ImageFont.truetype("SF Pro Display", 48)
+    except:
+        font = ImageFont.load_default()
+    
+    # Calculate text position
+    text_bbox = draw.textbbox((0, 0), text, font=font)
+    text_width = text_bbox[2] - text_bbox[0]
+    text_height = text_bbox[3] - text_bbox[1]
+    x = (width - text_width) // 2
+    y = (height - text_height) // 2
+    
+    # Draw text with shadow
+    shadow_offset = 2
+    draw.text((x + shadow_offset, y + shadow_offset), text, font=font, fill=(0, 0, 0, 128))
+    draw.text((x, y), text, font=font, fill=(255, 255, 255, 255))
+    
+    # Save image
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    # Convert to RGB before saving as JPEG
+    image = image.convert('RGB')
+    image.save(filename, quality=95, optimize=True)
+    print(f"Created placeholder image: {filename}")
+
+def main():
+    # Create placeholder images
+    base_dir = "ai-projects/assets/images"
+    placeholders = [
+        "ai-header-placeholder.jpg",
+        "climate-model-placeholder.jpg",
+        "ai-policy-placeholder.jpg"
+    ]
+    
+    for placeholder in placeholders:
+        filename = os.path.join(base_dir, placeholder)
+        text = placeholder.replace("-placeholder.jpg", "").replace("-", " ").title()
+        create_placeholder_image(filename, text=text)
+
+if __name__ == "__main__":
+    main()
 
 # Create a new image with white background
 width, height = 800, 400

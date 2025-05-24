@@ -23,8 +23,8 @@ permalink: /epidemiology/
     
     <div class="feature-cards">
       <div class="feature-card">
-        <div class="card-icon">
-          <img src="/assets/icons/infectious-disease.svg" alt="Infectious Disease icon">
+        <div class="card-icon icon-ios">
+          <img src="/assets/icons/infectious-disease.svg" alt="Infectious Disease Icon">
         </div>
         <h3>Infectious Disease</h3>
         <p>Modeling transmission dynamics and evaluating control measures for infectious diseases in diverse populations.</p>
@@ -32,8 +32,8 @@ permalink: /epidemiology/
       </div>
       
       <div class="feature-card">
-        <div class="card-icon">
-          <img src="/assets/icons/environmental-health.svg" alt="Environmental Health icon">
+        <div class="card-icon icon-ios">
+          <img src="/assets/icons/environmental-health.svg" alt="Environmental Health Icon">
         </div>
         <h3>Environmental Health</h3>
         <p>Assessing the health impacts of environmental exposures and climate change on vulnerable populations.</p>
@@ -41,8 +41,8 @@ permalink: /epidemiology/
       </div>
       
       <div class="feature-card">
-        <div class="card-icon">
-          <img src="/assets/icons/health-disparities.svg" alt="Health Disparities icon">
+        <div class="card-icon icon-ios">
+          <img src="/assets/icons/health-disparities.svg" alt="Health Disparities Icon">
         </div>
         <h3>Health Disparities</h3>
         <p>Investigating social determinants of health and developing interventions to reduce health inequities.</p>
