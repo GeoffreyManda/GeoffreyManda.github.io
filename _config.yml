@@ -22,6 +22,7 @@ header_pages:
   - index.md
   - about.md
   - ai-projects.md
+  - tutorials.md
   - biostatistics.md
   - epidemiology.md
   - contact.md
