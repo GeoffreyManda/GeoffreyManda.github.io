@@ -82,6 +82,6 @@ title: Geoffrey Manda
 
 <section class="contact-preview">
   <h2>Let's Collaborate</h2>
-  <p>Interested in working together on research, data analysis, or AI projects?</p>
+  <p>Interested in working together on causal inference, biostatistics, or public health research?</p>
   <a href="contact" class="btn-primary">Get in Touch</a>
 </section>
