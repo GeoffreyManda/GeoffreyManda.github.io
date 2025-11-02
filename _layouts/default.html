@@ -7,11 +7,24 @@
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
+    <main class="page-content" aria-label="Content" id="main-content">
+      {% unless page.url == "/" %}
+      <nav class="breadcrumbs wrapper" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="separator">›</span>
+        <span class="current">{{ page.title }}</span>
+      </nav>
+      {% endunless %}
+
       {{ content }}
     </main>
 
     {% include footer.html %}
+
+    <!-- Floating Contact Button -->
+    <a href="/contact" class="contact-fab" aria-label="Contact" title="Get in touch">
+      ✉
+    </a>
 
     <!-- Back to Top Button -->
     <button id="back-to-top" aria-label="Back to top">↑</button>
@@ -33,6 +46,28 @@
         window.scrollTo({
           top: 0,
           behavior: 'smooth'
+        });
+      });
+
+      // Active Page Navigation Indicator
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll('.page-link');
+
+      navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (currentPath === linkPath || currentPath.startsWith(linkPath + '/')) {
+          link.classList.add('active');
+        }
+      });
+
+      // Loading State for Links
+      const allLinks = document.querySelectorAll('a:not([href^="#"]):not([target="_blank"])');
+      allLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          if (!this.classList.contains('no-loading')) {
+            this.style.opacity = '0.6';
+            this.style.pointerEvents = 'none';
+          }
         });
       });
     </script>
