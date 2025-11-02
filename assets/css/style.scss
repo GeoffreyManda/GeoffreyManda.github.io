@@ -3062,33 +3062,6 @@ a[target="_blank"]:not(.btn-primary):not(.btn-secondary):not(.feature-link)::aft
   height: 3px;
 }
 
-/* Breadcrumbs */
-.breadcrumbs {
-  padding: 1rem 0;
-  font-size: 0.875rem;
-  color: var(--color-text-secondary);
-}
-
-.breadcrumbs a {
-  color: var(--color-text-secondary);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.breadcrumbs a:hover {
-  color: var(--primary-600);
-}
-
-.breadcrumbs .separator {
-  margin: 0 0.5rem;
-  color: var(--color-text-tertiary);
-}
-
-.breadcrumbs .current {
-  color: var(--primary-600);
-  font-weight: 600;
-}
-
 /* Enhanced Footer with Quick Links */
 .site-footer {
   background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
