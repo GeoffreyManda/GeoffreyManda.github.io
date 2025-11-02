@@ -119,7 +119,7 @@ permalink: /about/
 
       <div class="feature-card">
         <h3>Biostatistical Consultant</h3>
-        <p><strong>International Rescue Committee</strong> | 2024-2025<br>
+        <p><strong>Ripple Global Health Research Institute</strong> | 2024-2025<br>
         Leading statistical analysis for nutrition clinical trials in Mali and Malawi, applying GAMs, SEM, and causal methods to inform program optimization.</p>
       </div>
 
