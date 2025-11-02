@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title | escape }}</p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+    {%- if site.license -%}
+    <div class="license">
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg" alt="License: CC BY-NC-ND 4.0" />
+      </a>
+    </div>
+    {%- endif -%}
+  </div>
+</footer>
