@@ -196,8 +196,8 @@ permalink: /ai-projects/
   <h2 style="text-align: center;">Collaboration Opportunities</h2>
   <p>Interested in collaborating on causal inference methods, biostatistical consulting, or global health research?</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
-    <a href="mailto:info@causalatlas.org" class="btn-primary">Contact via CausalAtlas</a>
-    <a href="about" class="btn-secondary">View Full CV</a>
+    <a href="/contact" class="btn-primary">Get in Touch</a>
+    <a href="/about" class="btn-secondary">View Full CV</a>
   </div>
 </section>
 

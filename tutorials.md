@@ -149,6 +149,6 @@ permalink: /tutorials/
   <p>Have questions about causal inference methods or feedback on the resources?</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
     <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn-primary">Visit CausalAtlas.org</a>
-    <a href="mailto:info@causalatlas.org" class="btn-secondary">Contact Me</a>
+    <a href="/contact" class="btn-secondary">Get in Touch</a>
   </div>
 </section>

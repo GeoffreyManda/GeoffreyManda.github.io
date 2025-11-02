@@ -170,8 +170,8 @@ permalink: /epidemiology/
   <h2>Research Collaboration</h2>
   <p>Interested in collaborative epidemiological research or consulting on study design and analysis?</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
-    <a href="mailto:info@causalatlas.org" class="btn-primary">Contact Me</a>
-    <a href="about#publications" class="btn-secondary">View Publications</a>
+    <a href="/contact" class="btn-primary">Get in Touch</a>
+    <a href="/about#publications" class="btn-secondary">View Publications</a>
   </div>
 </section>
 

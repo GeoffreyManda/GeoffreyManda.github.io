@@ -250,7 +250,7 @@ permalink: /about/
   <h2>Get in Touch</h2>
   <p>Interested in collaboration, consultation, or discussing research opportunities?</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
-    <a href="mailto:info@causalatlas.org" class="btn-primary">Contact via CausalAtlas</a>
+    <a href="/contact" class="btn-primary">Get in Touch</a>
     <a href="https://www.linkedin.com/in/geoffreymanda/" class="btn-secondary" target="_blank" rel="noopener">LinkedIn Profile</a>
   </div>
   <p style="margin-top: 1.5rem; font-size: 0.9375rem; color: var(--color-text-tertiary);">
