@@ -155,26 +155,26 @@ permalink: /about/
 
   <section class="project-section">
     <div class="section-header">
-      <h2>Selected Publications</h2>
+      <h2>Publications & Research</h2>
     </div>
-    <div class="project-publications">
-      <ul class="publication-list">
-        <li>
-          <span class="pub-authors">[Author Names]</span> (Year).
-          <span class="pub-title">[Publication Title 1]</span>.
-          <span class="pub-journal">[Journal Name], Volume(Issue), Pages</span>.
-        </li>
-        <li>
-          <span class="pub-authors">[Author Names]</span> (Year).
-          <span class="pub-title">[Publication Title 2]</span>.
-          <span class="pub-journal">[Journal Name], Volume(Issue), Pages</span>.
-        </li>
-        <li>
-          <span class="pub-authors">[Author Names]</span> (Year).
-          <span class="pub-title">[Publication Title 3]</span>.
-          <span class="pub-journal">[Journal Name], Volume(Issue), Pages</span>.
-        </li>
-      </ul>
+    <div class="project-content">
+      <div class="project-description">
+        <p style="text-align: center; margin-bottom: 2rem;">My research publications are being compiled and will be available here soon. In the meantime, you can find my work and academic profile on:</p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="https://scholar.google.com/citations?user=your-id" target="_blank" class="btn-secondary" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem; vertical-align: middle;">
+              <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+            </svg>
+            Google Scholar
+          </a>
+          <a href="https://www.researchgate.net/profile/Geoffrey-Manda" target="_blank" class="btn-secondary" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem; vertical-align: middle;">
+              <path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.121 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.96-.18-1.277-.523-.317-.344-.526-.810-.632-1.397a6.869 6.869 0 0 1-.06-.734 17.671 17.671 0 0 1-.016-1.096c0-.12.013-.381.016-1.095.006-.248.024-.5.06-.734.107-.588.316-1.054.633-1.398.317-.344.733-.523 1.276-.523.545 0 .984.164 1.314.476.33.313.517.72.565 1.223.008.094.06.14.14.14h1.043c.094 0 .14-.047.14-.14v-.047c-.055-.705-.3-1.29-.77-1.763-.47-.472-1.124-.733-1.96-.733zM6.326 0C2.832 0 0 2.832 0 6.326s2.832 6.326 6.326 6.326 6.326-2.832 6.326-6.326S9.82 0 6.326 0z"/>
+            </svg>
+            ResearchGate
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
