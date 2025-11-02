@@ -4,10 +4,10 @@ title: Code & Analysis
 permalink: /projects/
 ---
 
-<div class="hero-section" style="text-align: center;">
-  <div class="hero-content" style="max-width: 100%;">
-    <h1 style="text-align: center;">Data Analysis Projects</h1>
-    <p style="text-align: center; margin: 0 auto;">Reproducible statistical analyses showcasing advanced methods in R</p>
+<div class="hero-section hero-section--centered">
+  <div class="hero-content">
+    <h1>Data Analysis Projects</h1>
+    <p>Reproducible statistical analyses showcasing advanced methods in R</p>
   </div>
   <div class="hero-image">
     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80" alt="Data analysis and coding">
@@ -25,8 +25,8 @@ permalink: /projects/
     <h2>Current Projects</h2>
     <div class="feature-grid">
       <div class="feature-card">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">📊</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-analytics.svg" alt="Analytics icon" class="icon-svg" loading="lazy">
         </div>
         <h3>COVID-19 Survival Analysis</h3>
         <p>Comprehensive analysis of hospital length of stay and mortality outcomes using survival analysis methods including Kaplan-Meier estimates, Cox proportional hazards models, parametric survival models, and mixed-effects approaches.</p>
@@ -39,8 +39,8 @@ permalink: /projects/
       </div>
 
       <div class="feature-card" style="opacity: 0.6; cursor: not-allowed;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🔬</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-microscope.svg" alt="Microscope icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Causal Inference Case Study</h3>
         <p>Applying propensity score methods and doubly robust estimation to evaluate treatment effects in observational healthcare data.</p>
@@ -50,8 +50,8 @@ permalink: /projects/
       </div>
 
       <div class="feature-card" style="opacity: 0.6; cursor: not-allowed;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">📈</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-trend.svg" alt="Trend analysis icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Longitudinal Data Analysis</h3>
         <p>Mixed-effects modeling and GEE approaches for analyzing repeated measurements in clinical studies with missing data handling.</p>
@@ -68,24 +68,24 @@ permalink: /projects/
     <h2>Project Categories</h2>
     <div class="expertise-grid">
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🔢</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-dataset.svg" alt="Dataset icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Statistical Methods</h3>
         <p style="text-align: left;">Survival Analysis • Regression Models • Mixed-Effects Models • Multivariate Analysis • Causal Inference Methods</p>
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🏥</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-hospital.svg" alt="Healthcare analytics icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Application Areas</h3>
         <p style="text-align: left;">Healthcare Analytics • Clinical Research • Public Health • Epidemiological Studies • Population Health Analysis</p>
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">💻</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-laptop.svg" alt="Laptop icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Tools & Technologies</h3>
         <p style="text-align: left;">R Programming • ggplot2 Visualization • R Markdown • Reproducible Research • Version Control with Git</p>

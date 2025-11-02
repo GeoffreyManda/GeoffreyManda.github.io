@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-section--centered">
   <div class="hero-content">
     <h1>Get in Touch</h1>
     <p>Have a question or interested in collaboration? I'd love to hear from you.</p>

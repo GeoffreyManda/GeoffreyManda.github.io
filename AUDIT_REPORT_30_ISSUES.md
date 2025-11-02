@@ -9,7 +9,7 @@
 
 ---
 
-### 🔧 REMAINING FIXES NEEDED (Issues 4-30)
+### Remaining Fixes Needed (Issues 4-30)
 
 #### **Content & Links (Issues 4-7)**
 
@@ -109,7 +109,7 @@
 14. **Emoji icons not accessible**
     ```html
     <!-- Replace emoji with proper markup -->
-    <span aria-label="Data analysis icon" role="img">📊</span>
+    <img src="/assets/icons/icon-analytics.svg" alt="Data analysis icon" style="width: 24px; height: 24px; vertical-align: middle;">
     <!-- Or use SVG with title -->
     <svg role="img" aria-labelledby="icon-title"><title id="icon-title">Data Analysis</title>...</svg>
     ```

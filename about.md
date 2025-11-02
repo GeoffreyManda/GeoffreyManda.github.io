@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-section--centered">
   <div class="hero-content">
     <h1>Geoffrey Manda, MBBS, MSc</h1>
     <p>PhD Research Fellow in Biostatistics & Epidemiology | Queen Mary University of London<br>

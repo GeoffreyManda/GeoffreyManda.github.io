@@ -4,7 +4,7 @@ title: Biostatistics
 permalink: /biostatistics/
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-section--centered">
   <div class="hero-content">
     <h1>Biostatistics Research</h1>
     <p>Advanced statistical methods for clinical research, survival analysis, and healthcare data</p>
