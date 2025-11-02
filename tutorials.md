@@ -1,93 +1,154 @@
 ---
 layout: page
-title: Tutorials & Learning Resources
+title: Causal Inference Tutorials
 permalink: /tutorials/
 ---
 
-<div class="hero-section">
-  <div class="hero-content">
-    <h1>Causal Inference Tutorials</h1>
-    <p>Comprehensive learning resources for causality, causal inference, and advanced statistical methods</p>
-  </div>
-  <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=800&h=600&fit=crop&q=80" alt="Learning and education">
+<div class="hero-section" style="text-align: center;">
+  <div class="hero-content" style="max-width: 100%;">
+    <h1 style="text-align: center;">Causal Inference Tutorials</h1>
+    <p style="text-align: center; margin: 0 auto;">Comprehensive learning resources for causality and causal inference methods</p>
   </div>
 </div>
 
-<section class="project-section">
-  <div class="section-header">
-    <h2>CausalAtlas.org - Your Complete Resource for Causal Inference</h2>
-  </div>
+<div class="section-container">
+  <section class="feature-section" style="text-align: center;">
+    <h2 style="text-align: center;">Visit CausalAtlas.org</h2>
+    <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.125rem; color: var(--color-text-secondary);">
+      All my causal inference tutorials, courses, and educational materials are hosted on <strong>CausalAtlas.org</strong> – a comprehensive platform dedicated to advancing knowledge in causality and causal inference.
+    </p>
 
-  <div class="project-content">
-    <div class="project-description">
-      <p style="font-size: 1.125rem; margin-bottom: 2rem;">All my causal inference tutorials, courses, and educational resources are hosted on <a href="https://causalatlas.org" target="_blank" rel="noopener" style="color: var(--primary-600); font-weight: 600; text-decoration: underline;">CausalAtlas.org</a> – a comprehensive platform dedicated to advancing knowledge in causality and causal inference.</p>
+    <div style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%); border-radius: 24px; padding: 4rem 3rem; margin: 3rem auto; max-width: 900px; border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 20px 60px rgba(31, 38, 135, 0.15);">
+      <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary-600);">CausalAtlas.org</h3>
+      <p style="font-size: 1.125rem; margin-bottom: 3rem; color: var(--color-text-secondary); line-height: 1.7;">
+        Your complete resource for causal inference methods, from foundational concepts to advanced techniques. Free and open access for the global research community.
+      </p>
+      <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem; display: inline-block;">
+        Visit CausalAtlas.org →
+      </a>
+    </div>
+  </section>
 
-      <h3>What You'll Find on CausalAtlas.org</h3>
-      <ul style="font-size: 1.0625rem; line-height: 1.8;">
-        <li><strong>Comprehensive Tutorials</strong>: From foundational concepts to advanced methods in causal inference</li>
-        <li><strong>Theoretical Frameworks</strong>: Counterfactual theory, directed acyclic graphs (DAGs), structural equation models</li>
-        <li><strong>Methodological Approaches</strong>: Propensity score methods, inverse probability weighting, instrumental variables, g-methods</li>
-        <li><strong>Practical Implementations</strong>: Code examples and hands-on exercises in R, Python, and other statistical software</li>
-        <li><strong>Real-World Applications</strong>: Case studies from epidemiology, economics, social sciences, and healthcare</li>
-        <li><strong>Research Resources</strong>: Literature reviews, method comparisons, and best practice guidelines</li>
-      </ul>
+  <div class="section-divider"></div>
 
-      <div class="project-metrics" style="margin: 3rem 0;">
-        <div class="metric-item">
-          <span class="metric-label">Topics Covered</span>
-          <span class="metric-value" style="font-size: 2rem;">Causal Discovery • DAGs • Mediation • G-Methods • Sensitivity Analysis</span>
+  <section class="expertise-section">
+    <h2 style="text-align: center;">What You'll Find on CausalAtlas.org</h2>
+    <div class="expertise-grid">
+      <div class="expertise-area" style="text-align: center;">
+        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
+          <span style="font-size: 1.75rem;">📚</span>
+        </div>
+        <h3>Comprehensive Tutorials</h3>
+        <p>Step-by-step guides from DAGs and counterfactuals to advanced g-methods and sensitivity analysis.</p>
+      </div>
+
+      <div class="expertise-area" style="text-align: center;">
+        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
+          <span style="font-size: 1.75rem;">💻</span>
+        </div>
+        <h3>Code Examples</h3>
+        <p>Practical implementations in R, Python, and other statistical software with real-world datasets.</p>
+      </div>
+
+      <div class="expertise-area" style="text-align: center;">
+        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
+          <span style="font-size: 1.75rem;">🔬</span>
+        </div>
+        <h3>Research Methods</h3>
+        <p>Propensity scores, instrumental variables, causal discovery, mediation analysis, and more.</p>
+      </div>
+
+      <div class="expertise-area" style="text-align: center;">
+        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
+          <span style="font-size: 1.75rem;">🎓</span>
+        </div>
+        <h3>For All Levels</h3>
+        <p>Resources for students, researchers, epidemiologists, data scientists, and policy analysts.</p>
+      </div>
+
+      <div class="expertise-area" style="text-align: center;">
+        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
+          <span style="font-size: 1.75rem;">🌍</span>
+        </div>
+        <h3>Real Applications</h3>
+        <p>Case studies from epidemiology, economics, social sciences, and healthcare research.</p>
+      </div>
+
+      <div class="expertise-area" style="text-align: center;">
+        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
+          <span style="font-size: 1.75rem;">🆓</span>
+        </div>
+        <h3>Free & Open Access</h3>
+        <p>All resources freely available to support the global research community.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="recent-section">
+    <h2 style="text-align: center;">Topics Covered</h2>
+    <p style="text-align: center; max-width: 720px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
+      Comprehensive coverage of causal inference methods and applications
+    </p>
+    <div class="update-timeline">
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Causal Graphs & DAGs</h3>
+          <p>Directed acyclic graphs, d-separation, backdoor criterion, front-door criterion, and graphical identification strategies.</p>
         </div>
       </div>
 
-      <h3>Who Should Use CausalAtlas.org?</h3>
-      <p>CausalAtlas.org is designed for:</p>
-      <ul style="font-size: 1.0625rem; line-height: 1.8;">
-        <li><strong>PhD Students & Researchers</strong>: Advanced methodological training and research support</li>
-        <li><strong>Epidemiologists & Biostatisticians</strong>: Practical guidance for causal analysis in health research</li>
-        <li><strong>Data Scientists</strong>: Moving beyond prediction to causal understanding</li>
-        <li><strong>Policy Analysts & Economists</strong>: Rigorous methods for evaluating interventions and policies</li>
-        <li><strong>Students</strong>: Clear explanations and learning paths from basics to advanced topics</li>
-      </ul>
-
-      <div style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%); border-radius: 16px; padding: 2.5rem; margin: 3rem 0; border: 1px solid rgba(255, 255, 255, 0.3);">
-        <h3 style="margin-top: 0; color: var(--primary-600);">🎓 Free and Open Access</h3>
-        <p style="font-size: 1.0625rem; margin-bottom: 0;">All resources on CausalAtlas.org are freely available to support the global research community in advancing causal inference methods and applications.</p>
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Propensity Score Methods</h3>
+          <p>Matching, stratification, inverse probability weighting, and doubly robust estimation for confounding control.</p>
+        </div>
       </div>
 
-      <div class="cta-buttons" style="margin-top: 3rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Visit CausalAtlas.org</a>
-        <a href="about" class="btn-secondary" style="font-size: 1.125rem; padding: 1rem 2rem;">About My Research</a>
+      <div class="update-item">
+        <div class="update-content">
+          <h3>G-Methods for Time-Varying Treatments</h3>
+          <p>G-formula, g-estimation, marginal structural models for complex longitudinal data with time-varying confounding.</p>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Instrumental Variables</h3>
+          <p>Two-stage least squares, weak instruments, Mendelian randomization, and natural experiments.</p>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Causal Discovery</h3>
+          <p>Constraint-based algorithms, score-based methods, and hybrid approaches for learning causal structures from data.</p>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Mediation & Moderation</h3>
+          <p>Direct and indirect effects, controlled direct effects, natural direct/indirect effects, and effect modification.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<section class="expertise-section">
-  <h2>Related Research Areas</h2>
-  <div class="expertise-grid">
-    <div class="expertise-area">
-      <h3>Biostatistics</h3>
-      <p>Advanced statistical methods for clinical trials, survival analysis, and longitudinal data analysis in healthcare research.</p>
-      <a href="biostatistics" style="color: var(--primary-600); font-weight: 600;">Explore →</a>
-    </div>
-    <div class="expertise-area">
-      <h3>Epidemiology</h3>
-      <p>Research design, observational studies, and population health methods for investigating disease patterns and determinants.</p>
-      <a href="epidemiology" style="color: var(--primary-600); font-weight: 600;">Explore →</a>
-    </div>
-    <div class="expertise-area">
-      <h3>Public Health Research</h3>
-      <p>Applied research in pediatric oncology, infectious diseases, and health systems strengthening in resource-limited settings.</p>
-      <a href="about#publications" style="color: var(--primary-600); font-weight: 600;">View Publications →</a>
-    </div>
-  </div>
-</section>
-
-<section class="contact-preview">
-  <h2>Questions or Feedback?</h2>
-  <p>Have questions about causal inference methods or feedback on CausalAtlas.org resources?</p>
+<section class="contact-preview" style="text-align: center;">
+  <h2 style="text-align: center;">Questions or Feedback?</h2>
+  <p>Have questions about causal inference methods or feedback on the resources?</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
-    <a href="mailto:info@causalatlas.org" class="btn-primary">Contact Me</a>
+    <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn-primary">Visit CausalAtlas.org</a>
+    <a href="mailto:info@causalatlas.org" class="btn-secondary">Contact Me</a>
   </div>
 </section>
