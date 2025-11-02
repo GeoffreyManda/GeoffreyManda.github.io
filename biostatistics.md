@@ -147,8 +147,8 @@ permalink: /biostatistics/
   <h2>Statistical Consulting</h2>
   <p>Available for biostatistical consulting on research design, data analysis, and statistical methodology.</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
-    <a href="mailto:info@causalatlas.org" class="btn-primary">Contact Me</a>
-    <a href="about#publications" class="btn-secondary">View Publications</a>
+    <a href="/contact" class="btn-primary">Get in Touch</a>
+    <a href="/about#publications" class="btn-secondary">View Publications</a>
   </div>
 </section>
 

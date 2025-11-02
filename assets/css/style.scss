@@ -218,6 +218,20 @@ h2 {
   letter-spacing: -0.025em;
 }
 
+/* Centralize all main section headers */
+section > h2,
+.section-container > section > h2,
+.feature-section > h2,
+.expertise-section > h2,
+.recent-section > h2,
+.featured-section > h2,
+.collaboration-section > h2,
+.contact-preview > h2,
+.social-links-section > h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 600;
