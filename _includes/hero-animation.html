@@ -1,430 +1,273 @@
 <div class="hero-animation-container">
-    <div id="particle-container"></div>
+    <div class="hero-gradient-bg"></div>
     <div class="hero-content">
+        <div class="hero-eyebrow">Data Science & AI Research</div>
         <h1 class="hero-title">
-            <span class="hero-word">Exploring</span>
-            <span class="hero-word">the</span>
-            <span class="hero-word">Frontiers</span>
-            <span class="hero-word">of</span>
-            <span class="hero-word">Knowledge</span>
+            <span class="hero-line">Advancing healthcare</span>
+            <span class="hero-line">through statistical</span>
+            <span class="hero-line">innovation</span>
         </h1>
-        <p class="hero-subtitle">
-            <span class="hero-char-wrapper">
-                <span class="hero-chars">A journey through research, innovation, and discovery</span>
-            </span>
-        </p>
+        <p class="hero-subtitle">Exploring the frontiers of biostatistics, epidemiology, and artificial intelligence to transform data into meaningful insights.</p>
         <div class="hero-buttons">
-            <a href="#projects" class="hero-button primary">Explore Projects</a>
-            <a href="#about" class="hero-button secondary">Learn More</a>
+            <a href="#featured-work" class="hero-button primary">View My Work</a>
+            <a href="/contact" class="hero-button secondary">Get in Touch</a>
         </div>
     </div>
     <div class="hero-scroll-indicator">
-        <div class="scroll-arrow"></div>
-        <div class="scroll-text">Scroll to explore</div>
+        <span class="scroll-text">Scroll to explore</span>
+        <svg class="scroll-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none">
+            <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
     </div>
 </div>
 
 <style>
-    :root {
-        --hero-bg: linear-gradient(120deg, #ff7e5f 0%, #6a82fb 100%);
-        --hero-text: #fff;
-        --hero-accent: #feb47b;
-        --hero-secondary: #6a82fb;
-        --hero-tertiary: #ff7e5f;
-        --hero-depth: #1a1a2a;
-        --transition-ease: var(--ease-in-out);
-    }
-
-    .dark-mode {
-        --hero-bg: linear-gradient(120deg, #23243a 0%, #6a82fb 100%);
-        --hero-text: #fff;
-        --hero-accent: #feb47b;
-    }
-
-    .light-mode {
-        --hero-bg: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);
-        --hero-text: #23243a;
-        --hero-accent: #ff7e5f;
-    }
-
     .hero-animation-container {
         position: relative;
         width: 100%;
-        height: 100vh;
-        min-height: 600px;
+        min-height: 692px;
+        height: calc(100vh - 48px);
+        max-height: 736px;
         overflow: hidden;
-        background: var(--hero-bg);
-        color: var(--hero-text);
+        background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 1;
-        backdrop-filter: var(--glass-blur);
-        -webkit-backdrop-filter: var(--glass-blur);
+        padding: 0 22px;
     }
 
-    /* Add a dark overlay for contrast */
-    .hero-animation-container::before {
-        content: '';
+    .hero-gradient-bg {
         position: absolute;
         inset: 0;
-        background: rgba(20, 20, 40, 0.45);
+        background: radial-gradient(circle at 30% 20%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
+                    radial-gradient(circle at 70% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
         z-index: 0;
+        opacity: 0;
+        animation: fadeInGradient 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
     }
 
-    #particle-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
+    @keyframes fadeInGradient {
+        to {
+            opacity: 1;
+        }
     }
 
     .hero-content {
         position: relative;
         z-index: 2;
         text-align: center;
-        max-width: 800px;
-        padding: 0 20px;
+        max-width: 840px;
+        margin: 0 auto;
         opacity: 0;
-        color: #fff;
-        text-shadow: 0 2px 16px rgba(0,0,0,0.7);
+        animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+    }
+
+    .hero-eyebrow {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        color: var(--color-link);
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.01em;
+        opacity: 0;
+        animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
     }
 
     .hero-title {
-        font-size: 3.5rem;
-        font-weight: 800;
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
-        overflow: hidden;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-family: 'Inter', 'SF Pro Display', Arial, sans-serif;
-        letter-spacing: -1px;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-weight: 700;
+        line-height: 1.05;
+        margin-bottom: 1rem;
+        color: var(--color-text-primary);
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        letter-spacing: -0.03em;
     }
 
-    .hero-word {
-        display: inline-block;
-        margin: 0 0.5rem;
+    .hero-line {
+        display: block;
         opacity: 0;
-        transform: translateY(100%);
-        background: linear-gradient(90deg, #ff7e5f, #feb47b, #6a82fb);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 200% auto;
-        animation: gradient-shift 8s linear infinite;
+        transform: translateY(20px);
+    }
+
+    .hero-line:nth-child(1) {
+        animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.6s forwards;
+    }
+
+    .hero-line:nth-child(2) {
+        animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.75s forwards;
+    }
+
+    .hero-line:nth-child(3) {
+        animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.9s forwards;
     }
 
     .hero-subtitle {
-        font-size: 1.25rem;
-        font-weight: 300;
-        line-height: 1.6;
-        margin-bottom: 2.5rem;
+        font-size: 1.3125rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        color: var(--color-text-secondary);
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
         opacity: 0;
-        color: #fff;
-        text-shadow: 0 1px 8px rgba(0,0,0,0.5);
-    }
-
-    .hero-char-wrapper {
-        display: block;
-        overflow: hidden;
-    }
-
-    .hero-chars {
-        display: block;
-        transform: translateY(100%);
+        animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 1.1s forwards;
     }
 
     .hero-buttons {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.75rem;
+        flex-wrap: wrap;
         opacity: 0;
+        animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 1.3s forwards;
     }
 
     .hero-button {
-        display: inline-block;
-        padding: 0.75rem 1.5rem;
-        border-radius: 8px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 21px;
+        border-radius: 12px;
+        font-weight: 400;
         text-decoration: none;
-        transition: all 0.3s var(--transition-ease);
-        position: relative;
-        overflow: hidden;
-        font-size: 1.1rem;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 0.875rem;
+        letter-spacing: -0.005em;
     }
 
     .hero-button.primary {
-        background: linear-gradient(90deg, #ff7e5f, #feb47b);
-        color: #fff;
+        background: var(--color-bg-accent);
+        color: white;
         border: none;
     }
 
+    .hero-button.primary:hover {
+        background: var(--primary-700);
+        transform: scale(1.01);
+    }
+
     .hero-button.secondary {
-        border: 2px solid #fff;
-        color: #fff;
+        border: 1.5px solid var(--color-border-secondary);
+        color: var(--color-link);
         background: transparent;
     }
 
-    .hero-button:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 0;
-        height: 0;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        transition: width 0.6s ease, height 0.6s ease;
-    }
-
-    .hero-button:hover:before {
-        width: 300px;
-        height: 300px;
-    }
-
-    .hero-button:hover {
-        transform: translateY(-2px) scale(1.04);
-        box-shadow: 0 8px 32px rgba(249, 115, 22, 0.2);
+    .hero-button.secondary:hover {
+        background: var(--color-bg-tertiary);
+        border-color: var(--color-border-accent);
+        transform: scale(1.01);
     }
 
     .hero-scroll-indicator {
         position: absolute;
-        bottom: 40px;
+        bottom: 32px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 8px;
         opacity: 0;
         z-index: 2;
-    }
-
-    .scroll-arrow {
-        width: 20px;
-        height: 20px;
-        border-right: 2px solid var(--hero-accent);
-        border-bottom: 2px solid var(--hero-accent);
-        transform: rotate(45deg);
-        margin-bottom: 8px;
-        animation: scrollArrow 2s infinite;
+        animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 1.5s forwards;
     }
 
     .scroll-text {
-        font-size: 0.8rem;
-        letter-spacing: 1px;
-        color: var(--hero-accent);
+        font-size: 0.75rem;
+        letter-spacing: 0.02em;
+        color: var(--color-text-tertiary);
+        font-weight: 400;
     }
 
-    @keyframes scrollArrow {
-        0% {
-            opacity: 0;
-            transform: rotate(45deg) translate(-5px, -5px);
+    .scroll-arrow {
+        color: var(--color-text-tertiary);
+        animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
         }
         50% {
+            transform: translateY(6px);
+        }
+    }
+
+    @keyframes fadeIn {
+        to {
             opacity: 1;
         }
-        100% {
+    }
+
+    @keyframes fadeInUp {
+        from {
             opacity: 0;
-            transform: rotate(45deg) translate(5px, 5px);
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 
     @media (max-width: 768px) {
+        .hero-animation-container {
+            min-height: 580px;
+            height: calc(100vh - 48px);
+            max-height: 640px;
+        }
+
         .hero-title {
-            font-size: 2.5rem;
+            font-size: 2.25rem;
         }
+
         .hero-subtitle {
-            font-size: 1rem;
+            font-size: 1.0625rem;
         }
+
+        .hero-buttons {
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+
+        .hero-button {
+            padding: 10px 18px;
+            font-size: 0.8125rem;
+        }
+    }
+
+    @media (max-width: 480px) {
         .hero-buttons {
             flex-direction: column;
             width: 100%;
-            max-width: 300px;
-            margin: 0 auto;
         }
-    }
 
-    .particle {
-        position: absolute;
-        border-radius: 50%;
-        background: linear-gradient(45deg, 
-            rgba(249, 115, 22, 0.1) 0%,
-            rgba(168, 85, 247, 0.1) 100%);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        pointer-events: none;
-    }
-
-    @keyframes gradient-shift {
-        to {
-            background-position: 200% center;
+        .hero-button {
+            width: 100%;
         }
     }
 </style>
 
-<!-- Include GSAP at the end of the body -->
 <script>
-    // Wait for GSAP to be loaded
-    function waitForGSAP() {
-        if (window.gsap) {
-            initHeroAnimation();
-        } else {
-            setTimeout(waitForGSAP, 100);
+    // Smooth parallax effect on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        const heroGradient = document.querySelector('.hero-gradient-bg');
+
+        if (heroGradient && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * 0.5;
+                heroGradient.style.transform = `translateY(${rate}px)`;
+            }, { passive: true });
         }
-    }
-
-    // Create particles
-    function createParticles() {
-        const container = document.getElementById('particle-container');
-        const particleCount = window.innerWidth < 768 ? 50 : 100;
-        
-        for (let i = 0; i < particleCount; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            
-            // Random properties
-            const size = Math.random() * 4 + 1;
-            const posX = Math.random() * 100;
-            const posY = Math.random() * 100;
-            const opacity = Math.random() * 0.5 + 0.1;
-            const duration = Math.random() * 60 + 30;
-            const delay = Math.random() * 10;
-            
-            // Apply styles
-            particle.style.width = `${size}px`;
-            particle.style.height = `${size}px`;
-            particle.style.left = `${posX}%`;
-            particle.style.top = `${posY}%`;
-            particle.style.opacity = opacity;
-            
-            container.appendChild(particle);
-            
-            // Animate with GSAP
-            gsap.to(particle, {
-                x: `random(-100, 100)`,
-                y: `random(-100, 100)`,
-                opacity: `random(0.1, 0.5)`,
-                duration: duration,
-                repeat: -1,
-                yoyo: true,
-                ease: "sine.inOut",
-                delay: delay
-            });
-        }
-    }
-
-    function initHeroAnimation() {
-        // Initialize GSAP animations
-        const tl = gsap.timeline({defaults: {ease: "power3.out"}});
-        
-        // Create particles
-        createParticles();
-        
-        // Make content visible first
-        gsap.set(".hero-content", {opacity: 1});
-        
-        // Animate title words
-        tl.to(".hero-word", {
-            opacity: 1, 
-            y: 0, 
-            duration: 0.8, 
-            stagger: 0.1
-        });
-        
-        // Animate subtitle
-        tl.to(".hero-chars", {
-            y: 0, 
-            duration: 0.8, 
-            stagger: 0.05
-        }, "-=0.4");
-        
-        // Animate buttons
-        tl.to(".hero-buttons", {
-            opacity: 1, 
-            duration: 0.6
-        }, "-=0.2");
-        
-        // Animate scroll indicator
-        tl.to(".hero-scroll-indicator", {
-            opacity: 1, 
-            duration: 0.6
-        }, "-=0.2");
-        
-        // Floating effect for the content
-        gsap.to(".hero-content", {
-            y: 10,
-            duration: 2,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut"
-        });
-        
-        // Interactive hover effect for buttons
-        const buttons = document.querySelectorAll('.hero-button');
-        buttons.forEach(button => {
-            button.addEventListener('mouseenter', () => {
-                gsap.to(button, {
-                    scale: 1.05,
-                    duration: 0.3
-                });
-            });
-            
-            button.addEventListener('mouseleave', () => {
-                gsap.to(button, {
-                    scale: 1,
-                    duration: 0.3
-                });
-            });
-        });
-        
-        // Interactive effect for hero container
-        const heroContainer = document.querySelector('.hero-animation-container');
-        heroContainer.addEventListener('mousemove', (e) => {
-            const xPos = (e.clientX / window.innerWidth - 0.5) * 20;
-            const yPos = (e.clientY / window.innerHeight - 0.5) * 20;
-            
-            gsap.to(".hero-content", {
-                x: xPos,
-                y: yPos,
-                duration: 1,
-                ease: "power1.out"
-            });
-            
-            gsap.to("#particle-container", {
-                x: xPos * 0.5,
-                y: yPos * 0.5,
-                duration: 2,
-                ease: "power1.out"
-            });
-        });
-    }
-
-    // Check if we need to load GSAP
-    function loadGSAP() {
-        if (!window.gsap) {
-            const script = document.createElement('script');
-            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js';
-            script.onload = waitForGSAP;
-            document.body.appendChild(script);
-        } else {
-            waitForGSAP();
-        }
-    }
-
-    // Initialize when document is loaded
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadGSAP);
-    } else {
-        loadGSAP();
-    }
+    });
 </script>
 
