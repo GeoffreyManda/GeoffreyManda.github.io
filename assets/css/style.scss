@@ -1212,3 +1212,157 @@ section {
   }
 }
 
+/* Footer Styles */
+.site-footer {
+  background: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border-primary);
+  padding: 3rem 0 2rem;
+  margin-top: 5rem;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col p {
+  font-size: 0.875rem;
+  color: var(--color-text-tertiary);
+}
+
+.social-media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media-list li {
+  display: inline-block;
+}
+
+.social-media-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-list a:hover {
+  opacity: 0.6;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-text-secondary);
+}
+
+/* Mobile Menu Toggle */
+.nav-trigger {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.menu-icon span,
+.menu-icon span:before,
+.menu-icon span:after {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background: var(--color-text-primary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+.menu-icon span {
+  top: 15px;
+  left: 6px;
+}
+
+.menu-icon span:before {
+  content: '';
+  top: -6px;
+}
+
+.menu-icon span:after {
+  content: '';
+  top: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 48px;
+    right: 1rem;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-primary);
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    text-align: right;
+    display: none;
+  }
+
+  .site-nav .trigger {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+
+  .site-nav .page-link {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+
+  .nav-trigger:checked ~ .site-nav {
+    display: block;
+  }
+
+  .nav-trigger:checked ~ .menu-icon span {
+    background: transparent;
+  }
+
+  .nav-trigger:checked ~ .menu-icon span:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .nav-trigger:checked ~ .menu-icon span:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
+
+/* Page Content Wrapper */
+.page-content {
+  padding: 0;
+}
