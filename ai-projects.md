@@ -1,142 +1,151 @@
 ---
 layout: page
-title: AI Projects
+title: Research Projects
 permalink: /ai-projects/
 ---
 
-<div class="page-header">
-  <div class="header-content">
-    <h1>AI Research & Projects</h1>
-    <p>Exploring the intersection of artificial intelligence with climate science and policy</p>
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Research Projects</h1>
+    <p>Advancing causal inference methods and biostatistical approaches for global health research</p>
   </div>
-  <div class="header-image">
-    <!-- Placeholder for header image -->
-    <img src="assets/images/ai-header-placeholder.jpg" alt="AI visualization" />
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&q=80" alt="Data science and research">
   </div>
 </div>
 
-<section id="climate-modeling" class="project-section">
+<section class="project-section">
   <div class="section-header">
-    <div class="section-icon icon-ios">
-      <img src="/assets/icons/ai-icon.svg" alt="AI Icon" />
-    </div>
-    <h2>AI in Climate Modeling</h2>
+    <h2>CausalAtlas.org - Editor & Contributor</h2>
   </div>
-  
+
   <div class="project-content">
     <div class="project-description">
-      <p>This research focuses on applying deep learning techniques to improve climate prediction models. By incorporating neural networks into traditional climate simulations, we've achieved significant improvements in prediction accuracy for regional climate patterns.</p>
-      
-      <h3>Key Innovations</h3>
+      <p>As Editor of <a href="https://causalatlas.org" target="_blank" rel="noopener" style="color: var(--primary-600); font-weight: 600;">CausalAtlas.org</a>, I lead the development of comprehensive resources on causality and causal inference for researchers, students, and practitioners worldwide.</p>
+
+      <p>CausalAtlas.org provides cutting-edge educational materials, methodological guidance, and practical implementations of causal inference techniques across various domains including epidemiology, biostatistics, economics, and social sciences.</p>
+
+      <h3>Key Areas Covered</h3>
       <ul>
-        <li>Hybrid physics-informed neural networks that respect conservation laws</li>
-        <li>Transfer learning approaches for limited training data scenarios</li>
-        <li>Uncertainty quantification in deep learning climate predictions</li>
+        <li>Causal discovery algorithms and graphical models (DAGs, MAGs)</li>
+        <li>Propensity score methods and inverse probability weighting</li>
+        <li>Instrumental variables and natural experiments</li>
+        <li>G-methods (g-formula, g-estimation) for time-varying exposures</li>
+        <li>Sensitivity analysis and bounds for unmeasured confounding</li>
+        <li>Mediation and moderation analysis</li>
       </ul>
-      
-      <div class="project-metrics">
-        <div class="metric-item">
-          <span class="metric-value">37%</span>
-          <span class="metric-label">Improvement in prediction accuracy</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-value">5×</span>
-          <span class="metric-label">Computational efficiency increase</span>
-        </div>
+
+      <div class="cta-buttons" style="margin-top: 2rem;">
+        <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn-primary">Visit CausalAtlas.org</a>
       </div>
     </div>
-    
-    <div class="project-visual">
-      <!-- Placeholder for project visualization -->
-      <img src="assets/images/climate-model-placeholder.jpg" alt="Climate model visualization" />
-      <p class="caption">Neural network architecture for temperature anomaly prediction</p>
-    </div>
-  </div>
-  
-  <div class="project-publications">
-    <h3>Related Publications</h3>
-    <ul class="publication-list">
-      <li>
-        <span class="pub-authors">Manda, G., et al.</span> (2023). 
-        <span class="pub-title">Hybrid Neural-Physical Models for Regional Climate Prediction</span>. 
-        <span class="pub-journal">Journal of AI for Earth Sciences</span>, 4(2), 112-128.
-      </li>
-      <li>
-        <span class="pub-authors">Chen, K., Manda, G., &amp; Rodriguez, T.</span> (2022). 
-        <span class="pub-title">Transfer Learning Approaches to Climate Model Downscaling</span>. 
-        <span class="pub-journal">Neural Computing for Climate Sciences</span>, 16(3), 87-95.
-      </li>
-    </ul>
   </div>
 </section>
 
-<section id="ai-policy" class="project-section">
+<section class="project-section">
   <div class="section-header">
-    <div class="section-icon icon-ios">
-      <img src="/assets/icons/policy-icon.svg" alt="Policy Icon" />
-    </div>
-    <h2>AI Policy Research</h2>
+    <h2>PhD Research - Causal Inference Methods</h2>
   </div>
-  
+
   <div class="project-content">
     <div class="project-description">
-      <p>My work in AI policy focuses on developing frameworks for responsible AI deployment in critical sectors such as healthcare and environmental management. This includes addressing challenges related to algorithm transparency, bias mitigation, and regulatory approaches.</p>
-      
+      <p>My PhD research at Queen Mary University of London focuses on developing and applying novel causal inference methods for complex observational data in healthcare and epidemiology.</p>
+
+      <h3>Research Focus</h3>
+      <ul>
+        <li><strong>Causal Discovery</strong>: Developing algorithms to learn causal structures from observational data</li>
+        <li><strong>High-Dimensional Data</strong>: Applying machine learning methods while maintaining causal interpretability</li>
+        <li><strong>Time-Varying Confounding</strong>: G-methods for longitudinal healthcare data</li>
+        <li><strong>Missing Data</strong>: Causal approaches to handling missingness mechanisms</li>
+      </ul>
+
+      <p style="margin-top: 1.5rem;"><strong>Funding</strong>: CREATE Fellowship (£74,000) from Wellcome Trust and MRC</p>
+      <p><strong>Supervisors</strong>: Prof. Stijn Vansteelandt, Prof. Karla Hemming</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-section">
+  <div class="section-header">
+    <h2>Pediatric Oncology Research</h2>
+  </div>
+
+  <div class="project-content">
+    <div class="project-description">
+      <p>Extensive research on childhood cancer outcomes, treatment protocols, and quality of life in Sub-Saharan Africa, with a focus on improving survival rates and care quality.</p>
+
+      <h3>Key Projects</h3>
+      <ul>
+        <li>Wilms tumor therapy effectiveness in resource-limited settings</li>
+        <li>Malnutrition and treatment outcomes in pediatric cancer patients</li>
+        <li>Quality of life assessment in pediatric lymphoma survivors</li>
+        <li>Type 1 diabetes management in children with limited healthcare access</li>
+      </ul>
+
+      <div class="project-publications">
+        <h3>Selected Publications</h3>
+        <ul class="publication-list">
+          <li>
+            <span class="pub-authors">Painschab, M. S., Westmoreland, K. D., Kaimila, B., <strong>Manda, G.</strong>, et al.</span> (2023).
+            <span class="pub-title">Wilms tumor therapy in Malawi</span>.
+            <span class="pub-journal">JCO Global Oncology, 9</span>, e2200431.
+            <span class="pub-citations">Cited by 14</span>
+          </li>
+          <li>
+            <span class="pub-authors">Kamthunzi, P., Banda, N. P., Chingombe, I., et al., <strong>Manda, G.</strong>, et al.</span> (2022).
+            <span class="pub-title">Malnutrition in children with cancer in Malawi</span>.
+            <span class="pub-journal">Pediatric Blood & Cancer, 69</span>(10), e29852.
+            <span class="pub-citations">Cited by 13</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-section">
+  <div class="section-header">
+    <h2>Public Health & Epidemiology</h2>
+  </div>
+
+  <div class="project-content">
+    <div class="project-description">
+      <p>Research on environmental health exposures, infectious diseases, and health systems strengthening in low-resource settings.</p>
+
       <h3>Research Areas</h3>
       <ul>
-        <li>Comparative analysis of AI governance frameworks across jurisdictions</li>
-        <li>Ethical guidelines for AI deployment in healthcare decision support</li>
-        <li>Policy recommendations for ensuring equitable access to AI benefits</li>
+        <li>Household air pollution and acute respiratory infections</li>
+        <li>Cancer survival analysis in resource-limited settings</li>
+        <li>Cardiovascular risk factors and fatty acid profiles</li>
+        <li>Health systems research and quality improvement</li>
       </ul>
+
+      <div class="project-publications">
+        <h3>Key Publications</h3>
+        <ul class="publication-list">
+          <li>
+            <span class="pub-authors">Jary, H., Simpson, H., Havens, D., <strong>Manda, G.</strong>, et al.</span> (2016).
+            <span class="pub-title">Household air pollution and acute lower respiratory infections in adults: a systematic review</span>.
+            <span class="pub-journal">PLoS ONE, 11</span>(12), e0167656.
+            <span class="pub-citations">Cited by 54</span>
+          </li>
+          <li>
+            <span class="pub-authors">Masamba, L., Stanley, C., Mtete, I., Chikankheni, J., Mpasa, A., <strong>Manda, G.</strong>, et al.</span> (2014).
+            <span class="pub-title">Presentation and outcomes of cancer in Malawi</span>.
+            <span class="pub-journal">Malawi Medical Journal, 26</span>(2), 26-29.
+            <span class="pub-citations">Cited by 32</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    
-    <div class="project-visual">
-      <!-- Placeholder for project visualization -->
-      <img src="assets/images/ai-policy-placeholder.jpg" alt="AI policy framework diagram" />
-      <p class="caption">Proposed framework for balanced AI governance</p>
-    </div>
-  </div>
-  
-  <div class="project-publications">
-    <h3>Policy Papers</h3>
-    <ul class="publication-list">
-      <li>
-        <span class="pub-authors">Manda, G. &amp; Washington, L.</span> (2023). 
-        <span class="pub-title">Toward Inclusive AI: Policy Approaches for Equitable Innovation</span>. 
-        <span class="pub-journal">AI Policy Review</span>, 8(1), 24-36.
-      </li>
-      <li>
-        <span class="pub-authors">International AI Governance Working Group</span> (2022). 
-        <span class="pub-title">Principles for Responsible AI in Healthcare</span>. 
-        <span class="pub-type">White Paper</span>.
-      </li>
-    </ul>
   </div>
 </section>
 
-<section class="related-projects">
-  <h2>Explore Related Areas</h2>
-  <div class="related-grid">
-    <a href="biostatistics" class="related-card">
-      <div class="related-icon icon-ios">
-        <img src="/assets/icons/research-icon.svg" alt="Research Icon" />
-      </div>
-      <h3>Biostatistics</h3>
-      <p>Statistical methods for clinical and healthcare research</p>
-    </a>
-    <a href="epidemiology" class="related-card">
-      <div class="related-icon icon-ios">
-        <img src="/assets/icons/epidemiology-icon.svg" alt="Epidemiology Icon" />
-      </div>
-      <h3>Epidemiology</h3>
-      <p>Population health studies and disease pattern analysis</p>
-    </a>
+<section class="contact-preview">
+  <h2>Collaboration Opportunities</h2>
+  <p>Interested in collaborating on causal inference methods, biostatistical consulting, or global health research?</p>
+  <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+    <a href="mailto:info@causalatlas.org" class="btn-primary">Contact via CausalAtlas</a>
+    <a href="about" class="btn-secondary">View Full CV</a>
   </div>
 </section>
-
-<div class="cta-section">
-  <h2>Interested in AI Research Collaboration?</h2>
-  <p>I'm always open to new research partnerships and consulting opportunities in AI applications and policy.</p>
-  <a href="contact" class="btn-primary">Contact Me</a>
-</div>
-
