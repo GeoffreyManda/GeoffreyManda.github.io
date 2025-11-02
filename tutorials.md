@@ -42,48 +42,48 @@ permalink: /tutorials/
     <h2 style="text-align: center;">What You'll Find on CausalAtlas.org</h2>
     <div class="expertise-grid">
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">📚</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-book.svg" alt="Tutorials icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Comprehensive Tutorials</h3>
         <p>Step-by-step guides from DAGs and counterfactuals to advanced g-methods and sensitivity analysis.</p>
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">💻</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-laptop.svg" alt="Code examples icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Code Examples</h3>
         <p>Practical implementations in R, Python, and other statistical software with real-world datasets.</p>
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🔬</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-microscope.svg" alt="Research methods icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Research Methods</h3>
         <p>Propensity scores, instrumental variables, causal discovery, mediation analysis, and more.</p>
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🎓</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-graduation.svg" alt="Learning levels icon" class="icon-svg" loading="lazy">
         </div>
         <h3>For All Levels</h3>
         <p>Resources for students, researchers, epidemiologists, data scientists, and policy analysts.</p>
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🌍</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-globe.svg" alt="Global applications icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Real Applications</h3>
         <p>Case studies from epidemiology, economics, social sciences, and healthcare research.</p>
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🆓</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-open-access.svg" alt="Open access icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Free & Open Access</h3>
         <p>All resources freely available to support the global research community.</p>

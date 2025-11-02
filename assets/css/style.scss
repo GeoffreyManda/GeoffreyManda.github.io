@@ -2864,6 +2864,11 @@ section > p {
   opacity: 0;
 }
 
+#back-to-top svg {
+  width: 24px;
+  height: 24px;
+}
+
 #back-to-top.visible {
   display: flex;
   opacity: 1;
@@ -3095,6 +3100,43 @@ a[target="_blank"]:not(.btn-primary):not(.btn-secondary):not(.feature-link)::aft
 
 .footer-quick-links a:hover::before {
   opacity: 1;
+}
+
+.fab-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.icon-svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.icon-svg-inline {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+  border: 2px solid rgba(14, 165, 233, 0.2);
+  margin: 0 auto 1.5rem;
+}
+
+.icon-badge svg,
+.icon-badge img {
+  width: 32px;
+  height: 32px;
 }
 
 /* Prominent Contact Button */
