@@ -260,9 +260,9 @@ a:hover {
 }
 
 .wrapper {
-  max-width: 980px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 22px;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1461,7 +1461,7 @@ section > p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 0;
-  max-width: 1200px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -1892,7 +1892,7 @@ section > p {
 
 .header-image {
   margin-top: 3rem;
-  max-width: 900px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1905,7 +1905,7 @@ section > p {
 
 /* Section Container */
 .section-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
 }
