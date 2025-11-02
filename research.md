@@ -50,8 +50,8 @@ permalink: /research/
     <h2 style="text-align: center;">Current Research</h2>
     <div class="expertise-grid">
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🔬</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-microscope.svg" alt="Microscope icon" class="icon-svg" loading="lazy">
         </div>
         <h3>PhD Research</h3>
         <p><strong>Queen Mary University of London</strong><br>
@@ -60,8 +60,8 @@ permalink: /research/
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">📊</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-analytics.svg" alt="Analytics icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Statistical Consulting</h3>
         <p><strong>Ripple Global Health Research Institute</strong><br>
@@ -69,8 +69,8 @@ permalink: /research/
       </div>
 
       <div class="expertise-area" style="text-align: center;">
-        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid rgba(14, 165, 233, 0.2);">
-          <span style="font-size: 1.75rem;">🏥</span>
+        <div class="icon-badge">
+          <img src="/assets/icons/icon-hospital.svg" alt="Hospital icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Pediatric Oncology</h3>
         <p><strong>Sub-Saharan Africa</strong><br>

@@ -8,14 +8,6 @@
     {% include header.html %}
 
     <main class="page-content" aria-label="Content" id="main-content">
-      {% unless page.url == "/" %}
-      <nav class="breadcrumbs wrapper" aria-label="Breadcrumb">
-        <a href="/">Home</a>
-        <span class="separator">›</span>
-        <span class="current">{{ page.title }}</span>
-      </nav>
-      {% endunless %}
-
       {{ content }}
     </main>
 
@@ -23,11 +15,19 @@
 
     <!-- Floating Contact Button -->
     <a href="/contact" class="contact-fab" aria-label="Contact" title="Get in touch">
-      ✉
+      <svg class="fab-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8" />
+        <path d="M4 7l8 6l8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
     </a>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <button id="back-to-top" aria-label="Back to top">
+      <svg class="fab-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        <path d="M6 11l6-6l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     <script>
