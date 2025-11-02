@@ -4,10 +4,10 @@ title: Causal Inference Tutorials
 permalink: /tutorials/
 ---
 
-<div class="hero-section" style="text-align: center;">
-  <div class="hero-content" style="max-width: 100%;">
-    <h1 style="text-align: center;">Causal Inference Tutorials</h1>
-    <p style="text-align: center; margin: 0 auto;">Comprehensive learning resources for causality and causal inference methods</p>
+<div class="hero-section hero-section--centered">
+  <div class="hero-content">
+    <h1>Causal Inference Tutorials</h1>
+    <p>Comprehensive learning resources for causality and causal inference methods</p>
   </div>
 </div>
 

@@ -4,7 +4,7 @@ title: Epidemiology
 permalink: /epidemiology/
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-section--centered">
   <div class="hero-content">
     <h1>Epidemiology Research</h1>
     <p>Investigating disease patterns and developing evidence-based interventions for population health</p>

@@ -4,10 +4,10 @@ title: Research
 permalink: /research/
 ---
 
-<div class="hero-section" style="text-align: center;">
-  <div class="hero-content" style="max-width: 100%;">
-    <h1 style="text-align: center;">Research Projects</h1>
-    <p style="text-align: center; margin: 0 auto;">Advancing causal inference methods and biostatistical approaches for global health</p>
+<div class="hero-section hero-section--centered">
+  <div class="hero-content">
+    <h1>Research Projects</h1>
+    <p>Advancing causal inference methods and biostatistical approaches for global health</p>
   </div>
 </div>
 

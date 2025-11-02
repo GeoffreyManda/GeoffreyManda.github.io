@@ -4,10 +4,10 @@ title: Code & Analysis
 permalink: /projects/
 ---
 
-<div class="hero-section" style="text-align: center;">
-  <div class="hero-content" style="max-width: 100%;">
-    <h1 style="text-align: center;">Data Analysis Projects</h1>
-    <p style="text-align: center; margin: 0 auto;">Reproducible statistical analyses showcasing advanced methods in R</p>
+<div class="hero-section hero-section--centered">
+  <div class="hero-content">
+    <h1>Data Analysis Projects</h1>
+    <p>Reproducible statistical analyses showcasing advanced methods in R</p>
   </div>
   <div class="hero-image">
     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80" alt="Data analysis and coding">
