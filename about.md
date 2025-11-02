@@ -155,30 +155,73 @@ permalink: /about/
 
   <section class="project-section">
     <div class="section-header">
-      <h2>Publications & Research</h2>
+      <h2>Selected Publications</h2>
     </div>
-    <div class="project-content">
-      <div class="project-description">
-        <p style="text-align: center; margin-bottom: 2rem; font-size: 1.125rem;">
-          For a complete and up-to-date list of my research publications, citations, and academic contributions, please visit my profiles:
+    <div class="project-publications">
+      <p style="text-align: center; margin-bottom: 2rem; font-size: 1.0625rem; color: var(--color-text-secondary);">
+        Highlighting key research contributions in epidemiology, pediatric oncology, and public health.
+      </p>
+      <ul class="publication-list">
+        <li>
+          <span class="pub-authors">Jary, H., Simpson, H., Havens, D., <strong>Manda, G.</strong>, Pope, D., Bruce, N., & Mortimer, K.</span> (2016).
+          <span class="pub-title">Household air pollution and acute lower respiratory infections in adults: a systematic review</span>.
+          <span class="pub-journal">PLoS ONE, 11(12), e0167656</span>.
+          <span class="pub-citations">Cited by 54</span>
+        </li>
+        <li>
+          <span class="pub-authors">Msyamboza, K.P., <strong>Manda, G.</strong>, Tembo, B., Thambo, C., Chitete, L., Mindiera, C., et al.</span> (2014).
+          <span class="pub-title">Cancer survival in Malawi: a retrospective cohort study</span>.
+          <span class="pub-journal">Pan African Medical Journal, 19(1)</span>.
+          <span class="pub-citations">Cited by 32</span>
+        </li>
+        <li>
+          <span class="pub-authors">Holmes, D.M., Matatiyo, A., Mpasa, A., Huibers, M.H.W., <strong>Manda, G.</strong>, Tomoka, T., et al.</span> (2023).
+          <span class="pub-title">Outcomes of Wilms tumor therapy in Lilongwe, Malawi, 2016–2021: successes and ongoing research priorities</span>.
+          <span class="pub-journal">Pediatric Blood & Cancer, 70(5), e30242</span>.
+          <span class="pub-citations">Cited by 14</span>
+        </li>
+        <li>
+          <span class="pub-authors">Huibers, M.H.W., <strong>Manda, G.</strong>, Silverstein, A., Wanda, W., Mtete, I., Makuti, S., et al.</span> (2022).
+          <span class="pub-title">The Burden of Malnutrition in Childhood Cancer in Malawi–Risk Regardless of Age</span>.
+          <span class="pub-journal">Nutrition and Cancer, 74(9), 3322-3328</span>.
+          <span class="pub-citations">Cited by 13</span>
+        </li>
+        <li>
+          <span class="pub-authors">Ellis, G.K., Chapman, H., Manda, A., Salima, A., Itimu, S., Banda, G., Seguin, R., et al.</span> (2021).
+          <span class="pub-title">Pediatric lymphoma patients in Malawi present with poor health‐related quality of life at diagnosis and improve throughout treatment and follow‐up</span>.
+          <span class="pub-journal">Pediatric Blood & Cancer, 68(10), e29257</span>.
+          <span class="pub-citations">Cited by 13</span>
+        </li>
+        <li>
+          <span class="pub-authors">Msekandiana, A., Chigayo, G., Chiume, S., Jaulani, A., Msuya, L., <strong>Manda, G.</strong>, et al.</span> (2020).
+          <span class="pub-title">Complications and glycaemic control of type 1 diabetes mellitus amongst children aged 5 to 19 years attending diabetic clinic at Kamuzu central hospital in Malawi</span>.
+          <span class="pub-journal">International Journal of Diabetes and Clinical Research, 7(1), 117</span>.
+          <span class="pub-citations">Cited by 13</span>
+        </li>
+        <li>
+          <span class="pub-authors">Nienaber, A., Conradie, C., <strong>Manda, G.</strong>, Chimera-Khombe, B., Nel, E., et al.</span> (2024).
+          <span class="pub-title">Effect of fatty acid profiles in varying recipes of ready-to-use therapeutic foods on neurodevelopmental and clinical outcomes of children (6–59 months) with severe wasting: a systematic review and meta-analysis</span>.
+          <span class="pub-journal">Nutrition Reviews, 82(12), 1784-1799</span>.
+          <span class="pub-citations">Cited by 2</span>
+        </li>
+        <li>
+          <span class="pub-authors"><strong>Manda, G.E.</strong>, Mtekateka, M., Kunkanga, S., & Kayange, N.</span> (2021).
+          <span class="pub-title">Unusual presentation of atrial myxoma in a young Malawian male: case report and review of literature</span>.
+          <span class="pub-journal">Malawi Medical Journal, 33(2), 140-141</span>.
+          <span class="pub-citations">Cited by 5</span>
+        </li>
+      </ul>
+
+      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(14, 165, 233, 0.05); border-radius: 16px; border: 1px solid rgba(14, 165, 233, 0.15);">
+        <p style="font-size: 1.0625rem; margin-bottom: 1.5rem; color: var(--color-text-secondary);">
+          <strong>26 publications</strong> with over <strong>150 citations</strong> across epidemiology, pediatric oncology, and public health research.
         </p>
-        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2.5rem;">
-          <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" class="btn-primary" rel="noopener noreferrer" style="display: inline-flex; align-items: center;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem;">
-              <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
-            </svg>
-            View Publications on Google Scholar
-          </a>
-          <a href="https://www.researchgate.net/profile/Geoffrey-Manda" target="_blank" class="btn-secondary" rel="noopener noreferrer" style="display: inline-flex; align-items: center;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem;">
-              <path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.121 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.96-.18-1.277-.523-.317-.344-.526-.810-.632-1.397a6.869 6.869 0 0 1-.06-.734 17.671 17.671 0 0 1-.016-1.096c0-.12.013-.381.016-1.095.006-.248.024-.5.06-.734.107-.588.316-1.054.633-1.398.317-.344.733-.523 1.276-.523.545 0 .984.164 1.314.476.33.313.517.72.565 1.223.008.094.06.14.14.14h1.043c.094 0 .14-.047.14-.14v-.047c-.055-.705-.3-1.29-.77-1.763-.47-.472-1.124-.733-1.96-.733zM6.326 0C2.832 0 0 2.832 0 6.326s2.832 6.326 6.326 6.326 6.326-2.832 6.326-6.326S9.82 0 6.326 0z"/>
-            </svg>
-            ResearchGate Profile
-          </a>
-        </div>
-        <p style="text-align: center; margin-top: 2.5rem; font-size: 0.9375rem; color: var(--color-text-tertiary);">
-          Research areas include epidemiology, biostatistics, survival analysis, and healthcare analytics.
-        </p>
+        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" class="btn-primary" rel="noopener noreferrer" style="display: inline-flex; align-items: center;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem;">
+            <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+          </svg>
+          View All Publications on Google Scholar
+        </a>
       </div>
     </div>
   </section>
