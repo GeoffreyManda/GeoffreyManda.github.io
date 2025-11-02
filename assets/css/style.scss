@@ -2147,13 +2147,9 @@ section > p {
   color: var(--primary-600);
 }
 
-.pub-title {
-  font-style: italic;
-  color: var(--color-text-secondary);
-}
-
 .pub-journal {
   color: var(--color-text-tertiary);
+  font-style: italic;
 }
 
 .pub-type {
