@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Data Analysis Projects
+title: Code & Analysis
 permalink: /projects/
 ---
 

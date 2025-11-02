@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Research Projects
-permalink: /ai-projects/
+title: Research
+permalink: /research/
 ---
 
 <div class="hero-section" style="text-align: center;">

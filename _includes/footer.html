@@ -2,20 +2,43 @@
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title | escape }}</p>
+        <h3>Geoffrey Manda</h3>
+        <p>PhD Research Fellow<br>
+        Biostatistics & Causal Inference<br>
+        Queen Mary University of London</p>
       </div>
 
       <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+        <h3>Quick Links</h3>
+        <ul class="footer-quick-links">
+          <li><a href="/about">About & CV</a></li>
+          <li><a href="/research">Research Projects</a></li>
+          <li><a href="/projects">Code & Analysis</a></li>
+          <li><a href="/biostatistics">Biostatistics</a></li>
+          <li><a href="/epidemiology">Epidemiology</a></li>
+          <li><a href="/tutorials">Tutorials</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+        <h3>Connect</h3>
+        {%- include social.html -%}
+        <p style="margin-top: 1.5rem; font-size: 0.875rem;">
+          <a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a> - Editor<br>
+          <a href="mailto:info@causalatlas.org">info@causalatlas.org</a>
+        </p>
       </div>
     </div>
 
+    <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(14, 165, 233, 0.1);">
+      <p style="font-size: 0.875rem; color: var(--color-text-tertiary);">
+        &copy; {{ 'now' | date: "%Y" }} Geoffrey Manda. All rights reserved.
+      </p>
+    </div>
+
     {%- if site.license -%}
-    <div class="license">
+    <div class="license" style="text-align: center; margin-top: 1rem;">
       <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
         <img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg" alt="License: CC BY-NC-ND 4.0" />
       </a>
