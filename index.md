@@ -42,8 +42,6 @@ title: Geoffrey Manda
   </div>
 </section>
 
-{% include research-network.html %}
-
 <section class="recent-section">
   <h2>Recent Publications</h2>
   <div class="update-timeline">

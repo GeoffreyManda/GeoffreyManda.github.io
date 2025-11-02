@@ -22,7 +22,7 @@ permalink: /contact/
       <h2>Send Me a Message</h2>
       <p>Use the form below to get in touch about potential collaborations, speaking engagements, or research opportunities.</p>
 
-      <form class="contact-form" id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/mrbgjnep" method="POST">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -30,16 +30,29 @@ permalink: /contact/
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required>
+          <input type="email" id="email" name="_replyto" placeholder="your.email@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="_subject" placeholder="Research collaboration, consulting, etc." required>
         </div>
 
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
         </div>
 
+        <input type="hidden" name="_next" value="https://geoffreymanda.github.io/contact?submitted=true">
+        <input type="text" name="_gotcha" style="display:none">
+
         <button type="submit" class="submit-button">Send Message</button>
+        <p style="font-size: 0.875rem; color: var(--color-text-tertiary); margin-top: 1rem; text-align: center;">
+          Your message will be sent securely via Formspree
+        </p>
       </form>
+
+      <div id="form-status" style="display: none; margin-top: 1.5rem; padding: 1rem; border-radius: 12px; text-align: center;"></div>
     </div>
   </div>
 
@@ -99,4 +112,42 @@ permalink: /contact/
 .social-icon:hover svg {
   color: var(--primary-600);
 }
+
+#form-status.success {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #059669;
+}
+
+#form-status.error {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #dc2626;
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if form was just submitted (from redirect)
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('submitted') === 'true') {
+    const statusDiv = document.getElementById('form-status');
+    statusDiv.style.display = 'block';
+    statusDiv.className = 'success';
+    statusDiv.innerHTML = '✓ Thank you! Your message has been sent successfully. I\'ll get back to you soon.';
+
+    // Remove the query parameter
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+
+  // Handle form submission
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      const submitBtn = form.querySelector('.submit-button');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+    });
+  }
+});
+</script>
