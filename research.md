@@ -1,217 +1,113 @@
 ---
-layout: page
-title: Research
+layout: default
+title: Research & Publications
 permalink: /research/
-description: Research projects in causal inference, biostatistics, and epidemiology. Editor of CausalAtlas.org advancing resources on causality and causal discovery methods.
 ---
 
-<div class="hero-section hero-section--centered">
-  <div class="hero-content">
-    <h1>Research Projects</h1>
-    <p>Advancing causal inference methods and biostatistical approaches for global health</p>
-  </div>
-</div>
-
-<div class="section-container">
-  <section class="feature-section" style="text-align: center;">
-    <h2 style="text-align: center;">CausalAtlas.org - Editor & Contributor</h2>
-    <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.125rem; color: var(--color-text-secondary);">
-      As Editor of CausalAtlas.org, I lead the development of comprehensive resources on causality and causal inference for the global research community.
-    </p>
-
-    <div style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%); border-radius: 24px; padding: 4rem 3rem; margin: 3rem auto; max-width: 900px; border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 20px 60px rgba(31, 38, 135, 0.15);">
-      <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: white;">
-          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
-          <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <path d="M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary-600);">CausalAtlas.org</h3>
-      <p style="font-size: 1.125rem; margin-bottom: 2rem; color: var(--color-text-secondary); line-height: 1.7;">
-        Providing cutting-edge educational materials, methodological guidance, and practical implementations of causal inference techniques across epidemiology, biostatistics, economics, and social sciences.
-      </p>
-      <ul style="text-align: left; max-width: 600px; margin: 0 auto 3rem; font-size: 1.0625rem; line-height: 1.8; color: var(--color-text-secondary);">
-        <li>Causal discovery algorithms and graphical models (DAGs, MAGs)</li>
-        <li>Propensity score methods and inverse probability weighting</li>
-        <li>Instrumental variables and natural experiments</li>
-        <li>G-methods (g-formula, g-estimation) for time-varying exposures</li>
-        <li>Sensitivity analysis and bounds for unmeasured confounding</li>
-        <li>Mediation and moderation analysis</li>
-      </ul>
-      <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem; display: inline-block;">
-        Visit CausalAtlas.org →
-      </a>
-    </div>
+<div class="container-narrow">
+  <section class="hero-section" style="min-height: auto; padding: var(--space-3xl) 0;">
+    <h1>Research & Publications</h1>
+    <p class="lead">Selected work from 26+ publications with 150+ citations in biostatistics, causal inference, and global health</p>
   </section>
 
-  <div class="section-divider"></div>
-
-  <section class="expertise-section">
-    <h2 style="text-align: center;">Current Research</h2>
-    <div class="expertise-grid">
-      <div class="expertise-area" style="text-align: center;">
-        <div class="icon-badge">
-          <img src="/assets/icons/icon-microscope.svg" alt="Microscope icon" class="icon-svg" loading="lazy">
-        </div>
-        <h3>PhD Research</h3>
-        <p><strong>Queen Mary University of London</strong><br>
-        Causal inference methods for complex observational data in healthcare and epidemiology.<br>
-        <em>Funding: CREATE Fellowship (£74,000)</em></p>
+  <section style="padding: var(--space-2xl) 0;">
+    <h2>Research Areas</h2>
+    <div class="grid grid-3" style="margin-top: var(--space-xl);">
+      <div class="card">
+        <h3>Causal Inference</h3>
+        <p>Advanced methodologies for establishing causality in observational studies, including propensity score methods, instrumental variables, and causal discovery algorithms for healthcare data.</p>
       </div>
-
-      <div class="expertise-area" style="text-align: center;">
-        <div class="icon-badge">
-          <img src="/assets/icons/icon-analytics.svg" alt="Analytics icon" class="icon-svg" loading="lazy">
-        </div>
-        <h3>Statistical Consulting</h3>
-        <p><strong>Ripple Global Health Research Institute</strong><br>
-        Statistical analysis for nutrition clinical trials using GAMs, SEM, and causal methods for program optimization.</p>
+      <div class="card">
+        <h3>Biostatistics</h3>
+        <p>Survival analysis, clinical trials design, mixed-effects models, and longitudinal data analysis for medical research and public health interventions.</p>
       </div>
-
-      <div class="expertise-area" style="text-align: center;">
-        <div class="icon-badge">
-          <img src="/assets/icons/icon-hospital.svg" alt="Hospital icon" class="icon-svg" loading="lazy">
-        </div>
-        <h3>Pediatric Oncology</h3>
-        <p><strong>Sub-Saharan Africa</strong><br>
-        Treatment outcomes, quality of life, and survival analysis in childhood cancer patients in resource-limited settings.</p>
+      <div class="card">
+        <h3>Global Health</h3>
+        <p>Pediatric oncology outcomes, infectious disease epidemiology, malnutrition research, and health systems strengthening in resource-limited settings.</p>
       </div>
     </div>
   </section>
 
-  <div class="section-divider"></div>
+  <section style="padding: var(--space-3xl) 0;">
+    <h2>Recent Publications</h2>
+    <p class="text-muted" style="margin-bottom: var(--space-xl);">Publications retrieved from EMBASE using search query: (geoffrey OR elihu) AND manda</p>
 
-  <section class="recent-section">
-    <h2 style="text-align: center;">Research Focus Areas</h2>
-    <p style="text-align: center; max-width: 720px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
-      Developing and applying advanced methods for causal inference and biostatistical analysis
-    </p>
-    <div class="update-timeline">
-      <div class="update-item">
-        <div class="update-content">
-          <h3>Causal Discovery & Inference</h3>
-          <p>Developing algorithms to learn causal structures from observational data and applying tools from mathematical statistics and machine learning to understand causal relationships.</p>
-        </div>
-      </div>
+    <div class="card" style="margin-bottom: var(--space-lg);">
+      <div class="update-date">2024</div>
+      <h3>Effect of Fatty Acid Profiles in Ready-to-Use Therapeutic Foods</h3>
+      <p><strong>Nienaber A, Conradie C, Manda G, et al.</strong> <em>Nutrition Reviews</em>, 82(12), 1784-1799.</p>
+      <p>Systematic review assessing the impact of varying fatty acid profiles in therapeutic foods on neurodevelopmental and clinical outcomes of severely wasted children. Found that lowering n-6:n-3 PUFA ratios improved neurodevelopmental scores and reduced mortality.</p>
+      <a href="https://doi.org/10.1093/nutrit/nuad151" target="_blank" rel="noopener" class="card-link">View Publication →</a>
+    </div>
 
-      <div class="update-item">
-        <div class="update-content">
-          <h3>High-Dimensional Data Analysis</h3>
-          <p>Applying machine learning methods while maintaining causal interpretability for complex healthcare datasets with many variables.</p>
-        </div>
-      </div>
+    <div class="card" style="margin-bottom: var(--space-lg);">
+      <div class="update-date">2024</div>
+      <h3>Energy Provided and Growth During Severe Wasting Treatment</h3>
+      <p><strong>Potani I, Tausanovitch Z, Ritz C, Briend A, Manda G, et al.</strong> <em>Maternal and Child Nutrition</em>, 20(4), e13693.</p>
+      <p>Secondary data analysis from Mali demonstrating positive relationship between energy provided at admission and catch-up growth in children with MUAC < 115 mm treated using simplified protocol.</p>
+      <a href="https://doi.org/10.1111/mcn.13693" target="_blank" rel="noopener" class="card-link">View Publication →</a>
+    </div>
 
-      <div class="update-item">
-        <div class="update-content">
-          <h3>Time-Varying Confounding</h3>
-          <p>G-methods for longitudinal healthcare data with time-dependent treatments and confounders in clinical and epidemiological studies.</p>
-        </div>
-      </div>
+    <div class="card" style="margin-bottom: var(--space-lg);">
+      <div class="update-date">2023</div>
+      <h3>Outcomes of Wilms Tumor Therapy in Lilongwe, Malawi</h3>
+      <p><strong>Holmes DM, Matatiyo A, Mpasa A, Manda G, et al.</strong> <em>Pediatric Blood and Cancer</em>, 70(5), e30242. <strong>Cited by 14.</strong></p>
+      <p>Retrospective cohort study assessing outcomes of resource-adapted treatment protocol for Wilms tumor in Malawi, 2016-2021. Identified high-impact targets for clinical trials including treatment abandonment and approaches for settings without radiotherapy.</p>
+      <a href="https://doi.org/10.1002/pbc.30242" target="_blank" rel="noopener" class="card-link">View Publication →</a>
+    </div>
 
-      <div class="update-item">
-        <div class="update-content">
-          <h3>Missing Data Methods</h3>
-          <p>Causal approaches to handling missingness mechanisms in observational studies and clinical trials.</p>
-        </div>
-      </div>
+    <div class="card" style="margin-bottom: var(--space-lg);">
+      <div class="update-date">2022</div>
+      <h3>The Burden of Malnutrition in Childhood Cancer in Malawi</h3>
+      <p><strong>Huibers MHW, Manda G, Silverstein A, et al.</strong> <em>Nutrition and Cancer</em>, 74(9), 3322-3328. <strong>Cited by 13.</strong></p>
+      <p>Single-center retrospective cohort characterizing age-related malnutrition burden among 463 children with cancer. Found 63.3% were malnourished, with higher rates in children ≥5 years, highlighting need for expanded nutrition programs.</p>
+      <a href="https://doi.org/10.1080/01635581.2022.2076888" target="_blank" rel="noopener" class="card-link">View Publication →</a>
+    </div>
+
+    <div class="card" style="margin-bottom: var(--space-lg);">
+      <div class="update-date">2022</div>
+      <h3>Palliative Care Services in Pediatric Hematology-Oncology</h3>
+      <p><strong>Silverstein A, Butia M, Bank R, Manda G, et al.</strong> <em>Journal of Pain and Symptom Management</em>, 63(5), e473-e480.</p>
+      <p>Three-year retrospective review describing establishment of palliative care program within pediatric hematology-oncology program in Lilongwe, Malawi. Demonstrated feasibility of integrating palliative care services in low-resource settings.</p>
+      <a href="https://doi.org/10.1016/j.jpainsymman.2022.01.006" target="_blank" rel="noopener" class="card-link">View Publication →</a>
+    </div>
+
+    <div class="card" style="margin-bottom: var(--space-lg);">
+      <div class="update-date">2021</div>
+      <h3>Pediatric Lymphoma Health-Related Quality of Life in Malawi</h3>
+      <p><strong>Ellis GK, Chapman H, Manda A, Manda G, et al.</strong> <em>Pediatric Blood and Cancer</em>, 68(10), e29257. <strong>Cited by 13.</strong></p>
+      <p>Patient-reported outcomes study using Chichewa PROMIS-25 among pediatric lymphoma patients. Found poor HRQoL at diagnosis that improved throughout treatment, with baseline scores potentially providing prognostic information.</p>
+      <a href="https://doi.org/10.1002/pbc.29257" target="_blank" rel="noopener" class="card-link">View Publication →</a>
+    </div>
+
+    <div class="card" style="margin-bottom: var(--space-lg);">
+      <div class="update-date">2018</div>
+      <h3>Pyoderma Gangrenosum Associated with Crohn's Disease</h3>
+      <p><strong>Manda G, Finch P, Mponda K.</strong> <em>Tropical Doctor</em>, 48(1), 43-46.</p>
+      <p>Case report and literature review of pyoderma gangrenosum in Malawian teenage boy with Crohn's disease, highlighting diagnostic and treatment challenges in resource-limited settings.</p>
+      <a href="https://doi.org/10.1177/0049475517724972" target="_blank" rel="noopener" class="card-link">View Publication →</a>
+    </div>
+
+    <div class="card" style="margin-bottom: var(--space-lg);">
+      <div class="update-date">2016</div>
+      <h3>Household Air Pollution and Acute Lower Respiratory Infections in Adults</h3>
+      <p><strong>Jary H, Simpson H, Havens D, Manda G, et al.</strong> <em>PLOS ONE</em>, 11(12), e0167656.</p>
+      <p>Systematic review examining association between household air pollution from solid fuel burning and acute lower respiratory infections in adults. Identified research gaps and opportunities for intervention studies.</p>
+      <a href="https://doi.org/10.1371/journal.pone.0167656" target="_blank" rel="noopener" class="card-link">View Publication →</a>
+    </div>
+
+    <div class="card">
+      <div class="update-date">2014</div>
+      <h3>Cancer Survival in Malawi: A Retrospective Cohort Study</h3>
+      <p><strong>Msyamboza KP, Manda G, Tembo B, et al.</strong> <em>Pan African Medical Journal</em>, 19, 234.</p>
+      <p>Analysis of 842 cancer patients demonstrating poor survival with median survival time of 9 months and only 6% surviving ≥5 years. Emphasized need for improved early detection, diagnostic capability, and access to treatment.</p>
+      <a href="https://doi.org/10.11604/pamj.2014.19.234.4675" target="_blank" rel="noopener" class="card-link">View Publication →</a>
     </div>
   </section>
 
-  <div class="section-divider"></div>
-
-  <section class="feature-section" style="text-align: center;">
-    <h2 style="text-align: center;">Key Publications</h2>
-    <p style="max-width: 800px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
-      Published research with real-world impact across pediatric oncology, public health, and epidemiology
-    </p>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Household Air Pollution</h3>
-        <p style="font-size: 0.9375rem; margin-bottom: 1rem;">Systematic review of household air pollution and acute lower respiratory infections in adults</p>
-        <p style="font-size: 0.875rem; color: var(--color-text-tertiary);"><em>PLoS ONE, 2016</em></p>
-        <div style="margin-top: 1rem;">
-          <span class="tag">Cited by 54</span>
-        </div>
-      </div>
-
-      <div class="feature-card">
-        <h3>Cancer Survival in Malawi</h3>
-        <p style="font-size: 0.9375rem; margin-bottom: 1rem;">Retrospective cohort study on cancer presentation and outcomes in resource-limited settings</p>
-        <p style="font-size: 0.875rem; color: var(--color-text-tertiary);"><em>Pan African Medical Journal, 2014</em></p>
-        <div style="margin-top: 1rem;">
-          <span class="tag">Cited by 32</span>
-        </div>
-      </div>
-
-      <div class="feature-card">
-        <h3>Wilms Tumor Therapy</h3>
-        <p style="font-size: 0.9375rem; margin-bottom: 1rem;">Outcomes of Wilms tumor therapy in Malawi: successes and ongoing research priorities</p>
-        <p style="font-size: 0.875rem; color: var(--color-text-tertiary);"><em>JCO Global Oncology, 2023</em></p>
-        <div style="margin-top: 1rem;">
-          <span class="tag">Cited by 14</span>
-        </div>
-      </div>
-
-      <div class="feature-card">
-        <h3>Childhood Cancer Malnutrition</h3>
-        <p style="font-size: 0.9375rem; margin-bottom: 1rem;">The burden of malnutrition in childhood cancer in Malawi - risk regardless of age</p>
-        <p style="font-size: 0.875rem; color: var(--color-text-tertiary);"><em>Pediatric Blood & Cancer, 2022</em></p>
-        <div style="margin-top: 1rem;">
-          <span class="tag">Cited by 13</span>
-        </div>
-      </div>
-
-      <div class="feature-card">
-        <h3>Pediatric Lymphoma QoL</h3>
-        <p style="font-size: 0.9375rem; margin-bottom: 1rem;">Quality of life outcomes in pediatric lymphoma patients in Sub-Saharan Africa</p>
-        <p style="font-size: 0.875rem; color: var(--color-text-tertiary);"><em>Cancer Medicine, 2021</em></p>
-        <div style="margin-top: 1rem;">
-          <span class="tag">Cited by 13</span>
-        </div>
-      </div>
-
-      <div class="feature-card">
-        <h3>Fatty Acid Profiles</h3>
-        <p style="font-size: 0.9375rem; margin-bottom: 1rem;">Effect of fatty acid profiles in ready-to-use therapeutic foods on neurodevelopmental outcomes</p>
-        <p style="font-size: 0.875rem; color: var(--color-text-tertiary);"><em>Wellcome Open Research, 2024</em></p>
-        <div style="margin-top: 1rem;">
-          <span class="tag">Cited by 2</span>
-        </div>
-      </div>
-    </div>
-
-    <div style="text-align: center; margin-top: 3rem;">
-      <p style="font-size: 1.0625rem; margin-bottom: 1.5rem; color: var(--color-text-secondary);">
-        <strong>26 publications</strong> with over <strong>150 citations</strong>
-      </p>
-      <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" class="btn-primary" rel="noopener noreferrer">
-        View All Publications on Google Scholar →
-      </a>
-    </div>
+  <section class="contact-preview">
+    <h2>Collaborate on Research</h2>
+    <p class="lead">Interested in collaborating on causal inference, biostatistics, or global health research projects?</p>
+    <a href="/contact" class="btn btn-primary">Get in Touch</a>
   </section>
 </div>
-
-<section class="contact-preview" style="text-align: center;">
-  <h2 style="text-align: center;">Collaboration Opportunities</h2>
-  <p>Interested in collaborating on causal inference methods, biostatistical consulting, or global health research?</p>
-  <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
-    <a href="/contact" class="btn-primary">Get in Touch</a>
-    <a href="/about" class="btn-secondary">View Full CV</a>
-  </div>
-</section>
-
-<style>
-.tag {
-  display: inline-block;
-  background: rgba(14, 165, 233, 0.1);
-  color: var(--color-link);
-  padding: 0.375rem 0.875rem;
-  border-radius: 8px;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  border: 1px solid rgba(14, 165, 233, 0.2);
-  margin: 0.25rem;
-}
-</style>

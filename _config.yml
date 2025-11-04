@@ -1,6 +1,6 @@
 theme: minima
-title: Geoffrey Manda | Data Scientist
-description: Statistical analysis, AI research, and epidemiological studies
+title: Geoffrey Manda
+description: PhD Research Fellow in Biostatistics & Causal Inference at Queen Mary University of London
 show_downloads: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,7 +9,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: Geoffrey Manda
   github: GeoffreyManda
-  email: your.email@example.com # Replace with your actual email
+  email: g.manda@qmul.ac.uk
 
 # Build settings
 markdown: kramdown
@@ -21,10 +21,9 @@ kramdown:
 header_pages:
   - index.md
   - about.md
-  - ai-projects.md
+  - research.md
+  - projects.md
   - tutorials.md
-  - biostatistics.md
-  - epidemiology.md
   - contact.md
 
 # Plugins

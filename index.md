@@ -59,28 +59,28 @@ description: PhD Research Fellow in Biostatistics & Epidemiology at Queen Mary U
     <div class="update-timeline">
       <div class="card">
         <div class="update-date">2024</div>
-        <h4>Fatty Acid Profiles and Cardiovascular Risk</h4>
-        <p>Nyirenda, M., Kumwenda, N., Choko, A. T., Crampin, A. C., <strong>Manda, G.</strong>, et al. <em>Wellcome Open Research, 9</em>, 41. Cited by 2.</p>
+        <h4>Effect of Fatty Acid Profiles in Therapeutic Foods</h4>
+        <p><strong>Nienaber A, Conradie C, Manda G, et al.</strong> <em>Nutrition Reviews, 82</em>(12), 1784-1799. Systematic review on neurodevelopmental outcomes of children with severe wasting.</p>
       </div>
       <div class="card">
         <div class="update-date">2023</div>
-        <h4>Wilms Tumor Therapy in Malawi</h4>
-        <p>Painschab, M. S., Westmoreland, K. D., Kaimila, B., <strong>Manda, G.</strong>, et al. <em>JCO Global Oncology, 9</em>, e2200431. Cited by 14.</p>
-        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" rel="noopener" class="card-link">View on Google Scholar →</a>
+        <h4>Wilms Tumor Therapy in Lilongwe, Malawi</h4>
+        <p><strong>Holmes DM, Matatiyo A, Mpasa A, Manda G, et al.</strong> <em>Pediatric Blood and Cancer, 70</em>(5), e30242. <strong>Cited by 14.</strong> Resource-adapted treatment outcomes 2016-2021.</p>
+        <a href="https://doi.org/10.1002/pbc.30242" target="_blank" rel="noopener" class="card-link">View Publication →</a>
       </div>
       <div class="card">
         <div class="update-date">2022</div>
-        <h4>Malnutrition in Childhood Cancer</h4>
-        <p>Kamthunzi, P., Banda, N. P., Chingombe, I., Ching'amba, D., Masamba, L. P. L., Mtunda, M., Mtika, D., <strong>Manda, G.</strong>, et al. <em>Pediatric Blood & Cancer, 69</em>(10), e29852. Cited by 13.</p>
+        <h4>Malnutrition in Childhood Cancer in Malawi</h4>
+        <p><strong>Huibers MHW, Manda G, Silverstein A, et al.</strong> <em>Nutrition and Cancer, 74</em>(9), 3322-3328. <strong>Cited by 13.</strong> Age-related malnutrition burden among 463 children.</p>
       </div>
       <div class="card">
         <div class="update-date">2021</div>
-        <h4>Pediatric Lymphoma Quality of Life</h4>
-        <p>Painschab, M. S., Kaimila, B., <strong>Manda, G.</strong>, et al. <em>Cancer Medicine, 10</em>(9), 2972-2984. Cited by 13.</p>
+        <h4>Pediatric Lymphoma Quality of Life in Malawi</h4>
+        <p><strong>Ellis GK, Chapman H, Manda A, Manda G, et al.</strong> <em>Pediatric Blood and Cancer, 68</em>(10), e29257. <strong>Cited by 13.</strong> Patient-reported outcomes study using PROMIS-25.</p>
       </div>
     </div>
     <div class="text-center mt-xl">
-      <a href="about#publications" class="btn btn-secondary">View All Publications</a>
+      <a href="research" class="btn btn-secondary">View All Publications</a>
     </div>
   </div>
 </section>
