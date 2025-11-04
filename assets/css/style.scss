@@ -633,58 +633,119 @@ a:hover {
   gap: 1rem;
 }
 
-/* Buttons */
+/* Buttons - World-class Apple quality */
 .btn-primary, .hero-button.primary, .button {
-  background: var(--color-bg-accent);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   border: none;
   border-radius: var(--button-radius);
-  padding: 12px 21px;
-  font-size: 0.875rem;
-  box-shadow: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 13px 24px;
+  font-size: 0.9375rem;
+  letter-spacing: -0.01em;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25),
+              0 2px 4px rgba(14, 165, 233, 0.15);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  isolation: isolate;
 }
 
-.btn-primary:hover, .hero-button.primary:hover, .button:hover {
-  background: var(--primary-700);
-  transform: scale(1.01);
+.btn-primary::before,
+.hero-button.primary::before,
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
 }
 
-.btn-primary:active, .hero-button.primary:active, .button:active {
-  transform: scale(0.98);
+.btn-primary:hover,
+.hero-button.primary:hover,
+.button:hover {
+  background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-600) 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.35),
+              0 4px 8px rgba(14, 165, 233, 0.2);
+}
+
+.btn-primary:hover::before,
+.hero-button.primary:hover::before,
+.button:hover::before {
+  opacity: 1;
+}
+
+.btn-primary:active,
+.hero-button.primary:active,
+.button:active {
+  transform: translateY(0) scale(0.99);
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.2);
+  transition-duration: 0.15s;
 }
 
 .btn-secondary, .hero-button.secondary, .button-secondary {
   background: transparent;
   color: var(--color-link);
-  border: 1.5px solid var(--color-border-secondary);
+  border: 2px solid var(--color-border-accent);
   border-radius: var(--button-radius);
-  padding: 11px 20px;
-  font-size: 0.875rem;
-  font-weight: 400;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 11px 22px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
 }
 
-.btn-secondary:hover, .hero-button.secondary:hover, .button-secondary:hover {
-  background: var(--color-bg-tertiary);
-  border-color: var(--color-border-accent);
-  transform: scale(1.01);
+.btn-secondary::before,
+.hero-button.secondary::before,
+.button-secondary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    var(--primary-50) 0%,
+    var(--secondary-50) 100%);
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
 }
 
-.btn-secondary:active, .hero-button.secondary:active, .button-secondary:active {
-  transform: scale(0.98);
+.btn-secondary:hover,
+.hero-button.secondary:hover,
+.button-secondary:hover {
+  border-color: var(--primary-600);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+}
+
+.btn-secondary:hover::before,
+.hero-button.secondary:hover::before,
+.button-secondary:hover::before {
+  opacity: 1;
+}
+
+.btn-secondary:active,
+.hero-button.secondary:active,
+.button-secondary:active {
+  transform: translateY(0) scale(0.99);
+  box-shadow: 0 1px 4px rgba(14, 165, 233, 0.1);
+  transition-duration: 0.15s;
 }
 
 /* Cards - Premium Apple Quality */

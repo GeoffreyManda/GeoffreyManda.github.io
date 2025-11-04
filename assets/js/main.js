@@ -47,24 +47,32 @@ function initSmoothScrolling() {
 
 function initScrollAnimations() {
   const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    threshold: 0.15,
+    rootMargin: '0px 0px -80px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        // Stagger animation for visual polish
+        const delay = index * 75;
+        setTimeout(() => {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }, delay);
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Observe cards and sections
-  document.querySelectorAll('.card, .feature-card, .expertise-area, .update-item').forEach(el => {
+  // Observe cards and sections with Apple-quality animations
+  const elements = document.querySelectorAll('.card, .feature-card, .expertise-area, .update-item, .project-card');
+
+  elements.forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+    el.style.willChange = 'opacity, transform';
     observer.observe(el);
   });
 }
