@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+description: Get in touch with Geoffrey Manda for biostatistical consulting, research collaboration, or speaking engagements. Available for causal inference projects and clinical trial analysis.
 ---
 
 <div class="hero-section hero-section--centered">

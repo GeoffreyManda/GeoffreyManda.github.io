@@ -2,6 +2,7 @@
 layout: page
 title: Epidemiology
 permalink: /epidemiology/
+description: Epidemiological research on infectious diseases, environmental health, maternal-child health, and cancer epidemiology in Sub-Saharan Africa.
 ---
 
 <div class="hero-section hero-section--centered">

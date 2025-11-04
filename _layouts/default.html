@@ -5,6 +5,9 @@
 
   <body>
 
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     {% include header.html %}
 
     <main class="page-content" aria-label="Content" id="main-content">
@@ -12,6 +15,9 @@
     </main>
 
     {% include footer.html %}
+
+    <!-- Dark Mode Toggle -->
+    {% include dark-mode-toggle.html %}
 
     <!-- Floating Contact Button -->
     <a href="/contact" class="contact-fab" aria-label="Contact" title="Get in touch">
@@ -47,6 +53,15 @@
           top: 0,
           behavior: 'smooth'
         });
+      });
+
+      // Premium entrance animation
+      document.body.style.opacity = '0';
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.body.style.transition = 'opacity 0.6s var(--ease-out)';
+          document.body.style.opacity = '1';
+        }, 50);
       });
 
       // Active Page Navigation Indicator

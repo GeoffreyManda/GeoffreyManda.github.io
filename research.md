@@ -2,6 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
+description: Research projects in causal inference, biostatistics, and epidemiology. Editor of CausalAtlas.org advancing resources on causality and causal discovery methods.
 ---
 
 <div class="hero-section hero-section--centered">

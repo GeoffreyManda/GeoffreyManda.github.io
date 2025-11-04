@@ -2,6 +2,7 @@
 layout: page
 title: Biostatistics
 permalink: /biostatistics/
+description: Advanced biostatistical methods for clinical research including survival analysis, clinical trials methodology, longitudinal data analysis, and Bayesian approaches.
 ---
 
 <div class="hero-section hero-section--centered">
