@@ -1,181 +1,573 @@
 <!DOCTYPE html>
-<html lang="en"><script src="https://d3js.org/d3.v7.min.js"></script> <body><header class="site-header" role="banner">
+<html lang="en">
 
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://formspree.io">
+
+  <!-- Primary Meta Tags --><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Biostatistics | Geoffrey Manda Data Scientist</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Biostatistics" />
+<meta name="author" content="Geoffrey Manda" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Advanced biostatistical methods for clinical research including survival analysis, clinical trials methodology, longitudinal data analysis, and Bayesian approaches." />
+<meta property="og:description" content="Advanced biostatistical methods for clinical research including survival analysis, clinical trials methodology, longitudinal data analysis, and Bayesian approaches." />
+<link rel="canonical" href="/biostatistics/" />
+<meta property="og:url" content="/biostatistics/" />
+<meta property="og:site_name" content="Geoffrey Manda Data Scientist" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Biostatistics" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Geoffrey Manda"},"description":"Advanced biostatistical methods for clinical research including survival analysis, clinical trials methodology, longitudinal data analysis, and Bayesian approaches.","headline":"Biostatistics","url":"/biostatistics/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/biostatistics/">
+  <meta property="og:title" content="Biostatistics | Geoffrey Manda | Data Scientist">
+  <meta property="og:description" content="Advanced biostatistical methods for clinical research including survival analysis, clinical trials methodology, longitudinal data analysis, and Bayesian approaches.">
+  <meta property="og:image" content="/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="/biostatistics/">
+  <meta property="twitter:title" content="Biostatistics | Geoffrey Manda | Data Scientist">
+  <meta property="twitter:description" content="Advanced biostatistical methods for clinical research including survival analysis, clinical trials methodology, longitudinal data analysis, and Bayesian approaches.">
+  <meta property="twitter:image" content="/assets/images/og-image.jpg">
+  <meta name="twitter:creator" content="@geoffreymanda">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="/biostatistics/">
+
+  <!-- Theme Color for mobile browsers -->
+  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c4a6e" media="(prefers-color-scheme: dark)">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+  <!-- Stylesheets with performance optimization -->
+  <link rel="preload" href="/assets/css/style.css" as="style">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/world-class-design.css">
+  <link rel="stylesheet" href="/assets/css/clean-override.css">
+
+  <!-- RSS Feed --><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Geoffrey Manda | Data Scientist" /><!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Geoffrey Manda",
+    "jobTitle": "PhD Research Fellow in Biostatistics & Epidemiology",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Queen Mary University of London"
+    },
+    "url": "",
+    "sameAs": [
+      "https://www.linkedin.com/in/geoffreymanda/",
+      "https://github.com/GeoffreyManda",
+      "https://scholar.google.com/citations?user=7-Sy11kAAAAJ",
+      "https://twitter.com/geoffreymanda"
+    ],
+    "description": "Biostatistician and epidemiologist specializing in causal inference, clinical trials, and public health research"
+  }
+  </script>
+
+  <!-- Analytics --></head>
+
+
+  <body>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
   <div class="wrapper"><a class="site-title" rel="author" href="/">Geoffrey Manda | Data Scientist</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
+        <label for="nav-trigger" class="menu-icon">
+          <span></span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Geoffrey Manda</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/ai-projects/">AI Projects</a><a class="page-link" href="/tutorials/">Tutorials</a><a class="page-link" href="/biostatistics/">Biostatistics</a><a class="page-link" href="/epidemiology/">Epidemiology</a><a class="page-link" href="/contact/">Contact</a></div>
+        <div class="trigger"><a class="page-link" href="/">Geoffrey Manda</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/tutorials/">Causal Inference Tutorials</a><a class="page-link" href="/biostatistics/">Biostatistics</a><a class="page-link" href="/epidemiology/">Epidemiology</a><a class="page-link" href="/contact/">Contact</a></div>
       </nav></div>
 </header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post">
+
+
+    <main class="page-content" aria-label="Content" id="main-content">
+      <article class="post">
 
   <header class="post-header">
     <h1 class="post-title">Biostatistics</h1>
   </header>
 
   <div class="post-content">
-    <div class="hero-section">
+    <div class="hero-section hero-section--centered">
   <div class="hero-content">
     <h1>Biostatistics Research</h1>
-    <p>Leveraging statistical methods to advance medical research and improve patient outcomes</p>
+    <p>Advanced statistical methods for clinical research, survival analysis, and healthcare data</p>
   </div>
   <div class="hero-image">
-    <img src="/assets/images/biostatistics-hero.jpg" alt="Biostatistics visualization" />
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&amp;h=600&amp;fit=crop&amp;q=80" alt="Data analysis and statistics" />
   </div>
 </div>
 
 <div class="section-container">
-  <div class="section-divider"></div>
-  
-  <div class="feature-section">
+  <section class="feature-section">
     <h2>Research Focus</h2>
-    <p>My biostatistics work focuses on developing and applying advanced statistical methods to medical and public health research questions. I specialize in survival analysis, longitudinal data analysis, and predictive modeling for clinical outcomes.</p>
-    
-    <div class="feature-cards">
+    <p>Developing and applying advanced statistical methods to address complex questions in medical and public health research, with emphasis on causal inference, survival analysis, and clinical trials methodology.</p>
+
+    <div class="feature-grid">
       <div class="feature-card">
-        <div class="card-icon icon-ios">
-          <img src="/assets/icons/survival-analysis.svg" alt="Survival Analysis Icon" />
-        </div>
         <h3>Survival Analysis</h3>
-        <p>Developing novel approaches to time-to-event data analysis with applications in clinical trials and observational studies.</p>
-        <a href="#survival-analysis" class="learn-more">Learn more <span class="arrow">→</span></a>
-      </div>
-      
-      <div class="feature-card">
-        <div class="card-icon icon-ios">
-          <img src="/assets/icons/cardiology.svg" alt="Cardiology Research Icon" />
+        <p>Time-to-event analysis including Kaplan-Meier estimation, Cox proportional hazards models, parametric survival models, and competing risks analysis for clinical outcomes research.</p>
+        <div style="margin-top: 1.5rem;">
+          <span class="tag">Kaplan-Meier</span>
+          <span class="tag">Cox Models</span>
+          <span class="tag">Competing Risks</span>
         </div>
-        <h3>Cardiology Research</h3>
-        <p>Statistical modeling of cardiovascular outcomes and risk factors to improve treatment strategies and prevention.</p>
-        <a href="#cardiology" class="learn-more">Learn more <span class="arrow">→</span></a>
       </div>
-      
+
       <div class="feature-card">
-        <div class="card-icon icon-ios">
-          <img src="/assets/icons/clinical-trials.svg" alt="Clinical Trials Icon" />
-        </div>
         <h3>Clinical Trials</h3>
-        <p>Design and analysis of clinical trials, including sample size calculation, interim analyses, and adaptive designs.</p>
-        <a href="#clinical-trials" class="learn-more">Learn more <span class="arrow">→</span></a>
+        <p>Study design, sample size determination, randomization methods, interim analyses, and statistical approaches for analyzing randomized controlled trials and observational studies.</p>
+        <div style="margin-top: 1.5rem;">
+          <span class="tag">RCTs</span>
+          <span class="tag">Adaptive Design</span>
+          <span class="tag">Power Analysis</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <h3>Longitudinal Data Analysis</h3>
+        <p>Mixed-effects models, generalized estimating equations (GEE), and growth curve modeling for repeated measurements and clustered data in healthcare settings.</p>
+        <div style="margin-top: 1.5rem;">
+          <span class="tag">Mixed Models</span>
+          <span class="tag">GEE</span>
+          <span class="tag">Growth Curves</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <h3>Regression Methods</h3>
+        <p>Linear regression, logistic regression, Poisson regression, and advanced regression techniques including penalized regression and machine learning methods for prediction.</p>
+        <div style="margin-top: 1.5rem;">
+          <span class="tag">GLM</span>
+          <span class="tag">Logistic</span>
+          <span class="tag">LASSO</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <h3>Missing Data Methods</h3>
+        <p>Multiple imputation, inverse probability weighting, and sensitivity analyses for handling missing data in clinical research and observational studies.</p>
+        <div style="margin-top: 1.5rem;">
+          <span class="tag">Multiple Imputation</span>
+          <span class="tag">IPW</span>
+          <span class="tag">Sensitivity</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <h3>Bayesian Methods</h3>
+        <p>Bayesian inference, prior specification, MCMC methods, and Bayesian adaptive trial designs for incorporating prior knowledge and uncertainty quantification.</p>
+        <div style="margin-top: 1.5rem;">
+          <span class="tag">MCMC</span>
+          <span class="tag">Prior Elicitation</span>
+          <span class="tag">Stan</span>
+        </div>
       </div>
     </div>
-  </div>
-  
+  </section>
+
   <div class="section-divider"></div>
-  
-  <div class="project-section" id="survival-analysis">
-    <div class="project-content">
-      <h2>Survival Analysis Projects</h2>
-      <p>My work in survival analysis focuses on developing and applying innovative statistical methods to analyze time-to-event data in medical research.</p>
-      
-      <div class="project">
-        <h3>Advanced Competing Risks Analysis</h3>
-        <p>Developed new methodologies for handling competing risks in survival analysis, with applications to cancer research and cardiovascular outcomes.</p>
-        <ul class="project-highlights">
-          <li>Novel estimation procedures for subdistribution hazards</li>
-          <li>Software implementation in R and SAS</li>
-          <li>Applications in multi-center clinical trials</li>
-        </ul>
+
+  <section class="expertise-section">
+    <h2>Statistical Software</h2>
+    <div class="expertise-grid">
+      <div class="expertise-area">
+        <h3>R Programming</h3>
+        <p>Advanced R programming for statistical analysis, data visualization with ggplot2, package development, and reproducible research with R Markdown and Quarto.</p>
       </div>
-      
-      <div class="project">
-        <h3>Joint Modeling of Longitudinal and Survival Data</h3>
-        <p>Created statistical frameworks for simultaneously analyzing repeated measurements and time-to-event outcomes.</p>
-        <ul class="project-highlights">
-          <li>Dynamic prediction models for personalized medicine</li>
-          <li>Bayesian approaches to parameter estimation</li>
-          <li>Applications in HIV/AIDS and chronic disease research</li>
-        </ul>
+
+      <div class="expertise-area">
+        <h3>SAS &amp; Stata</h3>
+        <p>Proficient in SAS and Stata for clinical trials analysis, regulatory submissions, and health economics research with adherence to industry standards.</p>
+      </div>
+
+      <div class="expertise-area">
+        <h3>Python</h3>
+        <p>Statistical computing with Python using pandas, NumPy, scikit-learn, and statsmodels for data analysis and machine learning applications.</p>
       </div>
     </div>
-    <div class="project-image">
-      <img src="/assets/images/survival-analysis.jpg" alt="Survival analysis curves" />
-    </div>
-  </div>
-  
+  </section>
+
   <div class="section-divider"></div>
-  
-  <div class="project-section" id="cardiology">
-    <div class="project-image">
-      <img src="/assets/images/cardiology-research.jpg" alt="Cardiology research" />
-    </div>
-    <div class="project-content">
-      <h2>Cardiology Research</h2>
-      <p>Applying advanced biostatistical methods to improve prediction, diagnosis, and treatment in cardiovascular medicine.</p>
-      
-      <div class="project">
-        <h3>Predictive Modeling for Cardiac Events</h3>
-        <p>Developed machine learning algorithms to predict adverse cardiac events in high-risk patients, incorporating clinical, genetic, and imaging data.</p>
-        <ul class="project-highlights">
-          <li>Ensemble methods combining clinical expertise with ML algorithms</li>
-          <li>Validation across diverse patient populations</li>
-          <li>Implementation tools for clinical decision support</li>
-        </ul>
+
+  <section class="recent-section">
+    <h2>Applications in Health Research</h2>
+    <p style="text-align: center; max-width: 720px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
+      Biostatistical methods applied across diverse areas of health research
+    </p>
+    <div class="update-timeline">
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Pediatric Oncology</h3>
+          <p>Survival analysis and treatment outcome evaluation in childhood cancer patients, including Wilms tumor therapy effectiveness and malnutrition impact on treatment outcomes.</p>
+        </div>
       </div>
-      
-      <div class="project">
-        <h3>Meta-analysis of Cardiovascular Interventions</h3>
-        <p>Conducted comprehensive systematic reviews and meta-analyses to evaluate the effectiveness of various interventions for cardiovascular diseases.</p>
-        <ul class="project-highlights">
-          <li>Network meta-analysis methods for multiple treatment comparisons</li>
-          <li>Assessment of publication bias and study heterogeneity</li>
-          <li>Guidelines for clinical practice based on evidence synthesis</li>
-        </ul>
+
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Nutrition Interventions</h3>
+          <p>Statistical analysis of nutrition clinical trials, including generalized additive models (GAMs) and structural equation modeling (SEM) for complex intervention evaluation.</p>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Cardiovascular Research</h3>
+          <p>Analysis of fatty acid profiles and cardiovascular risk factors, applying advanced regression techniques and causal inference methods.</p>
+        </div>
+      </div>
+
+      <div class="update-item">
+        <div class="update-content">
+          <h3>Systematic Reviews</h3>
+          <p>Meta-analysis and evidence synthesis for WHO guideline development, including fixed and random effects models and assessment of heterogeneity.</p>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="section-divider"></div>
-  
-  <div class="collaboration-section">
-    <h2>Collaboration Opportunities</h2>
-    <p>I'm always interested in collaborating on challenging biostatistics problems. If you have a research project that could benefit from advanced statistical expertise, please <a href="/contact">get in touch</a>.</p>
-    
-    <div class="cta-button">
-      <a href="/contact" class="button">Contact Me</a>
-    </div>
-  </div>
+  </section>
 </div>
+
+<section class="contact-preview">
+  <h2>Statistical Consulting</h2>
+  <p>Available for biostatistical consulting on research design, data analysis, and statistical methodology.</p>
+  <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+    <a href="/contact" class="btn-primary">Get in Touch</a>
+    <a href="/about#publications" class="btn-secondary">View Publications</a>
+  </div>
+</section>
+
+<style>
+.tag {
+  display: inline-block;
+  background: rgba(14, 165, 233, 0.1);
+  color: var(--color-link);
+  padding: 0.375rem 0.875rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  margin: 0.25rem;
+}
+</style>
 
 
   </div>
 
 </article>
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+    </main>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Geoffrey Manda | Data Scientist</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">{&quot;name&quot;=&gt;&quot;Geoffrey Manda&quot;, &quot;github&quot;=&gt;&quot;GeoffreyManda&quot;, &quot;email&quot;=&gt;&quot;your.email@example.com&quot;}</li></ul>
+    <footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- About Section -->
+      <div class="footer-section footer-about">
+        <h4>Geoffrey Manda</h4>
+        <p>PhD Research Fellow in Biostatistics & Causal Inference at Queen Mary University of London. Advancing statistical methods for global health research.</p>
+        <p class="footer-editor">Editor, <a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a></p>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
-</div>
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="/about">About & CV</a></li>
+          <li><a href="/research">Research</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/tutorials">Tutorials</a></li>
+        </ul>
+      </div>
 
-      <div class="footer-col footer-col-3">
-        <p>Statistical analysis, AI research, and epidemiological studies</p>
+      <!-- Research Areas -->
+      <div class="footer-section">
+        <h4>Research</h4>
+        <ul class="footer-links">
+          <li><a href="/biostatistics">Biostatistics</a></li>
+          <li><a href="/epidemiology">Epidemiology</a></li>
+          <li><a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" rel="noopener">Publications</a></li>
+          <li><a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="/contact">Contact Me</a></li>
+          <li><a href="https://github.com/GeoffreyManda" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/geoffreymanda" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
       </div>
     </div>
 
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>&copy; 2025 Geoffrey Manda. All rights reserved.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/GeoffreyManda" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" class="social-link" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/geoffreymanda" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
-
 </footer>
-</body>
+
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle" role="region" aria-label="Theme toggle">
+    <button 
+        id="theme-toggle-button"
+        class="theme-toggle-button"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+        role="switch"
+        aria-checked="false">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="5" fill="currentColor" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+</div>
+
+<style>
+    .theme-toggle {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 1000;
+        background: var(--glass-bg);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+        border: var(--glass-border);
+        border-radius: var(--radius-full);
+        padding: 0.5rem;
+        box-shadow: var(--glass-shadow);
+        transition: all 0.3s var(--ease-in-out);
+    }
+
+    .theme-toggle:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 12px 40px rgba(249, 115, 22, 0.15);
+        border-color: var(--glass-highlight);
+    }
+
+    .theme-toggle-button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: var(--radius-full);
+        color: var(--color-text-primary);
+        transition: all 0.3s var(--ease-in-out);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .theme-toggle-button:hover {
+        background: linear-gradient(45deg, 
+            rgba(249, 115, 22, 0.1) 0%,
+            rgba(168, 85, 247, 0.1) 100%);
+    }
+
+    .theme-toggle-button:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--primary-400), 0 0 0 4px rgba(249, 115, 22, 0.2);
+    }
+
+    .theme-toggle svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: all 0.3s var(--ease-in-out);
+    }
+
+    .theme-toggle-button:hover svg {
+        transform: rotate(15deg);
+        color: var(--primary-500);
+    }
+
+    .theme-toggle .sun-icon {
+        color: var(--primary-500);
+    }
+
+    .theme-toggle .moon-icon {
+        color: var(--secondary-500);
+    }
+
+    .theme-toggle-button[aria-checked="true"] .sun-icon {
+        display: none;
+    }
+
+    .theme-toggle-button[aria-checked="false"] .moon-icon {
+        display: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .theme-toggle,
+        .theme-toggle-button,
+        .theme-toggle svg {
+            transition: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .theme-toggle {
+            bottom: 1rem;
+            right: 1rem;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle-button');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Set initial state
+        const currentTheme = localStorage.getItem('theme') || 
+            (prefersDarkScheme.matches ? 'dark' : 'light');
+        document.documentElement.classList.toggle('dark-mode', currentTheme === 'dark');
+        themeToggle.setAttribute('aria-checked', currentTheme === 'dark');
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.toggle('dark-mode');
+            themeToggle.setAttribute('aria-checked', isDark);
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+
+        // Listen for system theme changes
+        prefersDarkScheme.addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                const isDark = e.matches;
+                document.documentElement.classList.toggle('dark-mode', isDark);
+                themeToggle.setAttribute('aria-checked', isDark);
+            }
+        });
+    });
+</script>
+
+
+
+    <!-- Floating Contact Button -->
+    <a href="/contact" class="contact-fab" aria-label="Contact" title="Get in touch">
+      <svg class="fab-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8" />
+        <path d="M4 7l8 6l8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+      <svg class="fab-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        <path d="M6 11l6-6l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+      // Back to Top Button
+      const backToTop = document.getElementById('back-to-top');
+
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // Premium entrance animation
+      document.body.style.opacity = '0';
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.body.style.transition = 'opacity 0.6s var(--ease-out)';
+          document.body.style.opacity = '1';
+        }, 50);
+      });
+
+      // Active Page Navigation Indicator
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll('.page-link');
+
+      navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (currentPath === linkPath || currentPath.startsWith(linkPath + '/')) {
+          link.classList.add('active');
+        }
+      });
+
+      // Loading State for Links
+      const allLinks = document.querySelectorAll('a:not([href^="#"]):not([target="_blank"])');
+      allLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          if (!this.classList.contains('no-loading')) {
+            this.style.opacity = '0.6';
+            this.style.pointerEvents = 'none';
+          }
+        });
+      });
+    </script>
+
+  </body>
 
 </html>
