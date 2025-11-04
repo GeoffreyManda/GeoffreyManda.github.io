@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Causal Inference Tutorials
+title: Tutorials
 permalink: /tutorials/
 description: Comprehensive learning resources for causal inference methods, DAGs, propensity scores, instrumental variables, and g-methods. Free tutorials on CausalAtlas.org.
 ---

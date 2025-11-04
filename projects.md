@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Code & Analysis
+title: Projects
 permalink: /projects/
 description: Reproducible statistical analyses and data science projects showcasing advanced methods in R, Python, and biostatistics. COVID-19 survival analysis, causal inference, and longitudinal data projects.
 ---
