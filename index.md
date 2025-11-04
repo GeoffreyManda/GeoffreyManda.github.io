@@ -5,7 +5,7 @@ description: PhD Research Fellow in Biostatistics & Epidemiology at Queen Mary U
 ---
 
 <section id="featured-work" class="featured-section">
-  <h2>Featured Research</h2>
+  <h2 class="gradient-heading">Featured Research</h2>
   <div class="feature-grid">
     <div class="feature-card">
       <h3>Causal Inference & Discovery</h3>
@@ -26,7 +26,7 @@ description: PhD Research Fellow in Biostatistics & Epidemiology at Queen Mary U
 </section>
 
 <section class="expertise-section">
-  <h2>Areas of Expertise</h2>
+  <h2 class="gradient-heading">Areas of Expertise</h2>
   <div class="expertise-grid">
     <div class="expertise-area">
       <h3>Causal Inference</h3>
@@ -44,7 +44,7 @@ description: PhD Research Fellow in Biostatistics & Epidemiology at Queen Mary U
 </section>
 
 <section class="recent-section">
-  <h2>Recent Publications</h2>
+  <h2 class="gradient-heading">Recent Publications</h2>
   <div class="update-timeline">
     <div class="update-item">
       <div class="update-content">
@@ -82,7 +82,7 @@ description: PhD Research Fellow in Biostatistics & Epidemiology at Queen Mary U
 </section>
 
 <section class="contact-preview">
-  <h2>Let's Collaborate</h2>
+  <h2 class="gradient-heading">Let's Collaborate</h2>
   <p>Interested in working together on causal inference, biostatistics, or public health research?</p>
-  <a href="contact" class="btn-primary">Get in Touch</a>
+  <a href="contact" class="btn-primary pulse-glow">Get in Touch</a>
 </section>

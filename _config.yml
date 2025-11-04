@@ -36,11 +36,16 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Gemfile.rb
   - node_modules
   - vendor
   - .gitignore
   - LICENSE.md
   - README.md
+  - AUDIT_REPORT_30_ISSUES.md
+  - CONTACT_FORM_SETUP.md
+  - covid-project-readme.md
+  - create_*.py
 
 # Social media links
 social:
