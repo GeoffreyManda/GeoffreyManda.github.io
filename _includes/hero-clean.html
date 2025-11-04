@@ -1,11 +1,56 @@
-<div class="hero-section">
+<style>
+.hero-section-bold-black {
+  background: #000000;
+  padding: 6rem 2rem;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section-bold-black::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 113, 227, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-title-bold-white {
+  color: #ffffff !important;
+  font-size: 3.5rem;
+  font-weight: 900 !important;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section-bold-black {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero-title-bold-white {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-bold-white {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<div class="hero-section-bold-black">
   <div class="hero-content">
-    <div class="hero-eyebrow">Biostatistics & Causal Inference</div>
-    <h1 class="hero-title">Advancing healthcare through statistical innovation</h1>
-    <p class="hero-subtitle">PhD Research Fellow at Queen Mary University of London, specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations.</p>
-    <div class="hero-buttons">
-      <a href="#featured-work" class="btn btn-primary">View My Work</a>
-      <a href="/contact" class="btn btn-secondary">Get in Touch</a>
-    </div>
+    <h1 class="hero-title-bold-white">Advancing healthcare through statistical innovation</h1>
   </div>
 </div>

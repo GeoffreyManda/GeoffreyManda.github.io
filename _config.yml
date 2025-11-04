@@ -22,8 +22,6 @@ header_pages:
   - index.md
   - about.md
   - research.md
-  - projects.md
-  - tutorials.md
   - contact.md
 
 # Plugins

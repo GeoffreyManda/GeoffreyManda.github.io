@@ -19,34 +19,34 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="PhD Research Fellow in Biostatistics &amp; Epidemiology at Queen Mary University of London. Specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations." />
 <meta property="og:description" content="PhD Research Fellow in Biostatistics &amp; Epidemiology at Queen Mary University of London. Specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations." />
-<link rel="canonical" href="/" />
-<meta property="og:url" content="/" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Home" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Geoffrey Manda"},"description":"PhD Research Fellow in Biostatistics &amp; Epidemiology at Queen Mary University of London. Specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations.","headline":"Home","name":"Home","url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Geoffrey Manda"},"description":"PhD Research Fellow in Biostatistics &amp; Epidemiology at Queen Mary University of London. Specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations.","headline":"Home","name":"Home","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/">
+  <meta property="og:url" content="http://localhost:4000/">
   <meta property="og:title" content="Home | Home">
   <meta property="og:description" content="PhD Research Fellow in Biostatistics & Epidemiology at Queen Mary University of London. Specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations.">
-  <meta property="og:image" content="/assets/images/og-image.jpg">
+  <meta property="og:image" content="http://localhost:4000/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="/">
+  <meta property="twitter:url" content="http://localhost:4000/">
   <meta property="twitter:title" content="Home | Home">
   <meta property="twitter:description" content="PhD Research Fellow in Biostatistics & Epidemiology at Queen Mary University of London. Specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations.">
-  <meta property="twitter:image" content="/assets/images/og-image.jpg">
+  <meta property="twitter:image" content="http://localhost:4000/assets/images/og-image.jpg">
   <meta name="twitter:creator" content="@geoffreymanda">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="http://localhost:4000/">
 
   <!-- Theme Color for mobile browsers -->
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -67,7 +67,7 @@
   <link rel="stylesheet" href="/assets/css/apple-force.css">
   <link rel="stylesheet" href="/assets/css/nuclear-override.css">
 
-  <!-- RSS Feed --><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Home" /><!-- Structured Data -->
+  <!-- RSS Feed --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" /><!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -78,7 +78,7 @@
       "@type": "Organization",
       "name": "Queen Mary University of London"
     },
-    "url": "",
+    "url": "http://localhost:4000",
     "sameAs": [
       "https://www.linkedin.com/in/geoffreymanda/",
       "https://github.com/GeoffreyManda",
@@ -106,114 +106,569 @@
           <span></span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/research/">Research</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/tutorials/">Tutorials</a><a class="page-link" href="/contact/">Contact</a></div>
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/research/">Research &amp; Projects</a><a class="page-link" href="/contact/">Contact</a></div>
       </nav></div>
 </header>
 
 
     <main class="page-content" aria-label="Content" id="main-content">
-      <div class="hero-section">
+      <style>
+.hero-section-bold-black {
+  background: #000000;
+  padding: 6rem 2rem;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section-bold-black::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 113, 227, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-title-bold-white {
+  color: #ffffff !important;
+  font-size: 3.5rem;
+  font-weight: 900 !important;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section-bold-black {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero-title-bold-white {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-bold-white {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<div class="hero-section-bold-black">
   <div class="hero-content">
-    <div class="hero-eyebrow">Biostatistics & Causal Inference</div>
-    <h1 class="hero-title">Advancing healthcare through statistical innovation</h1>
-    <p class="hero-subtitle">PhD Research Fellow at Queen Mary University of London, specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations.</p>
-    <div class="hero-buttons">
-      <a href="#featured-work" class="btn btn-primary">View My Work</a>
-      <a href="/contact" class="btn btn-secondary">Get in Touch</a>
-    </div>
+    <h1 class="hero-title-bold-white">Advancing healthcare through statistical innovation</h1>
   </div>
 </div>
 
 
 <div class="home-content">
-  <section id="featured-work" class="featured-section">
-  <div class="container">
-    <h2>Featured Research</h2>
-    <div class="grid grid-3">
-      <div class="card">
-        <h3>Causal Inference &amp; Discovery</h3>
-        <p>Editor of <a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a> – advancing resources on causality and causal inference for researchers worldwide.</p>
-        <a href="about#research" class="card-link">Learn More →</a>
-      </div>
-      <div class="card">
-        <h3>Pediatric Oncology</h3>
-        <p>Investigating treatment outcomes, quality of life, and survival analysis in childhood cancer patients across Sub-Saharan Africa.</p>
-        <a href="about#publications" class="card-link">View Publications →</a>
-      </div>
-      <div class="card">
-        <h3>Public Health</h3>
-        <p>Research on household air pollution, infectious diseases, and health systems strengthening in resource-limited settings.</p>
-        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" rel="noopener" class="card-link">Google Scholar →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="expertise-section">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Areas of Expertise</h2>
-      <p class="section-description">Specialized methodologies in biostatistics and epidemiological research</p>
-    </div>
-    <div class="grid grid-3">
-      <div class="card">
-        <h3>Causal Inference</h3>
-        <p>Advanced methods for establishing causality in observational data, including propensity score methods, instrumental variables, and causal discovery algorithms.</p>
-      </div>
-      <div class="card">
-        <h3>Biostatistics</h3>
-        <p>Survival analysis, clinical trials methodology, mixed-effects models, and statistical approaches for longitudinal healthcare data.</p>
-      </div>
-      <div class="card">
-        <h3>Public Health</h3>
-        <p>Pediatric oncology outcomes, infectious disease epidemiology, environmental health, and health systems strengthening in Sub-Saharan Africa.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="recent-section">
+  <section id="featured-work" class="expertise-section">
   <div class="container-narrow">
-    <div class="section-header">
-      <h2 class="section-title">Recent Publications</h2>
-      <p class="section-description">Selected work from 26+ publications with 150+ citations</p>
+    <h2 class="section-title-center">Research Focus</h2>
+
+    <div class="research-carousel-container">
+      <button class="research-carousel-btn research-carousel-btn-prev" aria-label="Previous research area">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 12L18 24L30 36" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div class="research-carousel-stage">
+        <div class="research-carousel-track">
+          <div class="research-card" data-index="0">
+            <div class="research-card-inner">
+              <div class="research-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" />
+                  <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Causal Inference &amp; Discovery</h3>
+              <p>Developing statistical and algorithmic foundations for causal discovery from observational data, integrating methods from graphical models, structural equation modeling, and machine learning.</p>
+              <a href="research#causal-inference-tutorials" class="card-link-text">View Tutorials →</a>
+            </div>
+          </div>
+
+          <div class="research-card" data-index="1">
+            <div class="research-card-inner">
+              <div class="research-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 3v18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M7 16l4-6 3 3 5-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="7" cy="16" r="1.5" fill="currentColor" />
+                  <circle cx="11" cy="10" r="1.5" fill="currentColor" />
+                  <circle cx="14" cy="13" r="1.5" fill="currentColor" />
+                  <circle cx="19" cy="6" r="1.5" fill="currentColor" />
+                </svg>
+              </div>
+              <h3>Biostatistics &amp; Clinical Trials</h3>
+              <p>Advanced statistical methods for clinical trials, observational studies, survival analysis, and longitudinal data analysis with applications in pediatric nutrition and oncology.</p>
+              <a href="research" class="card-link-text">View Publications →</a>
+            </div>
+          </div>
+
+          <div class="research-card" data-index="2">
+            <div class="research-card-inner">
+              <div class="research-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Public Health &amp; Health Systems</h3>
+              <p>Evidence synthesis, program design and evaluation, mixed methods research, and health policy development for maternal-child health, infectious diseases, and nutrition interventions.</p>
+              <a href="research" class="card-link-text">View Publications →</a>
+            </div>
+          </div>
+
+          <div class="research-card" data-index="3">
+            <div class="research-card-inner">
+              <div class="research-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 22V12h6v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Statistical &amp; Methodological Consulting</h3>
+              <p>Expert consulting on study design, causal inference methods, statistical analysis, and data science solutions for academic research, clinical trials, and public health programs.</p>
+              <a href="about" class="card-link-text" style="margin-right: 1rem;">Learn More →</a>
+              <a href="contact" class="card-link-text">Get in Touch →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="research-carousel-btn research-carousel-btn-next" aria-label="Next research area">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 12L30 24L18 36" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
     </div>
-    <div class="update-timeline">
-      <div class="card">
-        <div class="update-date">2024</div>
-        <h4>Effect of Fatty Acid Profiles in Therapeutic Foods</h4>
-        <p><strong>Nienaber A, Conradie C, Manda G, et al.</strong> <em>Nutrition Reviews, 82</em>(12), 1784-1799. Systematic review on neurodevelopmental outcomes of children with severe wasting.</p>
-      </div>
-      <div class="card">
-        <div class="update-date">2023</div>
-        <h4>Wilms Tumor Therapy in Lilongwe, Malawi</h4>
-        <p><strong>Holmes DM, Matatiyo A, Mpasa A, Manda G, et al.</strong> <em>Pediatric Blood and Cancer, 70</em>(5), e30242. <strong>Cited by 14.</strong> Resource-adapted treatment outcomes 2016-2021.</p>
-        <a href="https://doi.org/10.1002/pbc.30242" target="_blank" rel="noopener" class="card-link">View Publication →</a>
-      </div>
-      <div class="card">
-        <div class="update-date">2022</div>
-        <h4>Malnutrition in Childhood Cancer in Malawi</h4>
-        <p><strong>Huibers MHW, Manda G, Silverstein A, et al.</strong> <em>Nutrition and Cancer, 74</em>(9), 3322-3328. <strong>Cited by 13.</strong> Age-related malnutrition burden among 463 children.</p>
-      </div>
-      <div class="card">
-        <div class="update-date">2021</div>
-        <h4>Pediatric Lymphoma Quality of Life in Malawi</h4>
-        <p><strong>Ellis GK, Chapman H, Manda A, Manda G, et al.</strong> <em>Pediatric Blood and Cancer, 68</em>(10), e29257. <strong>Cited by 13.</strong> Patient-reported outcomes study using PROMIS-25.</p>
-      </div>
-    </div>
-    <div class="text-center mt-xl">
-      <a href="research" class="btn btn-secondary">View All Publications</a>
-    </div>
+
+    <div class="research-carousel-dots"></div>
   </div>
 </section>
 
-<section class="contact-preview">
-  <div class="container-narrow">
-    <h2>Let's Collaborate</h2>
-    <p class="lead">Interested in working together on causal inference, biostatistics, or public health research?</p>
-    <a href="contact" class="btn btn-primary">Get in Touch</a>
-  </div>
-</section>
+<style>
+/* Publications Section - Bold Black Background */
+.publications-home {
+  background: #000000;
+  padding: 5rem 0;
+  margin: 4rem 0;
+}
+
+.publications-home .section-title {
+  color: #ffffff !important;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.publications-home .section-description {
+  color: #ffffff !important;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  letter-spacing: 0.3px;
+}
+
+/* Center title */
+.section-title-center {
+  text-align: center;
+  color: #1d1d1f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+/* Research Carousel Container */
+.research-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 2rem 0;
+}
+
+/* Carousel Stage - 3D Perspective */
+.research-carousel-stage {
+  perspective: 2000px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.research-carousel-track {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Research Cards - iTunes Album Style */
+.research-card {
+  position: absolute;
+  width: 400px;
+  max-width: 90%;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.research-card-inner {
+  background: #ffffff;
+  border: 2px solid #d1d1d6;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  transition: all 0.6s ease;
+  height: 100%;
+}
+
+/* Card States - Cover Flow Style */
+.research-card[data-position="center"] {
+  transform: translateX(0) translateZ(0) scale(1);
+  z-index: 3;
+  opacity: 1;
+}
+
+.research-card[data-position="center"] .research-card-inner {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  border-color: #0071e3;
+}
+
+.research-card[data-position="left"] {
+  transform: translateX(-280px) translateZ(-200px) rotateY(35deg) scale(0.85);
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.research-card[data-position="right"] {
+  transform: translateX(280px) translateZ(-200px) rotateY(-35deg) scale(0.85);
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.research-card[data-position="hidden-left"],
+.research-card[data-position="hidden-right"] {
+  transform: translateX(0) translateZ(-400px) scale(0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Research Card Content */
+.research-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  border: 2px solid #d1d1d6;
+  color: #0071e3;
+  transition: all 0.3s ease;
+}
+
+.research-card[data-position="center"] .research-icon {
+  background: linear-gradient(135deg, #0071e3 0%, #005bb5 100%);
+  border-color: #0071e3;
+  color: #ffffff;
+}
+
+.research-card h3 {
+  color: #1d1d1f;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.research-card p {
+  color: #48484a;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.card-link-text {
+  display: inline-block;
+  color: #0071e3;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.card-link-text:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
+
+/* Navigation Buttons */
+.research-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  border: 2px solid #d1d1d6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.research-carousel-btn:hover {
+  background: #0071e3;
+  border-color: #0071e3;
+  box-shadow: 0 8px 24px rgba(0, 113, 227, 0.3);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.research-carousel-btn:hover svg {
+  color: #ffffff;
+}
+
+.research-carousel-btn svg {
+  color: #1d1d1f;
+  transition: color 0.3s ease;
+}
+
+.research-carousel-btn-prev {
+  left: -36px;
+}
+
+.research-carousel-btn-next {
+  right: -36px;
+}
+
+/* Carousel Dots */
+.research-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2rem;
+}
+
+.research-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d1d1d6;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.research-carousel-dot.active {
+  background: #0071e3;
+  width: 32px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title-center {
+    font-size: 2rem;
+  }
+
+  .research-carousel-stage {
+    min-height: 380px;
+  }
+
+  .research-carousel-track {
+    height: 350px;
+  }
+
+  .research-card {
+    width: 320px;
+  }
+
+  .research-card-inner {
+    padding: 2rem 1.5rem;
+  }
+
+  .research-card[data-position="left"] {
+    transform: translateX(-200px) translateZ(-150px) rotateY(30deg) scale(0.75);
+  }
+
+  .research-card[data-position="right"] {
+    transform: translateX(200px) translateZ(-150px) rotateY(-30deg) scale(0.75);
+  }
+
+  .research-carousel-btn {
+    width: 56px;
+    height: 56px;
+  }
+
+  .research-carousel-btn svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .research-carousel-btn-prev {
+    left: 8px;
+  }
+
+  .research-carousel-btn-next {
+    right: 8px;
+  }
+
+  .research-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .research-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .research-card p {
+    font-size: 0.9375rem;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('.research-carousel-track');
+  const cards = Array.from(document.querySelectorAll('.research-card'));
+  const prevBtn = document.querySelector('.research-carousel-btn-prev');
+  const nextBtn = document.querySelector('.research-carousel-btn-next');
+  const dotsContainer = document.querySelector('.research-carousel-dots');
+
+  if (!track || cards.length === 0) return;
+
+  let currentIndex = 0;
+
+  // Generate dots
+  cards.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.classList.add('research-carousel-dot');
+    dot.setAttribute('aria-label', `Go to research area ${index + 1}`);
+    if (index === 0) dot.classList.add('active');
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = Array.from(dotsContainer.children);
+
+  // Update card positions
+  function updateCards() {
+    cards.forEach((card, index) => {
+      card.removeAttribute('data-position');
+
+      const diff = index - currentIndex;
+
+      if (diff === 0) {
+        card.setAttribute('data-position', 'center');
+      } else if (diff === -1 || (currentIndex === 0 && index === cards.length - 1)) {
+        card.setAttribute('data-position', 'left');
+      } else if (diff === 1 || (currentIndex === cards.length - 1 && index === 0)) {
+        card.setAttribute('data-position', 'right');
+      } else if (diff < -1) {
+        card.setAttribute('data-position', 'hidden-left');
+      } else {
+        card.setAttribute('data-position', 'hidden-right');
+      }
+    });
+
+    // Update dots
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  // Next button
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    updateCards();
+  });
+
+  // Previous button
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    updateCards();
+  });
+
+  // Dot navigation
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentIndex = index;
+      updateCards();
+    });
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      prevBtn.click();
+    } else if (e.key === 'ArrowRight') {
+      nextBtn.click();
+    }
+  });
+
+  // Auto-play carousel - advance every 10 seconds
+  let autoPlayInterval = setInterval(() => {
+    nextBtn.click();
+  }, 10000);
+
+  // Pause auto-play on hover
+  const carouselContainer = document.querySelector('.research-carousel-container');
+  carouselContainer.addEventListener('mouseenter', () => {
+    clearInterval(autoPlayInterval);
+  });
+
+  // Resume auto-play when mouse leaves
+  carouselContainer.addEventListener('mouseleave', () => {
+    autoPlayInterval = setInterval(() => {
+      nextBtn.click();
+    }, 10000);
+  });
+
+  // Pause auto-play when user interacts
+  [prevBtn, nextBtn, ...dots].forEach(element => {
+    element.addEventListener('click', () => {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = setInterval(() => {
+        nextBtn.click();
+      }, 10000);
+    });
+  });
+
+  // Initialize
+  updateCards();
+});
+</script>
+
 
 </div>
 
@@ -267,172 +722,9 @@
       <div class="footer-copyright">
         <p>&copy; 2025 Geoffrey Manda. All rights reserved.</p>
       </div>
-      <div class="footer-social">
-        <a href="https://github.com/GeoffreyManda" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-          </svg>
-        </a>
-        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" class="social-link" target="_blank" rel="noopener" aria-label="Google Scholar">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/geoffreymanda" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-          </svg>
-        </a>
-      </div>
     </div>
   </div>
 </footer>
-
-
-    <!-- Dark Mode Toggle -->
-    <div class="theme-toggle" role="region" aria-label="Theme toggle">
-    <button 
-        id="theme-toggle-button"
-        class="theme-toggle-button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-        role="switch"
-        aria-checked="false">
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <circle cx="12" cy="12" r="5" fill="currentColor" />
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-        </svg>
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </button>
-</div>
-
-<style>
-    .theme-toggle {
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        z-index: 1000;
-        background: var(--glass-bg);
-        backdrop-filter: var(--glass-blur);
-        -webkit-backdrop-filter: var(--glass-blur);
-        border: var(--glass-border);
-        border-radius: var(--radius-full);
-        padding: 0.5rem;
-        box-shadow: var(--glass-shadow);
-        transition: all 0.3s var(--ease-in-out);
-    }
-
-    .theme-toggle:hover {
-        transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 12px 40px rgba(249, 115, 22, 0.15);
-        border-color: var(--glass-highlight);
-    }
-
-    .theme-toggle-button {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0.5rem;
-        border-radius: var(--radius-full);
-        color: var(--color-text-primary);
-        transition: all 0.3s var(--ease-in-out);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
-    .theme-toggle-button:hover {
-        background: linear-gradient(45deg, 
-            rgba(249, 115, 22, 0.1) 0%,
-            rgba(168, 85, 247, 0.1) 100%);
-    }
-
-    .theme-toggle-button:focus {
-        outline: none;
-        box-shadow: 0 0 0 2px var(--primary-400), 0 0 0 4px rgba(249, 115, 22, 0.2);
-    }
-
-    .theme-toggle svg {
-        width: 1.5rem;
-        height: 1.5rem;
-        stroke: currentColor;
-        fill: none;
-        stroke-width: 2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        transition: all 0.3s var(--ease-in-out);
-    }
-
-    .theme-toggle-button:hover svg {
-        transform: rotate(15deg);
-        color: var(--primary-500);
-    }
-
-    .theme-toggle .sun-icon {
-        color: var(--primary-500);
-    }
-
-    .theme-toggle .moon-icon {
-        color: var(--secondary-500);
-    }
-
-    .theme-toggle-button[aria-checked="true"] .sun-icon {
-        display: none;
-    }
-
-    .theme-toggle-button[aria-checked="false"] .moon-icon {
-        display: none;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-        .theme-toggle,
-        .theme-toggle-button,
-        .theme-toggle svg {
-            transition: none;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .theme-toggle {
-            bottom: 1rem;
-            right: 1rem;
-        }
-    }
-</style>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const themeToggle = document.getElementById('theme-toggle-button');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        // Set initial state
-        const currentTheme = localStorage.getItem('theme') || 
-            (prefersDarkScheme.matches ? 'dark' : 'light');
-        document.documentElement.classList.toggle('dark-mode', currentTheme === 'dark');
-        themeToggle.setAttribute('aria-checked', currentTheme === 'dark');
-
-        // Toggle theme
-        themeToggle.addEventListener('click', () => {
-            const isDark = document.documentElement.classList.toggle('dark-mode');
-            themeToggle.setAttribute('aria-checked', isDark);
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        });
-
-        // Listen for system theme changes
-        prefersDarkScheme.addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                const isDark = e.matches;
-                document.documentElement.classList.toggle('dark-mode', isDark);
-                themeToggle.setAttribute('aria-checked', isDark);
-            }
-        });
-    });
-</script>
-
 
 
     <!-- Floating Contact Button -->
@@ -475,7 +767,7 @@
       document.body.style.opacity = '0';
       window.addEventListener('load', () => {
         setTimeout(() => {
-          document.body.style.transition = 'opacity 0.6s var(--ease-out)';
+          document.body.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.6, 1)';
           document.body.style.opacity = '1';
         }, 50);
       });

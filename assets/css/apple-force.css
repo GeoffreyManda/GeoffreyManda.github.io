@@ -6,21 +6,23 @@
 
 /* ===== FORCE APPLE COLORS EVERYWHERE ===== */
 
-/* Force black headings everywhere */
+/* Force black headings everywhere - CENTER ALIGNED */
 h1, h2, h3, h4, h5, h6,
 .hero-title, .section-title, .card h3, .card h4,
 .feature-card h3, .expertise-area h3, .update-item h3,
 .project h3, .about h3 {
   color: #1d1d1f !important;
   font-weight: 600 !important;
+  text-align: center !important;
 }
 
-/* Force grey body text everywhere */
+/* Force grey body text everywhere - CENTER ALIGNED */
 p, .lead, .hero-subtitle, .section-description,
 .card p, .feature-card p, .expertise-area p,
 .update-content p, .project p {
   color: #48484a !important;
   font-weight: 400 !important;
+  text-align: center !important;
 }
 
 /* Remove ALL background gradients */
@@ -52,6 +54,9 @@ a:hover, .card-link:hover, .feature-link:hover {
   background: #0071e3 !important;
   color: #ffffff !important;
   border: none !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .btn-primary:hover, .btn.btn-primary:hover {
@@ -62,11 +67,26 @@ a:hover, .card-link:hover, .feature-link:hover {
   background: transparent !important;
   color: #0071e3 !important;
   border: 1px solid #0071e3 !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .btn-secondary:hover, .btn.btn-secondary:hover {
   background: #0071e3 !important;
   color: #ffffff !important;
+}
+
+/* Force center-aligned button containers - ROW layout for side by side */
+.hero-buttons, .button-group, .text-center,
+div:has(> .btn), div:has(> a.btn) {
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
 }
 
 /* Remove any colored text */
@@ -128,11 +148,28 @@ a:hover, .card-link:hover, .feature-link:hover {
   text-decoration: none !important;
   opacity: 0.8 !important;
   transition: opacity 0.3s !important;
+  text-align: center !important;
 }
 
 .page-link:hover,
 .page-link.active {
   opacity: 1 !important;
+}
+
+/* Force center-aligned navigation */
+.site-header, .site-nav {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.wrapper {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.trigger {
+  text-align: center !important;
+  justify-content: center !important;
 }
 
 /* Hide burger menu on desktop */
@@ -290,20 +327,43 @@ a:hover, .card-link:hover, .feature-link:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* ===== PROPER ALIGNMENT: Symmetric grids, left-aligned text ===== */
+/* ===== PROPER ALIGNMENT: Symmetric grids, center-aligned text ===== */
 
-/* TEXT inside elements: LEFT aligned */
-h1, h2, h3, h4, h5, h6, p, .lead,
-.hero-title, .hero-subtitle, .section-title,
-.card h3, .card h4, .card p,
-.feature-card h3, .feature-card p {
-  text-align: left !important;
+/* Force center-alignment on ALL card/box elements and children */
+.card, .card *,
+.feature-card, .feature-card *,
+.expertise-area, .expertise-area *,
+.update-item, .update-item *,
+.project, .project *,
+.publication, .publication *,
+.post, .post * {
+  text-align: center !important;
 }
 
-/* Paragraphs: JUSTIFIED */
-p, .lead, .hero-subtitle, .card p {
-  text-align: justify !important;
-  text-justify: inter-word !important;
+/* Card headings - center-aligned */
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
+.feature-card h1, .feature-card h2, .feature-card h3, .feature-card h4,
+.expertise-area h1, .expertise-area h2, .expertise-area h3, .expertise-area h4,
+.update-item h1, .update-item h2, .update-item h3, .update-item h4,
+.project h1, .project h2, .project h3, .project h4,
+.publication h1, .publication h2, .publication h3, .publication h4 {
+  text-align: center !important;
+}
+
+/* Card paragraphs - center-aligned (NOT justified) */
+.card p, .feature-card p, .expertise-area p,
+.update-item p, .project p, .publication p, .post p {
+  text-align: center !important;
+}
+
+/* Card links - centered */
+.card a, .card .card-link,
+.feature-card a, .feature-card .feature-link,
+.expertise-area a, .update-item a, .project a, .publication a {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* GRIDS & CONTAINERS: Centered for symmetry */
@@ -314,7 +374,7 @@ p, .lead, .hero-subtitle, .card p {
   margin-right: auto !important;
 }
 
-/* Sections can be centered */
+/* Sections centered */
 section {
   margin-left: auto !important;
   margin-right: auto !important;
