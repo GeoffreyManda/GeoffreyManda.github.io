@@ -3352,30 +3352,6 @@ a[target="_blank"]:not(.btn-primary):not(.btn-secondary):not(.feature-link)::aft
 }
 
 /* Interactive Cursor Glow - Professional Orange/Purple */
-.cursor-glow {
-  position: fixed;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(242, 100, 25, 0.12) 0%,
-    rgba(147, 51, 234, 0.08) 30%,
-    transparent 70%
-  );
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: screen;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-  will-change: transform;
-}
-
-@media (max-width: 768px) {
-  .cursor-glow {
-    display: none;
-  }
-}
 
 /* Better Mobile Menu */
 .site-nav .menu-icon {
