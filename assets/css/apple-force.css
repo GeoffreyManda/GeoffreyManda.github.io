@@ -81,6 +81,17 @@ a:hover, .card-link:hover, .feature-link:hover {
 
 /* ===== APPLE NAVIGATION & BURGER MENU ===== */
 
+/* FORCE HIDE site-title (Geoffrey Manda duplication) */
+.site-title {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
 .site-header {
   background: rgba(255, 255, 255, 0.72) !important;
   backdrop-filter: saturate(180%) blur(20px) !important;
