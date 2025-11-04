@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary University of London. Editor of CausalAtlas.org with expertise in biostatistics, causal inference, and global health research.
 ---
 
 <div class="hero-section hero-section--centered">

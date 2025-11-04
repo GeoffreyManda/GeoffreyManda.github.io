@@ -181,6 +181,76 @@
   --glass-highlight: rgba(255, 255, 255, 0.05);
 }
 
+/* Dark Mode Theme - World-class implementation */
+.dark-mode {
+  /* Background colors for dark mode */
+  --color-bg-primary: #0a0a0b;
+  --color-bg-secondary: #141416;
+  --color-bg-tertiary: #1e1e20;
+  --color-bg-accent: var(--primary-500);
+
+  /* Text colors for dark mode */
+  --color-text-primary: #f5f5f7;
+  --color-text-secondary: #98989f;
+  --color-text-tertiary: #6e6e73;
+  --color-text-accent: var(--primary-400);
+  --color-text-on-accent: white;
+
+  /* Border colors for dark mode */
+  --color-border-primary: rgba(255, 255, 255, 0.1);
+  --color-border-secondary: rgba(255, 255, 255, 0.15);
+  --color-border-accent: var(--primary-700);
+
+  /* Link colors for dark mode */
+  --color-link: var(--primary-400);
+  --color-link-hover: var(--primary-300);
+
+  /* Shadows for dark mode */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+  --shadow-2xl: 0 16px 48px 0 rgba(0, 0, 0, 0.7);
+  --shadow-outline: 0 0 0 4px rgba(14, 165, 233, 0.3);
+
+  /* Dark mode specific variables */
+  --background-gradient: linear-gradient(180deg, #0a0a0b 0%, #141416 100%);
+  --glass-bg: rgba(30, 30, 32, 0.72);
+  --glass-blur: blur(20px) saturate(180%);
+  --heading-color: #f5f5f7;
+  --text-color: #98989f;
+  --card-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
+  --card-bg: rgba(30, 30, 32, 0.8);
+  --card-blur: blur(20px) saturate(180%);
+  --nav-bg: rgba(20, 20, 22, 0.85);
+  --nav-blur: blur(20px) saturate(180%);
+  --nav-border: 1px solid rgba(255, 255, 255, 0.1);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+  --glass-highlight: rgba(255, 255, 255, 0.08);
+
+  /* Adjust button and interactive element colors */
+  color-scheme: dark;
+}
+
+/* Smooth transitions for theme switching */
+html {
+  transition: background-color 0.3s var(--ease-in-out), color 0.3s var(--ease-in-out);
+}
+
+body,
+.hero-section,
+.feature-card,
+.expertise-area,
+.contact-preview,
+.site-header,
+.site-footer {
+  transition: background-color 0.3s var(--ease-in-out),
+              color 0.3s var(--ease-in-out),
+              border-color 0.3s var(--ease-in-out),
+              box-shadow 0.3s var(--ease-in-out);
+}
+
 /* Base Styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -193,6 +263,52 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+/* Accessibility - Skip Link (World-class implementation) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  padding: 1rem 2rem;
+  background: var(--primary-600);
+  color: white;
+  font-weight: 600;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.4);
+  transition: top 0.3s var(--ease-out);
+  text-decoration: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--primary-300);
+  outline-offset: 2px;
+}
+
+/* Enhanced focus states for all interactive elements */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--primary-400);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Typography */

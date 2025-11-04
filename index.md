@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Geoffrey Manda
+description: PhD Research Fellow in Biostatistics & Epidemiology at Queen Mary University of London. Specializing in causal inference, clinical trials, and public health research with 26+ publications and 150+ citations.
 ---
 
 <section id="featured-work" class="featured-section">
