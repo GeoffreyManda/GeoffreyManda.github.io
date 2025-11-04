@@ -4,7 +4,7 @@
  * Remove ALL centered layouts
  */
 
-/* Force left alignment on ALL text elements */
+/* Force left alignment on TEXT CONTENT (not containers) */
 h1, h2, h3, h4, h5, h6,
 p, .lead, .hero-title, .hero-subtitle, .hero-eyebrow,
 .section-title, .section-description,
@@ -19,11 +19,11 @@ p, .lead, .hero-subtitle, .section-description, .card p {
   text-justify: inter-word !important;
 }
 
-/* Override any centered sections */
-section, .hero-section, .section-header,
-.featured-section, .expertise-section, .recent-section,
-.contact-preview {
-  text-align: left !important;
+/* Containers stay centered for grid symmetry */
+.grid, .container, .container-narrow,
+.featured-section, .expertise-section {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* Remove gradient heading nonsense */

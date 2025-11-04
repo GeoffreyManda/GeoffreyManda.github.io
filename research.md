@@ -30,7 +30,6 @@ permalink: /research/
 
   <section style="padding: var(--space-3xl) 0;">
     <h2>Recent Publications</h2>
-    <p class="text-muted" style="margin-bottom: var(--space-xl);">Publications retrieved from EMBASE using search query: (geoffrey OR elihu) AND manda</p>
 
     <div class="card" style="margin-bottom: var(--space-lg);">
       <div class="update-date">2024</div>
