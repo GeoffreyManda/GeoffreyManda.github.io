@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initNavigation();
   initLazyLoading();
+  init3DCardTilt();
+  initParallaxEffects();
+  initCursorGlow();
 });
 
 // ============================================================================
@@ -156,6 +159,113 @@ function isInViewport(element) {
     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
+}
+
+// ============================================================================
+// 3D CARD TILT EFFECT - Ultra Premium
+// ============================================================================
+
+function init3DCardTilt() {
+  if (!window.matchMedia('(prefers-reduced-motion: no-preference)').matches) return;
+
+  const cards = document.querySelectorAll('.card, .feature-card, .expertise-area, .project-card');
+
+  cards.forEach(card => {
+    card.addEventListener('mousemove', handleTilt);
+    card.addEventListener('mouseleave', resetTilt);
+  });
+
+  function handleTilt(e) {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * -8;
+    const rotateY = ((x - centerX) / centerX) * 8;
+
+    card.style.transform = `
+      perspective(1000px)
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+      translateY(-16px)
+      scale3d(1.03, 1.03, 1.03)
+    `;
+  }
+
+  function resetTilt(e) {
+    const card = e.currentTarget;
+    card.style.transform = '';
+  }
+}
+
+// ============================================================================
+// PARALLAX SCROLLING EFFECTS
+// ============================================================================
+
+function initParallaxEffects() {
+  if (!window.matchMedia('(prefers-reduced-motion: no-preference)').matches) return;
+
+  const parallaxElements = document.querySelectorAll('.hero-section, .hero-content, .feature-section');
+
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const scrolled = window.pageYOffset;
+
+        parallaxElements.forEach((element, index) => {
+          const speed = 0.3 + (index * 0.1);
+          const yPos = -(scrolled * speed);
+          const rect = element.getBoundingClientRect();
+
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.style.transform = `translate3d(0, ${yPos}px, 0)`;
+          }
+        });
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+}
+
+// ============================================================================
+// INTERACTIVE CURSOR GLOW
+// ============================================================================
+
+function initCursorGlow() {
+  if (window.matchMedia('(max-width: 768px)').matches) return;
+  if (!window.matchMedia('(prefers-reduced-motion: no-preference)').matches) return;
+
+  const glow = document.createElement('div');
+  glow.className = 'cursor-glow';
+  document.body.appendChild(glow);
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let glowX = 0;
+  let glowY = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animateGlow() {
+    glowX += (mouseX - glowX) * 0.1;
+    glowY += (mouseY - glowY) * 0.1;
+
+    glow.style.transform = `translate(${glowX}px, ${glowY}px)`;
+    requestAnimationFrame(animateGlow);
+  }
+
+  animateGlow();
 }
 
 // ============================================================================
