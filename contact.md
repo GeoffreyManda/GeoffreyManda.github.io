@@ -11,7 +11,7 @@ description: Get in touch with Geoffrey Manda for biostatistical consulting, res
     <p>Have a question or interested in collaboration? I'd love to hear from you.</p>
   </div>
   <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=600&fit=crop&q=80" alt="Contact and communication" style="border-radius: 20px; box-shadow: 0 20px 60px rgba(31, 38, 135, 0.2);">
+    <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=600&fit=crop&q=80" alt="Contact and communication">
   </div>
 </div>
 
@@ -45,15 +45,15 @@ description: Get in touch with Geoffrey Manda for biostatistical consulting, res
         </div>
 
         <input type="hidden" name="_next" value="https://geoffreymanda.github.io/contact?submitted=true">
-        <input type="text" name="_gotcha" style="display:none">
+        <input type="text" name="_gotcha">
 
         <button type="submit" class="submit-button">Send Message</button>
-        <p style="font-size: 0.875rem; color: var(--color-text-tertiary); margin-top: 1rem; text-align: center;">
+        <p>
           Your message will be sent securely via Formspree
         </p>
       </form>
 
-      <div id="form-status" style="display: none; margin-top: 1.5rem; padding: 1rem; border-radius: 12px; text-align: center;"></div>
+      <div id="form-status"></div>
     </div>
   </div>
 

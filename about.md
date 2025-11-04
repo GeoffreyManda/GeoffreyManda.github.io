@@ -9,10 +9,10 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
   <div class="hero-content">
     <h1>Geoffrey Manda, MBBS, MSc</h1>
     <p>PhD Research Fellow in Biostatistics & Epidemiology | Queen Mary University of London<br>
-    Editor, <a href="https://causalatlas.org" target="_blank" rel="noopener" style="color: var(--primary-600); text-decoration: underline;">CausalAtlas.org</a> – Advancing Resources on Causality and Causal Inference</p>
+    Editor, <a href="https://causalatlas.org" target="_blank" rel="noopener" >CausalAtlas.org</a> – Advancing Resources on Causality and Causal Inference</p>
   </div>
   <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&q=80" alt="Data analysis and research visualization" style="border-radius: 20px; box-shadow: 0 20px 60px rgba(31, 38, 135, 0.2);">
+    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&q=80" alt="Data analysis and research visualization">
   </div>
 </div>
 
@@ -79,7 +79,7 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
       <div class="project">
         <h3>PhD in Nutrition (Biostatistics & Epidemiology)</h3>
         <p><strong>Queen Mary University of London</strong> | September 2025 – September 2029</p>
-        <p style="font-size: 0.9375rem; margin-top: 0.5rem; color: var(--color-text-secondary);">
+        <p >
           <strong>Thesis:</strong> Integrating Causal Inference, Causal Discovery, and State Transition Modelling to Investigate Long-Term Recovery Trajectories in Children Convalescing from Severe Acute Malnutrition
           <br><strong>Advisors:</strong> Prof. Andrew Prendergast & Prof. Melanie Smuk
           <br><strong>Funding:</strong> CREATE PhD Fellowship (£74,000)
@@ -89,7 +89,7 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
       <div class="project">
         <h3>MSc in Public Health</h3>
         <p><strong>London School of Hygiene & Tropical Medicine</strong> | September 2020 – September 2021</p>
-        <p style="font-size: 0.9375rem; margin-top: 0.5rem; color: var(--color-text-secondary);">
+        <p >
           <strong>Thesis:</strong> Determinants of neonatal mortality in Malawi, 2019-2020: A spatiotemporal analysis of the NEST360° baseline data
           <br><strong>Supervisors:</strong> Prof. Kelias Msyamboza (WHO) & Prof. Eric Ohuma (LSHTM)
           <br><strong>GPA:</strong> 4.0/5.0 | <strong>Funding:</strong> Commonwealth Masters Scholarship (£40,000)
@@ -99,7 +99,7 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
       <div class="project">
         <h3>MBBS (Bachelor of Medicine, Bachelor of Surgery)</h3>
         <p><strong>University of Malawi, College of Medicine</strong> | January 2010 – July 2015</p>
-        <p style="font-size: 0.9375rem; margin-top: 0.5rem; color: var(--color-text-secondary);">
+        <p >
           <strong>Thesis:</strong> Cancer survival in Malawi: A retrospective cohort study (Distinction grade)
           <br><em>US Doctor of Medicine (MD) Equivalent</em>
         </p>
@@ -178,7 +178,7 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
       <h2>Selected Publications</h2>
     </div>
     <div class="project-publications">
-      <p style="text-align: center; margin-bottom: 2rem; font-size: 1.0625rem; color: var(--color-text-secondary);">
+      <p >
         Highlighting key research contributions in epidemiology, pediatric oncology, and public health.
       </p>
       <ul class="publication-list">
@@ -214,12 +214,12 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
         </li>
       </ul>
 
-      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--color-gray-50); border-radius: 16px; border: 1px solid var(--color-gray-200);">
-        <p style="font-size: 1.0625rem; margin-bottom: 1.5rem; color: var(--color-text-secondary);">
+      <div >
+        <p >
           <strong>26 publications</strong> with over <strong>150 citations</strong> across epidemiology, pediatric oncology, and public health research.
         </p>
-        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" class="btn btn-primary" rel="noopener noreferrer" style="display: inline-flex; align-items: center;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem;">
+        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
           </svg>
           View All Publications on Google Scholar
@@ -232,13 +232,13 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
 
   <section class="collaboration-section">
     <h2>Professional Affiliations</h2>
-    <div class="expertise-grid" style="margin-top: 2rem;">
-      <div class="expertise-area" style="min-height: auto;">
+    <div class="expertise-grid">
+      <div class="expertise-area">
         <p>• International Society for Clinical Biostatisticians<br>
         • International Statistical Institute<br>
         • World Public Health Nutrition Association</p>
       </div>
-      <div class="expertise-area" style="min-height: auto;">
+      <div class="expertise-area">
         <p>• Public Health Society, UK<br>
         • Medical Association of Malawi<br>
         • Commonwealth Scholarship Commission Alumni Advisory Panel</p>
@@ -250,11 +250,11 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
 <section class="contact-preview">
   <h2>Get in Touch</h2>
   <p>Interested in collaboration, consultation, or discussing research opportunities?</p>
-  <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+  <div>
     <a href="/contact" class="btn btn-primary">Get in Touch</a>
     <a href="https://www.linkedin.com/in/geoffreymanda/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn Profile</a>
   </div>
-  <p style="margin-top: 1.5rem; font-size: 0.9375rem; color: var(--color-text-tertiary);">
+  <p >
     Correspondence: Centre of Genomics and Child Health, Blizard Institute, Mile End Road, London E1 4NS, UK
   </p>
 </section>

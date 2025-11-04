@@ -16,8 +16,8 @@ description: Reproducible statistical analyses and data science projects showcas
 </div>
 
 <div class="section-container">
-  <section class="feature-section" style="text-align: center;">
-    <p style="max-width: 800px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
+  <section class="feature-section" >
+    <p>
       Each project demonstrates rigorous statistical methodology with fully documented, reproducible code. All analyses are implemented in R with detailed explanations and visualizations.
     </p>
   </section>
@@ -31,7 +31,7 @@ description: Reproducible statistical analyses and data science projects showcas
         </div>
         <h3>COVID-19 Survival Analysis</h3>
         <p>Comprehensive analysis of hospital length of stay and mortality outcomes using survival analysis methods including Kaplan-Meier estimates, Cox proportional hazards models, parametric survival models, and mixed-effects approaches.</p>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0; justify-content: center;">
+        <div>
           <span class="tag">R</span>
           <span class="tag">Survival Analysis</span>
           <span class="tag">Mixed-Effects Models</span>
@@ -39,24 +39,24 @@ description: Reproducible statistical analyses and data science projects showcas
         <a href="https://github.com/GeoffreyManda/covid-survival-analysis" class="feature-link" target="_blank" rel="noopener">View Project →</a>
       </div>
 
-      <div class="feature-card" style="opacity: 0.6; cursor: not-allowed;">
+      <div class="feature-card">
         <div class="icon-badge">
           <img src="/assets/icons/icon-microscope.svg" alt="Microscope icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Causal Inference Case Study</h3>
         <p>Applying propensity score methods and doubly robust estimation to evaluate treatment effects in observational healthcare data.</p>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0; justify-content: center;">
+        <div>
           <span class="tag">Coming Soon</span>
         </div>
       </div>
 
-      <div class="feature-card" style="opacity: 0.6; cursor: not-allowed;">
+      <div class="feature-card">
         <div class="icon-badge">
           <img src="/assets/icons/icon-trend.svg" alt="Trend analysis icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Longitudinal Data Analysis</h3>
         <p>Mixed-effects modeling and GEE approaches for analyzing repeated measurements in clinical studies with missing data handling.</p>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0; justify-content: center;">
+        <div>
           <span class="tag">Coming Soon</span>
         </div>
       </div>
@@ -68,28 +68,28 @@ description: Reproducible statistical analyses and data science projects showcas
   <section class="expertise-section">
     <h2>Project Categories</h2>
     <div class="expertise-grid">
-      <div class="expertise-area" style="text-align: center;">
+      <div class="expertise-area" >
         <div class="icon-badge">
           <img src="/assets/icons/icon-dataset.svg" alt="Dataset icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Statistical Methods</h3>
-        <p style="text-align: left;">Survival Analysis • Regression Models • Mixed-Effects Models • Multivariate Analysis • Causal Inference Methods</p>
+        <p>Survival Analysis • Regression Models • Mixed-Effects Models • Multivariate Analysis • Causal Inference Methods</p>
       </div>
 
-      <div class="expertise-area" style="text-align: center;">
+      <div class="expertise-area" >
         <div class="icon-badge">
           <img src="/assets/icons/icon-hospital.svg" alt="Healthcare analytics icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Application Areas</h3>
-        <p style="text-align: left;">Healthcare Analytics • Clinical Research • Public Health • Epidemiological Studies • Population Health Analysis</p>
+        <p>Healthcare Analytics • Clinical Research • Public Health • Epidemiological Studies • Population Health Analysis</p>
       </div>
 
-      <div class="expertise-area" style="text-align: center;">
+      <div class="expertise-area" >
         <div class="icon-badge">
           <img src="/assets/icons/icon-laptop.svg" alt="Laptop icon" class="icon-svg" loading="lazy">
         </div>
         <h3>Tools & Technologies</h3>
-        <p style="text-align: left;">R Programming • ggplot2 Visualization • R Markdown • Reproducible Research • Version Control with Git</p>
+        <p>R Programming • ggplot2 Visualization • R Markdown • Reproducible Research • Version Control with Git</p>
       </div>
     </div>
   </section>
@@ -98,7 +98,7 @@ description: Reproducible statistical analyses and data science projects showcas
 
   <section class="recent-section">
     <h2>Planned Projects</h2>
-    <p style="text-align: center; max-width: 720px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
+    <p >
       Upcoming analyses demonstrating advanced statistical techniques
     </p>
     <div class="update-timeline">
@@ -136,7 +136,7 @@ description: Reproducible statistical analyses and data science projects showcas
 <section class="contact-preview">
   <h2>Collaboration Welcome</h2>
   <p>Interested in collaborating on statistical analysis projects? All code is open source.</p>
-  <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem;">
+  <div>
     <a href="https://github.com/GeoffreyManda" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
     <a href="/contact" class="btn btn-primary">Get in Touch</a>
   </div>

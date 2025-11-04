@@ -5,14 +5,14 @@ permalink: /research/
 ---
 
 <div class="container-narrow">
-  <section class="hero-section" style="min-height: auto; padding: var(--space-3xl) 0;">
+  <section class="hero-section">
     <h1>Research & Publications</h1>
     <p class="lead">Selected work from 26+ publications with 150+ citations in biostatistics, causal inference, and global health</p>
   </section>
 
-  <section style="padding: var(--space-2xl) 0;">
+  <section>
     <h2>Research Areas</h2>
-    <div class="grid grid-3" style="margin-top: var(--space-xl);">
+    <div class="grid grid-3">
       <div class="card">
         <h3>Causal Inference</h3>
         <p>Advanced methodologies for establishing causality in observational studies, including propensity score methods, instrumental variables, and causal discovery algorithms for healthcare data.</p>
@@ -28,10 +28,10 @@ permalink: /research/
     </div>
   </section>
 
-  <section style="padding: var(--space-3xl) 0;">
+  <section>
     <h2>Recent Publications</h2>
 
-    <div class="card" style="margin-bottom: var(--space-lg);">
+    <div class="card">
       <div class="update-date">2024</div>
       <h3>Effect of Fatty Acid Profiles in Ready-to-Use Therapeutic Foods</h3>
       <p><strong>Nienaber A, Conradie C, Manda G, et al.</strong> <em>Nutrition Reviews</em>, 82(12), 1784-1799.</p>
@@ -39,7 +39,7 @@ permalink: /research/
       <a href="https://doi.org/10.1093/nutrit/nuad151" target="_blank" rel="noopener" class="card-link">View Publication →</a>
     </div>
 
-    <div class="card" style="margin-bottom: var(--space-lg);">
+    <div class="card">
       <div class="update-date">2024</div>
       <h3>Energy Provided and Growth During Severe Wasting Treatment</h3>
       <p><strong>Potani I, Tausanovitch Z, Ritz C, Briend A, Manda G, et al.</strong> <em>Maternal and Child Nutrition</em>, 20(4), e13693.</p>
@@ -47,7 +47,7 @@ permalink: /research/
       <a href="https://doi.org/10.1111/mcn.13693" target="_blank" rel="noopener" class="card-link">View Publication →</a>
     </div>
 
-    <div class="card" style="margin-bottom: var(--space-lg);">
+    <div class="card">
       <div class="update-date">2023</div>
       <h3>Outcomes of Wilms Tumor Therapy in Lilongwe, Malawi</h3>
       <p><strong>Holmes DM, Matatiyo A, Mpasa A, Manda G, et al.</strong> <em>Pediatric Blood and Cancer</em>, 70(5), e30242. <strong>Cited by 14.</strong></p>
@@ -55,7 +55,7 @@ permalink: /research/
       <a href="https://doi.org/10.1002/pbc.30242" target="_blank" rel="noopener" class="card-link">View Publication →</a>
     </div>
 
-    <div class="card" style="margin-bottom: var(--space-lg);">
+    <div class="card">
       <div class="update-date">2022</div>
       <h3>The Burden of Malnutrition in Childhood Cancer in Malawi</h3>
       <p><strong>Huibers MHW, Manda G, Silverstein A, et al.</strong> <em>Nutrition and Cancer</em>, 74(9), 3322-3328. <strong>Cited by 13.</strong></p>
@@ -63,7 +63,7 @@ permalink: /research/
       <a href="https://doi.org/10.1080/01635581.2022.2076888" target="_blank" rel="noopener" class="card-link">View Publication →</a>
     </div>
 
-    <div class="card" style="margin-bottom: var(--space-lg);">
+    <div class="card">
       <div class="update-date">2022</div>
       <h3>Palliative Care Services in Pediatric Hematology-Oncology</h3>
       <p><strong>Silverstein A, Butia M, Bank R, Manda G, et al.</strong> <em>Journal of Pain and Symptom Management</em>, 63(5), e473-e480.</p>
@@ -71,7 +71,7 @@ permalink: /research/
       <a href="https://doi.org/10.1016/j.jpainsymman.2022.01.006" target="_blank" rel="noopener" class="card-link">View Publication →</a>
     </div>
 
-    <div class="card" style="margin-bottom: var(--space-lg);">
+    <div class="card">
       <div class="update-date">2021</div>
       <h3>Pediatric Lymphoma Health-Related Quality of Life in Malawi</h3>
       <p><strong>Ellis GK, Chapman H, Manda A, Manda G, et al.</strong> <em>Pediatric Blood and Cancer</em>, 68(10), e29257. <strong>Cited by 13.</strong></p>
@@ -79,7 +79,7 @@ permalink: /research/
       <a href="https://doi.org/10.1002/pbc.29257" target="_blank" rel="noopener" class="card-link">View Publication →</a>
     </div>
 
-    <div class="card" style="margin-bottom: var(--space-lg);">
+    <div class="card">
       <div class="update-date">2018</div>
       <h3>Pyoderma Gangrenosum Associated with Crohn's Disease</h3>
       <p><strong>Manda G, Finch P, Mponda K.</strong> <em>Tropical Doctor</em>, 48(1), 43-46.</p>
@@ -87,7 +87,7 @@ permalink: /research/
       <a href="https://doi.org/10.1177/0049475517724972" target="_blank" rel="noopener" class="card-link">View Publication →</a>
     </div>
 
-    <div class="card" style="margin-bottom: var(--space-lg);">
+    <div class="card">
       <div class="update-date">2016</div>
       <h3>Household Air Pollution and Acute Lower Respiratory Infections in Adults</h3>
       <p><strong>Jary H, Simpson H, Havens D, Manda G, et al.</strong> <em>PLOS ONE</em>, 11(12), e0167656.</p>
