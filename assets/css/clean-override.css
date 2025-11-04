@@ -1,16 +1,40 @@
 /**
- * CLEAN OVERRIDE - Remove all chaotic styles
- * Apply world-class monochromatic design
+ * APPLE-STYLE OVERRIDES
+ * Force left-aligned, justified text throughout
+ * Remove ALL centered layouts
  */
 
-/* Remove all gradient heading nonsense */
+/* Force left alignment on ALL text elements */
+h1, h2, h3, h4, h5, h6,
+p, .lead, .hero-title, .hero-subtitle, .hero-eyebrow,
+.section-title, .section-description,
+.card h3, .card h4, .card p,
+.footer-section h4, .footer-section p {
+  text-align: left !important;
+}
+
+/* Justify all paragraphs */
+p, .lead, .hero-subtitle, .section-description, .card p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+/* Override any centered sections */
+section, .hero-section, .section-header,
+.featured-section, .expertise-section, .recent-section,
+.contact-preview {
+  text-align: left !important;
+}
+
+/* Remove gradient heading nonsense */
 .gradient-heading {
   background: none !important;
   -webkit-background-clip: unset !important;
   background-clip: unset !important;
   -webkit-text-fill-color: unset !important;
-  color: var(--color-text-primary) !important;
+  color: var(--color-black) !important;
   font-weight: 600 !important;
+  text-align: left !important;
 }
 
 /* Remove pulse glow */
@@ -19,295 +43,119 @@
   box-shadow: none !important;
 }
 
-/* Clean up feature cards */
+/* Remove spotlight effects */
+.spotlight-effect {
+  display: none !important;
+}
+
+/* Force left-aligned hero sections */
+.hero-section--centered {
+  text-align: left !important;
+}
+
+.hero-section--centered .hero-content {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+/* Left-align all buttons in button groups */
+.hero-buttons,
+div[style*="display: flex"][style*="justify-content: center"] {
+  justify-content: flex-start !important;
+}
+
+/* Override any inline centered styles */
+[style*="text-align: center"] {
+  text-align: left !important;
+}
+
+/* Force left-align on feature cards and content */
 .feature-card,
 .expertise-area,
 .update-item {
-  background: var(--color-white) !important;
-  border: 1px solid var(--color-border) !important;
-  border-radius: var(--radius-lg) !important;
-  padding: var(--space-xl) !important;
-  transition: var(--transition) !important;
-  box-shadow: none !important;
+  text-align: left !important;
+}
+
+.feature-card h3,
+.feature-card p,
+.expertise-area h3,
+.expertise-area p {
+  text-align: left !important;
+}
+
+.feature-card p,
+.expertise-area p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+/* Clean up any remaining centered layouts */
+.section-container,
+.container,
+.container-narrow {
+  text-align: left !important;
+}
+
+/* Remove any icon or visual center alignments */
+.icon-badge,
+.expertise-icon-visual {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Clean contact preview */
+.contact-preview {
+  text-align: left !important;
+}
+
+.contact-preview h2,
+.contact-preview p {
+  text-align: left !important;
+}
+
+/* Update timeline items */
+.update-content,
+.update-content h3,
+.update-content p {
+  text-align: left !important;
+}
+
+.update-content p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+/* Force left on project sections */
+.project,
+.project-content,
+.project h3,
+.project p {
+  text-align: left !important;
+}
+
+.project p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+/* Remove any transform effects that are not Apple-like */
+.card:hover,
+.btn:hover {
   transform: none !important;
 }
 
-.feature-card::before,
-.expertise-area::before {
-  display: none !important;
+/* Simplify shadows */
+* {
+  box-shadow: none !important;
 }
 
-.feature-card:hover,
-.expertise-area:hover,
-.update-item:hover {
-  border-color: var(--color-gray-300) !important;
-  box-shadow: var(--shadow-md) !important;
-  transform: translateY(-2px) !important;
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* Clean grid layouts */
-.feature-grid,
-.expertise-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
-  gap: var(--space-lg) !important;
-  perspective: none !important;
-}
-
-@media (max-width: 768px) {
-  .feature-grid,
-  .expertise-grid {
-    grid-template-columns: 1fr !important;
-    gap: var(--space-md) !important;
-  }
-}
-
-/* Section styling */
-.featured-section,
-.expertise-section,
-.recent-section,
-.contact-preview {
-  padding: var(--space-4xl) 0 !important;
-}
-
-@media (max-width: 768px) {
-  .featured-section,
-  .expertise-section,
-  .recent-section,
-  .contact-preview {
-    padding: var(--space-3xl) 0 !important;
-  }
-}
-
-/* Typography */
-.featured-section h2,
-.expertise-section h2,
-.recent-section h2,
-.contact-preview h2 {
-  font-size: clamp(2rem, 4vw, 3rem) !important;
-  font-weight: 600 !important;
-  color: var(--color-text-primary) !important;
-  margin-bottom: var(--space-xl) !important;
-  text-align: center !important;
-}
-
-.featured-section h3,
-.expertise-area h3,
-.update-item h3 {
-  font-size: 1.5rem !important;
-  font-weight: 600 !important;
-  color: var(--color-text-primary) !important;
-  margin-bottom: var(--space-sm) !important;
-}
-
-.featured-section p,
-.expertise-area p,
-.update-content p,
-.contact-preview p {
-  font-size: 1.0625rem !important;
-  line-height: 1.7 !important;
-  color: var(--color-text-secondary) !important;
-}
-
-/* Links */
+/* Clean up any special styling that's not Apple-like */
 .feature-link,
-.update-link {
-  font-size: 0.9375rem !important;
-  font-weight: 500 !important;
-  color: var(--color-accent) !important;
-  text-decoration: none !important;
-  transition: var(--transition) !important;
-}
-
-.feature-link:hover,
-.update-link:hover {
-  color: var(--color-accent-hover) !important;
-}
-
-/* Timeline */
-.update-timeline {
-  max-width: 768px !important;
-  margin: 0 auto !important;
-}
-
-.update-item {
-  margin-bottom: var(--space-lg) !important;
-}
-
-.update-date {
-  font-size: 0.875rem !important;
-  font-weight: 600 !important;
-  color: var(--color-accent) !important;
-  margin-bottom: var(--space-xs) !important;
-}
-
-/* Contact preview section */
-.contact-preview {
-  text-align: center !important;
-  background: var(--color-bg-secondary) !important;
-  padding: var(--space-3xl) var(--space-md) !important;
-  border-radius: var(--radius-xl) !important;
-  margin: var(--space-3xl) 0 !important;
-}
-
-.contact-preview h2 {
-  margin-bottom: var(--space-sm) !important;
-}
-
-.contact-preview p {
-  max-width: 600px !important;
-  margin: 0 auto var(--space-xl) auto !important;
-}
-
-/* Hero animation cleanup */
-.hero-animation-container {
-  background: linear-gradient(to bottom, var(--color-white) 0%, var(--color-bg-secondary) 100%) !important;
-}
-
-.hero-animation-container::after {
-  display: none !important;
-}
-
-.hero-gradient-bg {
-  display: none !important;
-}
-
-.hero-content {
-  max-width: 960px !important;
-}
-
-.hero-eyebrow {
-  font-size: 0.875rem !important;
-  font-weight: 500 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.1em !important;
-  color: var(--color-text-tertiary) !important;
-}
-
-.hero-title {
-  color: var(--color-text-primary) !important;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem !important;
-  color: var(--color-text-secondary) !important;
-}
-
-.hero-button.primary {
-  background: var(--color-accent) !important;
-  color: var(--color-white) !important;
-  border: none !important;
-  padding: 0.875rem 2rem !important;
-  font-weight: 500 !important;
-  box-shadow: none !important;
-}
-
-.hero-button.primary:hover {
-  background: var(--color-accent-hover) !important;
-  transform: translateY(-1px) !important;
-  box-shadow: var(--shadow-md) !important;
-}
-
-.hero-button.secondary {
-  background: transparent !important;
-  color: var(--color-text-primary) !important;
-  border: 1.5px solid var(--color-border) !important;
-  padding: 0.875rem 2rem !important;
-}
-
-.hero-button.secondary:hover {
-  background: var(--color-bg-secondary) !important;
-  border-color: var(--color-gray-400) !important;
-}
-
-/* Buttons */
-.btn-primary,
-.btn-secondary {
-  font-size: 1rem !important;
-  padding: 0.875rem 2rem !important;
-  border-radius: var(--radius-lg) !important;
-  font-weight: 500 !important;
-  transition: var(--transition) !important;
-}
-
-.btn-primary {
-  background: var(--color-accent) !important;
-  color: var(--color-white) !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.btn-primary:hover {
-  background: var(--color-accent-hover) !important;
-  transform: translateY(-1px) !important;
-  box-shadow: var(--shadow-md) !important;
-}
-
-.btn-secondary {
-  background: transparent !important;
-  color: var(--color-text-primary) !important;
-  border: 1.5px solid var(--color-border) !important;
-}
-
-.btn-secondary:hover {
-  background: var(--color-bg-secondary) !important;
-  border-color: var(--color-gray-400) !important;
-}
-
-/* Remove all floating animations */
-.float-gentle {
-  animation: none !important;
-}
-
-/* Remove spotlight effects */
-.spotlight-card::before {
-  display: none !important;
-}
-
-/* Clean scroll indicator */
-.hero-scroll-indicator {
-  color: var(--color-text-tertiary) !important;
-}
-
-.scroll-text {
-  font-size: 0.75rem !important;
-  color: var(--color-text-tertiary) !important;
-}
-
-.scroll-arrow {
-  color: var(--color-text-tertiary) !important;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .hero-animation-container {
-    padding: var(--space-2xl) var(--space-md) !important;
-  }
-
-  .hero-buttons {
-    flex-direction: column !important;
-    gap: var(--space-sm) !important;
-  }
-
-  .hero-button {
-    width: 100% !important;
-  }
-
-  .feature-card,
-  .expertise-area,
-  .update-item {
-    padding: var(--space-lg) !important;
-  }
-}
-
-/* Page content wrapper */
-.home-content {
-  max-width: var(--container-max) !important;
-  margin: 0 auto !important;
-  padding: 0 var(--space-md) !important;
-}
-
-/* Remove scroll progress bar */
-.scroll-progress {
-  display: none !important;
+.card-link {
+  text-align: left !important;
 }
