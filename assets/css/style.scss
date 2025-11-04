@@ -3215,6 +3215,15 @@ a[target="_blank"]:not(.btn-primary):not(.btn-secondary):not(.feature-link)::aft
   border-radius: 2px;
 }
 
+/* Hide Minima theme's default page title - we use custom hero sections */
+.post-header {
+  display: none !important;
+}
+
+.post-title {
+  display: none !important;
+}
+
 /* Better Mobile Menu */
 .site-nav .menu-icon {
   width: 36px;
