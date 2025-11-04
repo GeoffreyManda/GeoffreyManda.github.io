@@ -214,11 +214,11 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
         </li>
       </ul>
 
-      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(14, 165, 233, 0.05); border-radius: 16px; border: 1px solid rgba(14, 165, 233, 0.15);">
+      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--color-gray-50); border-radius: 16px; border: 1px solid var(--color-gray-200);">
         <p style="font-size: 1.0625rem; margin-bottom: 1.5rem; color: var(--color-text-secondary);">
           <strong>26 publications</strong> with over <strong>150 citations</strong> across epidemiology, pediatric oncology, and public health research.
         </p>
-        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" class="btn-primary" rel="noopener noreferrer" style="display: inline-flex; align-items: center;">
+        <a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" class="btn btn-primary" rel="noopener noreferrer" style="display: inline-flex; align-items: center;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem;">
             <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
           </svg>
@@ -251,8 +251,8 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
   <h2>Get in Touch</h2>
   <p>Interested in collaboration, consultation, or discussing research opportunities?</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
-    <a href="/contact" class="btn-primary">Get in Touch</a>
-    <a href="https://www.linkedin.com/in/geoffreymanda/" class="btn-secondary" target="_blank" rel="noopener">LinkedIn Profile</a>
+    <a href="/contact" class="btn btn-primary">Get in Touch</a>
+    <a href="https://www.linkedin.com/in/geoffreymanda/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn Profile</a>
   </div>
   <p style="margin-top: 1.5rem; font-size: 0.9375rem; color: var(--color-text-tertiary);">
     Correspondence: Centre of Genomics and Child Health, Blizard Institute, Mile End Road, London E1 4NS, UK
@@ -263,13 +263,13 @@ description: Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary Unive
 .expertise-icon-visual {
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+  background: var(--color-gray-50);
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  border: 2px solid rgba(14, 165, 233, 0.2);
-  color: var(--primary-600);
+  border: 2px solid var(--color-gray-200);
+  color: var(--color-accent);
 }
 </style>

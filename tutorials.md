@@ -19,19 +19,19 @@ description: Comprehensive learning resources for causal inference methods, DAGs
       All my causal inference tutorials, courses, and educational materials are hosted on <strong>CausalAtlas.org</strong> – a comprehensive platform dedicated to advancing knowledge in causality and causal inference.
     </p>
 
-    <div style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%); border-radius: 24px; padding: 4rem 3rem; margin: 3rem auto; max-width: 900px; border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 20px 60px rgba(31, 38, 135, 0.15);">
-      <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-600) 0%, var(--secondary-600) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);">
+    <div style="background: var(--color-gray-50); border-radius: 24px; padding: 4rem 3rem; margin: 3rem auto; max-width: 900px; border: 1px solid var(--color-gray-200); box-shadow: var(--shadow-lg);">
+      <div style="width: 80px; height: 80px; background: var(--color-accent); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem;">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: white;">
           <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
           <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           <path d="M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
       </div>
-      <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary-600);">CausalAtlas.org</h3>
+      <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--color-text-primary);">CausalAtlas.org</h3>
       <p style="font-size: 1.125rem; margin-bottom: 3rem; color: var(--color-text-secondary); line-height: 1.7;">
         Your complete resource for causal inference methods, from foundational concepts to advanced techniques. Free and open access for the global research community.
       </p>
-      <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem; display: inline-block;">
+      <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem; display: inline-block;">
         Visit CausalAtlas.org →
       </a>
     </div>
@@ -149,7 +149,7 @@ description: Comprehensive learning resources for causal inference methods, DAGs
   <h2 style="text-align: center;">Questions or Feedback?</h2>
   <p>Have questions about causal inference methods or feedback on the resources?</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
-    <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn-primary">Visit CausalAtlas.org</a>
-    <a href="/contact" class="btn-secondary">Get in Touch</a>
+    <a href="https://causalatlas.org" target="_blank" rel="noopener" class="btn btn-primary">Visit CausalAtlas.org</a>
+    <a href="/contact" class="btn btn-secondary">Get in Touch</a>
   </div>
 </section>

@@ -137,27 +137,21 @@ description: Reproducible statistical analyses and data science projects showcas
   <h2>Collaboration Welcome</h2>
   <p>Interested in collaborating on statistical analysis projects? All code is open source.</p>
   <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem;">
-    <a href="https://github.com/GeoffreyManda" class="btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
-    <a href="/contact" class="btn-primary">Get in Touch</a>
+    <a href="https://github.com/GeoffreyManda" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
+    <a href="/contact" class="btn btn-primary">Get in Touch</a>
   </div>
 </section>
 
 <style>
 .tag {
   display: inline-block;
-  background: rgba(14, 165, 233, 0.1);
-  color: var(--color-link);
+  background: var(--color-gray-100);
+  color: var(--color-text-primary);
   padding: 0.375rem 0.875rem;
   border-radius: 8px;
   font-size: 0.8125rem;
   font-weight: 500;
-  border: 1px solid rgba(14, 165, 233, 0.2);
+  border: 1px solid var(--color-gray-300);
   margin: 0.25rem;
-}
-
-.feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.18);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 </style>

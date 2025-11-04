@@ -111,19 +111,19 @@ description: Get in touch with Geoffrey Manda for biostatistical consulting, res
 }
 
 .social-icon:hover svg {
-  color: var(--primary-600);
+  color: var(--color-accent);
 }
 
 #form-status.success {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  color: #059669;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  color: #166534;
 }
 
 #form-status.error {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
 }
 </style>
 
