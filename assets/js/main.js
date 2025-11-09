@@ -50,31 +50,31 @@ function initSmoothScrolling() {
 
 function initScrollAnimations() {
   const observerOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -80px 0px'
+    threshold: 0.12,
+    rootMargin: '0px 0px -60px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        // Stagger animation for visual polish
-        const delay = index * 75;
+        // Apple Vision Pro stagger timing
+        const delay = index * 60;
         setTimeout(() => {
           entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
+          entry.target.style.transform = 'translateY(0) translateZ(0)';
         }, delay);
         observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Observe cards and sections with Apple-quality animations
+  // Observe cards with Vision Pro animations
   const elements = document.querySelectorAll('.card, .feature-card, .expertise-area, .update-item, .project-card');
 
-  elements.forEach(el => {
+  elements.forEach((el, index) => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+    el.style.transform = 'translateY(24px) translateZ(-10px)';
+    el.style.transition = 'opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1)';
     el.style.willChange = 'opacity, transform';
     observer.observe(el);
   });
@@ -162,7 +162,7 @@ function isInViewport(element) {
 }
 
 // ============================================================================
-// 3D CARD TILT EFFECT - Ultra Premium
+// 3D CARD TILT EFFECT - Apple Vision Pro Spring Physics
 // ============================================================================
 
 function init3DCardTilt() {
@@ -171,35 +171,69 @@ function init3DCardTilt() {
   const cards = document.querySelectorAll('.card, .feature-card, .expertise-area, .project-card');
 
   cards.forEach(card => {
-    card.addEventListener('mousemove', handleTilt);
-    card.addEventListener('mouseleave', resetTilt);
+    let currentRotateX = 0;
+    let currentRotateY = 0;
+    let targetRotateX = 0;
+    let targetRotateY = 0;
+    let animationFrameId = null;
+
+    card.addEventListener('mouseenter', () => {
+      card.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+    });
+
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      // Reduced rotation for subtlety (Vision Pro style)
+      targetRotateX = ((y - centerY) / centerY) * -4;
+      targetRotateY = ((x - centerX) / centerX) * 4;
+
+      if (!animationFrameId) {
+        animateCardTilt();
+      }
+    });
+
+    card.addEventListener('mouseleave', () => {
+      targetRotateX = 0;
+      targetRotateY = 0;
+      card.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+      card.style.transform = 'translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) scale(1)';
+
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = null;
+      }
+    });
+
+    function animateCardTilt() {
+      // Smooth spring interpolation
+      const springFactor = 0.12;
+      currentRotateX += (targetRotateX - currentRotateX) * springFactor;
+      currentRotateY += (targetRotateY - currentRotateY) * springFactor;
+
+      card.style.transform = `
+        perspective(1200px)
+        translateY(-12px)
+        translateZ(20px)
+        rotateX(${currentRotateX}deg)
+        rotateY(${currentRotateY}deg)
+        scale(1.02)
+      `;
+
+      // Continue animation if not close enough to target
+      if (Math.abs(targetRotateX - currentRotateX) > 0.01 ||
+          Math.abs(targetRotateY - currentRotateY) > 0.01) {
+        animationFrameId = requestAnimationFrame(animateCardTilt);
+      } else {
+        animationFrameId = null;
+      }
+    }
   });
-
-  function handleTilt(e) {
-    const card = e.currentTarget;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = ((y - centerY) / centerY) * -8;
-    const rotateY = ((x - centerX) / centerX) * 8;
-
-    card.style.transform = `
-      perspective(1000px)
-      rotateX(${rotateX}deg)
-      rotateY(${rotateY}deg)
-      translateY(-16px)
-      scale3d(1.03, 1.03, 1.03)
-    `;
-  }
-
-  function resetTilt(e) {
-    const card = e.currentTarget;
-    card.style.transform = '';
-  }
 }
 
 // ============================================================================
