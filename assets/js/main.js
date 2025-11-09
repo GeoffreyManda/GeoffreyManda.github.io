@@ -1,20 +1,10 @@
 /**
- * main.js - Refined interactions for Apple-quality experience
- * Author: Geoffrey Manda
+ * main.js - Clean Apple-style interactions ONLY
  */
-
-// ============================================================================
-// INITIALIZATION
-// ============================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
   initSmoothScrolling();
-  initScrollAnimations();
   initNavigation();
-  initLazyLoading();
-  init3DCardTilt();
-  initParallaxEffects();
-  initCursorGlow();
 });
 
 // ============================================================================

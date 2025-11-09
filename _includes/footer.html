@@ -1,48 +1,50 @@
 <footer class="site-footer">
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <h3>Geoffrey Manda</h3>
-        <p>PhD Research Fellow<br>
-        Biostatistics & Causal Inference<br>
-        Queen Mary University of London</p>
+  <div class="container">
+    <div class="footer-content">
+      <!-- About Section -->
+      <div class="footer-section footer-about">
+        <h4>Geoffrey Manda</h4>
+        <p>PhD Research Fellow in Biostatistics & Causal Inference at Queen Mary University of London. Advancing statistical methods for global health research.</p>
+        <p class="footer-editor">Editor, <a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a></p>
       </div>
 
-      <div class="footer-col footer-col-2">
-        <h3>Quick Links</h3>
-        <ul class="footer-quick-links">
-          <li><a href="/about">About & CV</a></li>
-          <li><a href="/research">Research Projects</a></li>
-          <li><a href="/projects">Code & Analysis</a></li>
-          <li><a href="/biostatistics">Biostatistics</a></li>
-          <li><a href="/epidemiology">Epidemiology</a></li>
-          <li><a href="/tutorials">Tutorials</a></li>
-          <li><a href="/contact">Contact</a></li>
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/about' | relative_url }}">About & CV</a></li>
+          <li><a href="{{ '/research' | relative_url }}">Research</a></li>
+          <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+          <li><a href="{{ '/tutorials' | relative_url }}">Tutorials</a></li>
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <h3>Connect</h3>
-        {%- include social.html -%}
-        <p style="margin-top: 1.5rem; font-size: 0.875rem;">
-          <a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a> - Editor<br>
-          <a href="mailto:info@causalatlas.org">info@causalatlas.org</a>
-        </p>
+      <!-- Research Areas -->
+      <div class="footer-section">
+        <h4>Research</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/research' | relative_url }}">Publications</a></li>
+          <li><a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/contact' | relative_url }}">Contact Me</a></li>
+          <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/geoffreymanda" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
       </div>
     </div>
 
-    <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(14, 165, 233, 0.1);">
-      <p style="font-size: 0.875rem; color: var(--color-text-tertiary);">
-        &copy; {{ 'now' | date: "%Y" }} Geoffrey Manda. All rights reserved.
-      </p>
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>&copy; {{ 'now' | date: "%Y" }} Geoffrey Manda. All rights reserved.</p>
+      </div>
     </div>
-
-    {%- if site.license -%}
-    <div class="license" style="text-align: center; margin-top: 1rem;">
-      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
-        <img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg" alt="License: CC BY-NC-ND 4.0" />
-      </a>
-    </div>
-    {%- endif -%}
   </div>
 </footer>
