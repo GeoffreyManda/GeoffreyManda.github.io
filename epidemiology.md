@@ -2,9 +2,10 @@
 layout: page
 title: Epidemiology
 permalink: /epidemiology/
+description: Epidemiological research on infectious diseases, environmental health, maternal-child health, and cancer epidemiology in Sub-Saharan Africa.
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-section--centered">
   <div class="hero-content">
     <h1>Epidemiology Research</h1>
     <p>Investigating disease patterns and developing evidence-based interventions for population health</p>
@@ -23,7 +24,7 @@ permalink: /epidemiology/
       <div class="feature-card">
         <h3>Infectious Disease Epidemiology</h3>
         <p>Disease transmission dynamics, outbreak investigation, and evaluation of prevention and control measures for infectious diseases in diverse populations and settings.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">Disease Surveillance</span>
           <span class="tag">Outbreak Analysis</span>
           <span class="tag">TB & HIV</span>
@@ -33,7 +34,7 @@ permalink: /epidemiology/
       <div class="feature-card">
         <h3>Environmental Epidemiology</h3>
         <p>Health impacts of environmental exposures including household air pollution, water quality, and climate-related health risks in resource-limited settings.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">Air Pollution</span>
           <span class="tag">Climate Health</span>
           <span class="tag">Exposure Assessment</span>
@@ -43,7 +44,7 @@ permalink: /epidemiology/
       <div class="feature-card">
         <h3>Maternal & Child Health</h3>
         <p>Epidemiological research on neonatal mortality, childhood nutrition, and maternal health outcomes with focus on low- and middle-income countries.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">Neonatal Mortality</span>
           <span class="tag">Child Nutrition</span>
           <span class="tag">LMIC</span>
@@ -53,7 +54,7 @@ permalink: /epidemiology/
       <div class="feature-card">
         <h3>Cancer Epidemiology</h3>
         <p>Investigation of cancer incidence, survival, and risk factors in Sub-Saharan Africa, including pediatric oncology and population-based cancer registries.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">Cancer Survival</span>
           <span class="tag">Pediatric Cancer</span>
           <span class="tag">Risk Factors</span>
@@ -63,7 +64,7 @@ permalink: /epidemiology/
       <div class="feature-card">
         <h3>Chronic Disease Epidemiology</h3>
         <p>Study of cardiovascular disease, diabetes, and other non-communicable diseases, focusing on modifiable risk factors and prevention strategies.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">CVD</span>
           <span class="tag">Diabetes</span>
           <span class="tag">Prevention</span>
@@ -73,7 +74,7 @@ permalink: /epidemiology/
       <div class="feature-card">
         <h3>Health Systems Research</h3>
         <p>Evaluation of health service delivery, quality of care, and implementation of evidence-based interventions in healthcare systems.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">Quality of Care</span>
           <span class="tag">Implementation</span>
           <span class="tag">Health Services</span>
@@ -108,7 +109,7 @@ permalink: /epidemiology/
 
   <section class="recent-section">
     <h2>Key Research Contributions</h2>
-    <p style="text-align: center; max-width: 720px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
+    <p>
       Published research addressing critical public health challenges
     </p>
     <div class="update-timeline">
@@ -169,7 +170,7 @@ permalink: /epidemiology/
 <section class="contact-preview">
   <h2>Research Collaboration</h2>
   <p>Interested in collaborative epidemiological research or consulting on study design and analysis?</p>
-  <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+  <div>
     <a href="/contact" class="btn-primary">Get in Touch</a>
     <a href="/about#publications" class="btn-secondary">View Publications</a>
   </div>

@@ -1,0 +1,309 @@
+/**
+ * NUCLEAR OVERRIDE - FORCE APPLE BLACK/GREY EVERYWHERE
+ * Kill ALL old colors with extreme prejudice
+ */
+
+/* ===== KILL ALL MINIMA THEME COLORS ===== */
+* {
+  /* Force base colors */
+  border-color: #d1d1d6 !important;
+}
+
+/* ===== FORCE BLACK HEADINGS EVERYWHERE - CENTER ALIGNED ===== */
+h1, h2, h3, h4, h5, h6,
+.site-title, .post-title, .page-heading,
+.hero-title, .section-title, .card h3, .card h4,
+.feature-card h3, .expertise-area h3, .update-item h3,
+.project h3, .publication-title {
+  color: #1d1d1f !important;
+  font-weight: 600 !important;
+  background: none !important;
+  background-image: none !important;
+  text-align: center !important;
+}
+
+/* ===== FORCE GREY BODY TEXT EVERYWHERE - CENTER ALIGNED ===== */
+p, .lead, .hero-subtitle, .section-description,
+.card p, .feature-card p, .expertise-area p,
+.post-content, .page-content {
+  color: #48484a !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  text-align: center !important;
+}
+
+/* Body and wrapper */
+body, .wrapper {
+  color: #48484a !important;
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+/* List items, spans, divs, table cells */
+span, div, li, td, th {
+  color: #48484a !important;
+}
+
+/* ===== FORCE APPLE BLUE FOR LINKS ===== */
+a, a:visited, a:link,
+.card-link, .feature-link, .page-link,
+.post-link, .site-nav a {
+  color: #0071e3 !important;
+  background: none !important;
+}
+
+a:hover, a:active,
+.card-link:hover, .page-link:hover {
+  color: #0077ed !important;
+  background: none !important;
+}
+
+/* ===== FORCE BUTTON COLORS ===== */
+.btn, .btn-primary, .hero-button, button[type="submit"],
+input[type="submit"], .submit-button {
+  background: #0071e3 !important;
+  color: #ffffff !important;
+  border: none !important;
+  background-image: none !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.btn:hover, .btn-primary:hover, .hero-button:hover {
+  background: #0077ed !important;
+  color: #ffffff !important;
+}
+
+.btn-secondary {
+  background: transparent !important;
+  color: #0071e3 !important;
+  border: 1px solid #0071e3 !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.btn-secondary:hover {
+  background: #0071e3 !important;
+  color: #ffffff !important;
+}
+
+/* ===== FORCE CENTER-ALIGNED BUTTON CONTAINERS - ROW LAYOUT ===== */
+.hero-buttons, .button-group, .text-center,
+div:has(> .btn), div:has(> a.btn),
+.section-header, .container-narrow,
+div:has(> a[class*="btn"]) {
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+}
+
+/* ===== FORCE WHITE/GREY BACKGROUNDS ===== */
+body, html, .wrapper, .page-content,
+.home-content, .container, .container-narrow,
+section, .hero-section, .featured-section,
+.expertise-section, .recent-section {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+.site-footer, .footer {
+  background: #f5f5f7 !important;
+  background-image: none !important;
+}
+
+/* ===== FORCE CARD COLORS ===== */
+.card, .feature-card, .expertise-area, .update-item,
+.post, .publication {
+  background: #ffffff !important;
+  background-image: none !important;
+  border: 1px solid #d1d1d6 !important;
+  color: #48484a !important;
+}
+
+/* ===== FORCE CENTER-ALIGNMENT ON ALL CARD/BOX ELEMENTS ===== */
+.card, .card *,
+.feature-card, .feature-card *,
+.expertise-area, .expertise-area *,
+.update-item, .update-item *,
+.project, .project *,
+.publication, .publication *,
+.post, .post * {
+  text-align: center !important;
+}
+
+/* Card headings - center-aligned */
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
+.feature-card h1, .feature-card h2, .feature-card h3, .feature-card h4,
+.expertise-area h1, .expertise-area h2, .expertise-area h3, .expertise-area h4,
+.update-item h1, .update-item h2, .update-item h3, .update-item h4,
+.project h1, .project h2, .project h3, .project h4,
+.publication h1, .publication h2, .publication h3, .publication h4,
+.publication-title {
+  text-align: center !important;
+}
+
+/* Card paragraphs - center-aligned (NOT justified) */
+.card p, .feature-card p, .expertise-area p,
+.update-item p, .project p, .publication p, .post p {
+  text-align: center !important;
+}
+
+/* Card links - centered */
+.card a, .card .card-link,
+.feature-card a, .feature-card .feature-link,
+.expertise-area a, .update-item a, .project a, .publication a {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ===== KILL ALL GRADIENTS ===== */
+*[style*="background: linear-gradient"],
+*[style*="background-image: linear-gradient"],
+*[class*="gradient"] {
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+/* ===== KILL ALL RGBA COLORS ===== */
+*[style*="rgba(14, 165, 233"],
+*[style*="rgba(168, 85, 247"],
+*[style*="rgba(249, 115, 22"],
+*[style*="#0ea5e9"],
+*[style*="#a855f7"],
+*[style*="#f97316"] {
+  background: #ffffff !important;
+  color: #1d1d1f !important;
+  border-color: #d1d1d6 !important;
+}
+
+/* ===== KILL COLORED BORDERS ===== */
+*[style*="border"] {
+  border-color: #d1d1d6 !important;
+}
+
+/* ===== KILL COLORED SHADOWS ===== */
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.card:hover, .feature-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ===== FORCE FOOTER COLORS ===== */
+.site-footer, .site-footer * {
+  background: #f5f5f7 !important;
+  background-image: none !important;
+}
+
+.footer-section h4, .site-footer h4 {
+  color: #1d1d1f !important;
+}
+
+.footer-section p, .footer-section a,
+.site-footer p, .site-footer a {
+  color: #48484a !important;
+}
+
+.footer-section a:hover, .site-footer a:hover {
+  color: #1d1d1f !important;
+}
+
+/* ===== FORCE NAVIGATION COLORS ===== */
+.site-header {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.site-nav {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.wrapper {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.trigger {
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.page-link {
+  color: #1d1d1f !important;
+  text-align: center !important;
+}
+
+.page-link:hover {
+  color: #0071e3 !important;
+}
+
+/* ===== KILL THEME COLOR VARIABLES ===== */
+:root {
+  --primary-color: #0071e3 !important;
+  --text-color: #1d1d1f !important;
+  --background-color: #ffffff !important;
+  --brand-color: #0071e3 !important;
+  --grey-color: #48484a !important;
+  --grey-color-light: #d1d1d6 !important;
+  --grey-color-dark: #1d1d1f !important;
+}
+
+/* ===== KILL OLD VARIABLE REFERENCES ===== */
+*[style*="var(--primary-600)"],
+*[style*="var(--secondary-600)"],
+*[style*="var(--brand-color)"] {
+  color: #1d1d1f !important;
+}
+
+/* ===== FORCE FORM COLORS ===== */
+input, textarea, select {
+  background: #ffffff !important;
+  color: #1d1d1f !important;
+  border: 1px solid #d1d1d6 !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #0071e3 !important;
+  outline-color: #0071e3 !important;
+}
+
+/* ===== FORCE TABLE COLORS ===== */
+table, th, td {
+  background: #ffffff !important;
+  color: #48484a !important;
+  border-color: #d1d1d6 !important;
+}
+
+thead, th {
+  background: #f5f5f7 !important;
+  color: #1d1d1f !important;
+}
+
+/* ===== FORCE CODE COLORS ===== */
+code, pre {
+  background: #f5f5f7 !important;
+  color: #1d1d1f !important;
+  border: 1px solid #d1d1d6 !important;
+}
+
+/* ===== KILL ANIMATIONS WITH COLOR ===== */
+@keyframes * {
+  background-color: inherit !important;
+  color: inherit !important;
+}
