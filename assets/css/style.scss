@@ -185,6 +185,29 @@
   --glass-border: 1px solid rgba(255, 255, 255, 0.3);
   --glass-shadow: var(--shadow-lg);
   --glass-highlight: rgba(255, 255, 255, 0.08);
+
+  /* Vision Pro Design System - Glassmorphism & 3D Depth */
+  --visionpro-glass-bg: rgba(255, 255, 255, 0.6);
+  --visionpro-glass-border: rgba(255, 255, 255, 0.4);
+  --visionpro-blur-strong: blur(40px) saturate(200%);
+  --visionpro-blur-medium: blur(24px) saturate(180%);
+  --visionpro-blur-light: blur(12px) saturate(160%);
+
+  /* Advanced shadow system for depth */
+  --visionpro-shadow-1: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --visionpro-shadow-2: 0 4px 16px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.03);
+  --visionpro-shadow-3: 0 8px 32px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+  --visionpro-shadow-4: 0 16px 48px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.05);
+  --visionpro-shadow-5: 0 24px 64px rgba(0, 0, 0, 0.12), 0 12px 24px rgba(0, 0, 0, 0.06);
+
+  /* Inner glow effects */
+  --visionpro-glow-inner: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  --visionpro-glow-outer: 0 0 24px rgba(14, 165, 233, 0.15);
+
+  /* Material layers */
+  --visionpro-material-1: rgba(255, 255, 255, 0.7);
+  --visionpro-material-2: rgba(255, 255, 255, 0.5);
+  --visionpro-material-3: rgba(255, 255, 255, 0.3);
 }
 
 /* Dark Mode Theme - Commanding Black/Orange/Purple */
@@ -3885,5 +3908,116 @@ a[target="_blank"]:not(.btn-primary):not(.btn-secondary):not(.feature-link)::aft
 
   .site-nav .page-link.active::after {
     bottom: -4px;
+  }
+}
+
+/* ===== Vision Pro Advanced 3D Effects ===== */
+
+/* 3D Depth Layers */
+.home-content {
+  transform-style: preserve-3d;
+  perspective: 2000px;
+}
+
+/* Section depth layering */
+section {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* Page Content with 3D perspective */
+.page-content {
+  transform-style: preserve-3d;
+  perspective: 2000px;
+}
+
+/* Vision Pro glass enhancement for cards */
+.card, .feature-card, .project-card,
+.research-card-inner {
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-medium);
+  -webkit-backdrop-filter: var(--visionpro-blur-medium);
+  box-shadow: var(--visionpro-shadow-3), var(--visionpro-glow-inner);
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover, .feature-card:hover, .project-card:hover,
+.research-card[data-position="center"] .research-card-inner {
+  transform: translateY(-8px) translateZ(20px);
+  box-shadow: var(--visionpro-shadow-4), var(--visionpro-glow-outer), var(--visionpro-glow-inner);
+  backdrop-filter: var(--visionpro-blur-strong);
+  -webkit-backdrop-filter: var(--visionpro-blur-strong);
+}
+
+/* Enhanced button depth */
+.btn-primary,
+.hero-button.primary,
+.button,
+.research-carousel-btn {
+  transform: translateZ(10px);
+  box-shadow: var(--visionpro-shadow-2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover,
+.hero-button.primary:hover,
+.button:hover,
+.research-carousel-btn:hover {
+  transform: translateZ(20px) scale(1.02);
+  box-shadow: var(--visionpro-shadow-3), var(--visionpro-glow-outer);
+}
+
+/* Contact preview with Vision Pro glass */
+.contact-preview {
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-strong);
+  -webkit-backdrop-filter: var(--visionpro-blur-strong);
+  box-shadow: var(--visionpro-shadow-4), var(--visionpro-glow-inner);
+  transform: translateZ(0);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-preview:hover {
+  transform: translateY(-8px) translateZ(30px);
+  box-shadow: var(--visionpro-shadow-5), var(--visionpro-glow-outer), var(--visionpro-glow-inner);
+}
+
+/* Frosted glass overlay for content */
+.feature-card > *,
+.expertise-area > *,
+.update-item > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Enhanced nav with Vision Pro glass */
+.site-header {
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-strong);
+  -webkit-backdrop-filter: var(--visionpro-blur-strong);
+  box-shadow: var(--visionpro-shadow-2), var(--visionpro-glow-inner);
+  transform: translateZ(100px);
+  transform-style: preserve-3d;
+}
+
+/* Enhanced footer with Vision Pro glass */
+.site-footer {
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-medium);
+  -webkit-backdrop-filter: var(--visionpro-blur-medium);
+  box-shadow: var(--visionpro-shadow-3), var(--visionpro-glow-inner);
+  transform: translateZ(0);
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transform: none !important;
+    transition-duration: 0.01ms !important;
   }
 }
