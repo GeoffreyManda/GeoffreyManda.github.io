@@ -184,6 +184,7 @@
   /* Refined glass morphism effects */
   --glass-border: 1px solid rgba(255, 255, 255, 0.3);
   --glass-shadow: var(--shadow-lg);
+  --glass-highlight: rgba(255, 255, 255, 0.05);
   --glass-highlight: rgba(255, 255, 255, 0.08);
 
   /* Vision Pro Design System - Glassmorphism & 3D Depth */
@@ -300,7 +301,7 @@ body,
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   color: var(--color-text-primary);
-  background: var(--color-bg-primary);
+  background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 50%, #f5f7fa 100%);
   min-height: 100vh;
   line-height: 1.6;
   font-size: 17px;
@@ -308,6 +309,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+/* Vision Pro Background Layers */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(14, 165, 233, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 90%, rgba(168, 85, 247, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.02) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: -1;
   opacity: 0;
   animation: pageLoad 0.8s var(--ease-vision) forwards;
 }
@@ -539,6 +557,7 @@ a:active {
   background-size: 100% 1.5px;
 }
 
+/* Site Navigation - Vision Pro Glass */
 /* Site Navigation */
 /* Site Header - Vision Pro Smooth Transitions */
 .site-header {
@@ -546,12 +565,15 @@ a:active {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: var(--nav-bg);
-  backdrop-filter: var(--nav-blur);
-  -webkit-backdrop-filter: var(--nav-blur);
-  border-bottom: var(--nav-border);
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.03);
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-strong);
+  -webkit-backdrop-filter: var(--visionpro-blur-strong);
+  border-bottom: 1px solid var(--visionpro-glass-border);
+  box-shadow: var(--visionpro-shadow-2), var(--visionpro-glow-inner);
   padding: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(100px);
+  transform-style: preserve-3d;
   transition: all 0.6s var(--ease-vision);
   will-change: background-color, box-shadow;
 }
@@ -789,13 +811,14 @@ a:active {
 }
 
 .site-footer {
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border-top: var(--glass-border);
-  box-shadow: var(--glass-shadow);
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-medium);
+  -webkit-backdrop-filter: var(--visionpro-blur-medium);
+  border-top: 1px solid var(--visionpro-glass-border);
+  box-shadow: var(--visionpro-shadow-3), var(--visionpro-glow-inner);
   padding: 3rem 0 2rem 0;
   color: var(--heading-color);
+  transform: translateZ(0);
 }
 
 .footer-col-wrapper {
@@ -1017,6 +1040,24 @@ a:active {
   opacity: 1;
 }
 
+/* Cards - Vision Pro Quality with 3D Depth */
+.card, .feature-card, .project-card {
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-medium);
+  -webkit-backdrop-filter: var(--visionpro-blur-medium);
+  border: 1px solid var(--visionpro-glass-border);
+  border-radius: 28px;
+  box-shadow:
+    var(--visionpro-shadow-3),
+    var(--visionpro-glow-inner);
+  padding: 3rem 2.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  perspective: 1000px;
 .btn-secondary:active,
 .hero-button.secondary:active,
 .button-secondary:active {
@@ -1088,6 +1129,14 @@ a:active {
 }
 
 .card:hover, .feature-card:hover, .project-card:hover {
+  transform: translateY(-16px) translateZ(40px) scale(1.02);
+  box-shadow:
+    var(--visionpro-shadow-5),
+    var(--visionpro-glow-outer),
+    var(--visionpro-glow-inner);
+  border-color: rgba(14, 165, 233, 0.4);
+  backdrop-filter: var(--visionpro-blur-strong);
+  -webkit-backdrop-filter: var(--visionpro-blur-strong);
   transform: translateY(-12px) translateZ(20px) scale(1.02);
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.03),
@@ -1620,25 +1669,31 @@ section > p {
   .site-header { padding: 1rem 0; }
 }
 
-/* Card Content Styles */
+/* Card Content Styles - Vision Pro Enhanced */
 .feature-card, .expertise-area, .update-item {
   display: flex;
   flex-direction: column;
   height: 100%;
   min-height: 280px;
   padding: 2rem;
-  background: var(--card-bg);
-  backdrop-filter: var(--card-blur);
-  -webkit-backdrop-filter: var(--card-blur);
-  border: var(--glass-border);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--card-shadow);
-  transition: all 0.3s var(--ease-out);
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-medium);
+  -webkit-backdrop-filter: var(--visionpro-blur-medium);
+  border: 1px solid var(--visionpro-glass-border);
+  border-radius: 28px;
+  box-shadow: var(--visionpro-shadow-3), var(--visionpro-glow-inner);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 .feature-card:hover, .expertise-area:hover, .update-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(124, 45, 18, 0.12);
+  transform: translateY(-8px) translateZ(20px);
+  box-shadow: var(--visionpro-shadow-4), var(--visionpro-glow-outer), var(--visionpro-glow-inner);
+  backdrop-filter: var(--visionpro-blur-strong);
+  -webkit-backdrop-filter: var(--visionpro-blur-strong);
+  border-color: rgba(14, 165, 233, 0.3);
 }
 
 /* Feature Card - Premium Styles */
@@ -2364,6 +2419,203 @@ section > p {
 /* Page Content Wrapper */
 .page-content {
   padding: 0;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+}
+
+/* ===== Vision Pro Advanced Effects ===== */
+
+/* 3D Depth Layers */
+.home-content {
+  transform-style: preserve-3d;
+  perspective: 2000px;
+}
+
+/* Section depth layering */
+section {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* Enhanced glassmorphism for sections */
+.featured-section,
+.expertise-section,
+.recent-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-section::after,
+.expertise-section::after,
+.recent-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--visionpro-material-3);
+  backdrop-filter: var(--visionpro-blur-light);
+  -webkit-backdrop-filter: var(--visionpro-blur-light);
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 32px;
+}
+
+/* Contact Preview - Enhanced Vision Pro Glass */
+.contact-preview {
+  background: var(--visionpro-material-1);
+  backdrop-filter: var(--visionpro-blur-strong);
+  -webkit-backdrop-filter: var(--visionpro-blur-strong);
+  border: 1.5px solid var(--visionpro-glass-border);
+  box-shadow:
+    var(--visionpro-shadow-4),
+    var(--visionpro-glow-inner),
+    var(--visionpro-glow-outer);
+  transform: translateZ(0);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-preview:hover {
+  transform: translateY(-8px) translateZ(30px);
+  box-shadow:
+    var(--visionpro-shadow-5),
+    0 0 40px rgba(14, 165, 233, 0.2),
+    var(--visionpro-glow-inner);
+}
+
+/* 3D Card Tilt Effect on Mouse Move */
+@media (hover: hover) and (pointer: fine) {
+  .feature-card,
+  .expertise-area,
+  .update-item {
+    position: relative;
+  }
+
+  .feature-card::after,
+  .expertise-area::after,
+  .update-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(14, 165, 233, 0.1) 0%,
+      transparent 50%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 28px;
+    z-index: 1;
+  }
+
+  .feature-card:hover::after,
+  .expertise-area:hover::after,
+  .update-item:hover::after {
+    opacity: 1;
+  }
+}
+
+/* Enhanced button depth */
+.btn-primary,
+.hero-button.primary,
+.button {
+  transform: translateZ(10px);
+  box-shadow: var(--visionpro-shadow-2);
+  position: relative;
+}
+
+.btn-primary:hover,
+.hero-button.primary:hover,
+.button:hover {
+  transform: translateZ(20px) scale(1.02);
+  box-shadow: var(--visionpro-shadow-3), var(--visionpro-glow-outer);
+}
+
+.btn-primary:active,
+.hero-button.primary:active,
+.button:active {
+  transform: translateZ(5px) scale(0.98);
+}
+
+/* Frosted glass overlay effect */
+.feature-card > *,
+.expertise-area > *,
+.update-item > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animated gradient background for hero */
+.hero-animation-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-animation-container::after {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(14, 165, 233, 0.03) 0deg,
+    rgba(168, 85, 247, 0.03) 120deg,
+    rgba(59, 130, 246, 0.03) 240deg,
+    rgba(14, 165, 233, 0.03) 360deg
+  );
+  animation: rotateGradient 30s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Enhanced mobile glassmorphism */
+@media screen and (max-width: 768px) {
+  .site-nav {
+    background: var(--visionpro-material-1);
+    backdrop-filter: var(--visionpro-blur-strong);
+    -webkit-backdrop-filter: var(--visionpro-blur-strong);
+    border: 1px solid var(--visionpro-glass-border);
+    box-shadow: var(--visionpro-shadow-4);
+  }
+
+  .site-nav .page-link {
+    background: var(--visionpro-material-2);
+    backdrop-filter: var(--visionpro-blur-light);
+    -webkit-backdrop-filter: var(--visionpro-blur-light);
+  }
+
+  .site-nav .page-link:hover {
+    background: var(--visionpro-material-1);
+    backdrop-filter: var(--visionpro-blur-medium);
+    -webkit-backdrop-filter: var(--visionpro-blur-medium);
+  }
+}
+
+/* Smooth scroll behavior with depth perception */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transform: none !important;
+  }
 }
 
 /* Hero Section - Professional Orange/Purple with 3D */
