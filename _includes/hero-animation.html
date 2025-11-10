@@ -29,22 +29,29 @@
         height: calc(100vh - 48px);
         max-height: 736px;
         overflow: hidden;
-        background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
+        background: linear-gradient(180deg, rgba(245, 247, 250, 0.8) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(245, 247, 250, 0.8) 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0 22px;
+        transform-style: preserve-3d;
+        perspective: 2000px;
     }
 
     .hero-gradient-bg {
         position: absolute;
         inset: 0;
-        background: radial-gradient(circle at 30% 20%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
-                    radial-gradient(circle at 70% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
+        background:
+            radial-gradient(circle at 30% 20%, rgba(14, 165, 233, 0.12) 0%, transparent 45%),
+            radial-gradient(circle at 70% 80%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
+            radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.06) 0%, transparent 60%);
+        backdrop-filter: blur(60px) saturate(200%);
+        -webkit-backdrop-filter: blur(60px) saturate(200%);
         z-index: 0;
         opacity: 0;
         animation: fadeInGradient 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+        transform: translateZ(-50px);
     }
 
     @keyframes fadeInGradient {
@@ -61,6 +68,8 @@
         margin: 0 auto;
         opacity: 0;
         animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+        transform: translateZ(50px);
+        transform-style: preserve-3d;
     }
 
     .hero-eyebrow {
@@ -148,15 +157,21 @@
     }
 
     .hero-button.secondary {
-        border: 1.5px solid var(--color-border-secondary);
+        border: 1.5px solid rgba(255, 255, 255, 0.4);
         color: var(--color-link);
-        background: transparent;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.6);
     }
 
     .hero-button.secondary:hover {
-        background: var(--color-bg-tertiary);
-        border-color: var(--color-border-accent);
-        transform: scale(1.01);
+        background: rgba(255, 255, 255, 0.7);
+        border-color: rgba(14, 165, 233, 0.3);
+        transform: scale(1.02) translateZ(10px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 0 24px rgba(14, 165, 233, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(30px) saturate(200%);
+        -webkit-backdrop-filter: blur(30px) saturate(200%);
     }
 
     .hero-scroll-indicator {
