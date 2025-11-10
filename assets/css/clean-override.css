@@ -1,0 +1,178 @@
+/**
+ * APPLE-STYLE OVERRIDES
+ * Force center-aligned and center-justified text throughout
+ * Center all main content
+ */
+
+/* Force center alignment and justification on ALL TEXT */
+h1, h2, h3, h4, h5, h6,
+p, .lead, .hero-title, .hero-subtitle, .hero-eyebrow,
+.section-title, .section-description,
+.card h3, .card h4, .card p,
+.post-content, .page-content,
+.feature-card h3, .feature-card p,
+.expertise-area h3, .expertise-area p,
+.update-item h3, .update-item p,
+article, section, div {
+  text-align: center !important;
+}
+
+/* Center-align paragraphs and descriptions (NOT justified) */
+p, .lead, .hero-subtitle, .section-description,
+.card p, .feature-card p, .expertise-area p {
+  text-align: center !important;
+}
+
+/* Keep footer left-aligned only */
+.footer-section, .footer-section h4, .footer-section p,
+.footer-section a, .footer-links, .footer-links li {
+  text-align: left !important;
+}
+
+/* Force center-aligned buttons and button containers */
+.btn, .btn-primary, .btn-secondary, .hero-button,
+button, input[type="submit"], .submit-button,
+.hero-buttons, .button-group, .text-center,
+div:has(> .btn), div:has(> a.btn) {
+  text-align: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Containers stay centered for grid symmetry */
+.grid, .container, .container-narrow,
+.featured-section, .expertise-section {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Force center-aligned navigation */
+.site-header, .site-nav, .wrapper {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.trigger {
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.page-link {
+  text-align: center !important;
+}
+
+/* Remove gradient heading nonsense */
+.gradient-heading {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: var(--color-black) !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+}
+
+/* Remove pulse glow */
+.pulse-glow {
+  animation: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove spotlight effects */
+.spotlight-effect {
+  display: none !important;
+}
+
+/* Force center-aligned hero sections */
+.hero-section--centered {
+  text-align: center !important;
+}
+
+.hero-section--centered .hero-content {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+/* Center-align all buttons in button groups - ROW layout for side by side */
+.hero-buttons,
+div[style*="display: flex"][style*="justify-content: center"] {
+  justify-content: center !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+}
+
+/* Force center-alignment on ALL card/box elements and children */
+.card, .card *,
+.feature-card, .feature-card *,
+.expertise-area, .expertise-area *,
+.update-item, .update-item *,
+.project, .project *,
+.publication, .publication *,
+.post, .post * {
+  text-align: center !important;
+}
+
+/* Card headings - center-aligned */
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
+.feature-card h1, .feature-card h2, .feature-card h3, .feature-card h4,
+.expertise-area h1, .expertise-area h2, .expertise-area h3, .expertise-area h4,
+.update-item h1, .update-item h2, .update-item h3, .update-item h4,
+.project h1, .project h2, .project h3, .project h4,
+.publication h1, .publication h2, .publication h3, .publication h4 {
+  text-align: center !important;
+}
+
+/* Card paragraphs - center-aligned (NOT justified) */
+.card p, .feature-card p, .expertise-area p,
+.update-item p, .project p, .publication p, .post p,
+.update-content p, .project-content p {
+  text-align: center !important;
+}
+
+/* Card links and buttons - centered */
+.card a, .card .btn, .card .card-link,
+.feature-card a, .feature-card .btn, .feature-card .feature-link,
+.expertise-area a, .update-item a, .project a, .publication a {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Remove any icon or visual center alignments */
+.icon-badge,
+.expertise-icon-visual {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Center contact preview */
+.contact-preview {
+  text-align: center !important;
+}
+
+.contact-preview h2,
+.contact-preview p {
+  text-align: center !important;
+}
+
+/* Remove any transform effects that are not Apple-like */
+.card:hover,
+.btn:hover {
+  transform: none !important;
+}
+
+/* Simplify shadows */
+* {
+  box-shadow: none !important;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}

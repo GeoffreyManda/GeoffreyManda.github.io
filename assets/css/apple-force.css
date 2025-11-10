@@ -1,0 +1,388 @@
+/**
+ * APPLE FORCE OVERRIDE
+ * Forcefully apply Apple's black/grey theme to EVERY element
+ * Remove ALL old colors (blue/purple/orange gradients)
+ */
+
+/* ===== FORCE APPLE COLORS EVERYWHERE ===== */
+
+/* Force black headings everywhere - CENTER ALIGNED */
+h1, h2, h3, h4, h5, h6,
+.hero-title, .section-title, .card h3, .card h4,
+.feature-card h3, .expertise-area h3, .update-item h3,
+.project h3, .about h3 {
+  color: #1d1d1f !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+}
+
+/* Force grey body text everywhere - CENTER ALIGNED */
+p, .lead, .hero-subtitle, .section-description,
+.card p, .feature-card p, .expertise-area p,
+.update-content p, .project p {
+  color: #48484a !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+}
+
+/* Remove ALL background gradients */
+.hero-section, .hero-animation-container,
+.featured-section, .expertise-section, .recent-section,
+.contact-preview, .section-container {
+  background: #ffffff !important;
+  background-image: none !important;
+  background-gradient: none !important;
+}
+
+/* Force white or light grey backgrounds only */
+.card, .feature-card, .expertise-area, .update-item {
+  background: #ffffff !important;
+  border: 1px solid #d1d1d6 !important;
+  background-image: none !important;
+}
+
+/* Force Apple blue for links and buttons */
+a, .card-link, .feature-link {
+  color: #0071e3 !important;
+}
+
+a:hover, .card-link:hover, .feature-link:hover {
+  color: #0077ed !important;
+}
+
+.btn-primary, .btn.btn-primary {
+  background: #0071e3 !important;
+  color: #ffffff !important;
+  border: none !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.btn-primary:hover, .btn.btn-primary:hover {
+  background: #0077ed !important;
+}
+
+.btn-secondary, .btn.btn-secondary {
+  background: transparent !important;
+  color: #0071e3 !important;
+  border: 1px solid #0071e3 !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.btn-secondary:hover, .btn.btn-secondary:hover {
+  background: #0071e3 !important;
+  color: #ffffff !important;
+}
+
+/* Force center-aligned button containers - ROW layout for side by side */
+.hero-buttons, .button-group, .text-center,
+div:has(> .btn), div:has(> a.btn) {
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+}
+
+/* Remove any colored text */
+.text-primary, .text-info, .text-success, .text-warning, .text-danger {
+  color: #1d1d1f !important;
+}
+
+/* Force grey for secondary text */
+.text-muted, .text-secondary, .hero-eyebrow, .update-date {
+  color: #8e8e93 !important;
+}
+
+/* ===== APPLE NAVIGATION & BURGER MENU ===== */
+
+/* FORCE HIDE site-title (Geoffrey Manda duplication) */
+.site-title {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: saturate(180%) blur(20px) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.wrapper {
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  padding: 0 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  min-height: 44px !important;
+}
+
+.site-nav {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.trigger {
+  display: flex !important;
+  gap: 32px !important;
+  align-items: center !important;
+}
+
+.page-link {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #1d1d1f !important;
+  text-decoration: none !important;
+  opacity: 0.8 !important;
+  transition: opacity 0.3s !important;
+  text-align: center !important;
+}
+
+.page-link:hover,
+.page-link.active {
+  opacity: 1 !important;
+}
+
+/* Force center-aligned navigation */
+.site-header, .site-nav {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.wrapper {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.trigger {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+/* Hide burger menu on desktop */
+.nav-trigger {
+  display: none !important;
+}
+
+.menu-icon {
+  display: none !important;
+}
+
+/* Mobile burger menu - Apple style */
+@media (max-width: 768px) {
+  .wrapper {
+    justify-content: space-between !important;
+  }
+
+  .menu-icon {
+    display: block !important;
+    width: 24px !important;
+    height: 24px !important;
+    position: relative !important;
+    cursor: pointer !important;
+    z-index: 10000 !important;
+  }
+
+  .menu-icon span {
+    display: block !important;
+    width: 18px !important;
+    height: 1px !important;
+    background: #1d1d1f !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+
+  .menu-icon span:nth-child(1) {
+    top: 6px !important;
+  }
+
+  .menu-icon span:nth-child(2) {
+    top: 11px !important;
+  }
+
+  .menu-icon span:nth-child(3) {
+    top: 16px !important;
+  }
+
+  /* Animated burger to X */
+  .nav-trigger:checked ~ .menu-icon span:nth-child(1) {
+    top: 11px !important;
+    transform: translateX(-50%) rotate(45deg) !important;
+  }
+
+  .nav-trigger:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .nav-trigger:checked ~ .menu-icon span:nth-child(3) {
+    top: 11px !important;
+    transform: translateX(-50%) rotate(-45deg) !important;
+  }
+
+  .trigger {
+    position: fixed !important;
+    top: 44px !important;
+    right: -100% !important;
+    width: 100% !important;
+    height: calc(100vh - 44px) !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 32px 22px !important;
+    gap: 0 !important;
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    z-index: 9999 !important;
+  }
+
+  .nav-trigger:checked ~ .trigger {
+    right: 0 !important;
+  }
+
+  .page-link {
+    font-size: 17px !important;
+    padding: 16px 0 !important;
+    width: 100% !important;
+    border-bottom: 1px solid #d1d1d6 !important;
+  }
+}
+
+/* ===== REMOVE OLD COLORS ===== */
+
+/* Kill any blue/purple/orange gradients */
+*[style*="linear-gradient"],
+*[style*="rgba(14, 165, 233"],
+*[style*="rgba(168, 85, 247"],
+*[style*="background: linear-gradient"],
+.gradient-bg, .gradient-heading, .gradient-text {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #1d1d1f !important;
+}
+
+/* Remove colored borders */
+*[style*="border: 1px solid rgba(14, 165, 233"],
+*[style*="border: 1px solid rgba(168, 85, 247"] {
+  border: 1px solid #d1d1d6 !important;
+}
+
+/* Remove colored boxes */
+*[style*="rgba(14, 165, 233, 0.05)"],
+*[style*="rgba(14, 165, 233, 0.08)"],
+*[style*="rgba(14, 165, 233, 0.1)"],
+*[style*="rgba(168, 85, 247"] {
+  background: #f5f5f7 !important;
+}
+
+/* Force footer to Apple grey */
+.site-footer {
+  background: #f5f5f7 !important;
+  color: #48484a !important;
+}
+
+.footer-section h4 {
+  color: #1d1d1f !important;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #48484a !important;
+}
+
+.footer-section a:hover {
+  color: #1d1d1f !important;
+}
+
+/* ===== REMOVE ALL ANIMATIONS ===== */
+
+.float-gentle, .pulse-glow, .spotlight-effect,
+*[class*="animate"], *[class*="animation"] {
+  animation: none !important;
+  transform: none !important;
+}
+
+/* ===== CLEAN SHADOWS ===== */
+
+* {
+  box-shadow: none !important;
+}
+
+.card:hover, .feature-card:hover, .expertise-area:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ===== PROPER ALIGNMENT: Symmetric grids, center-aligned text ===== */
+
+/* Force center-alignment on ALL card/box elements and children */
+.card, .card *,
+.feature-card, .feature-card *,
+.expertise-area, .expertise-area *,
+.update-item, .update-item *,
+.project, .project *,
+.publication, .publication *,
+.post, .post * {
+  text-align: center !important;
+}
+
+/* Card headings - center-aligned */
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
+.feature-card h1, .feature-card h2, .feature-card h3, .feature-card h4,
+.expertise-area h1, .expertise-area h2, .expertise-area h3, .expertise-area h4,
+.update-item h1, .update-item h2, .update-item h3, .update-item h4,
+.project h1, .project h2, .project h3, .project h4,
+.publication h1, .publication h2, .publication h3, .publication h4 {
+  text-align: center !important;
+}
+
+/* Card paragraphs - center-aligned (NOT justified) */
+.card p, .feature-card p, .expertise-area p,
+.update-item p, .project p, .publication p, .post p {
+  text-align: center !important;
+}
+
+/* Card links - centered */
+.card a, .card .card-link,
+.feature-card a, .feature-card .feature-link,
+.expertise-area a, .update-item a, .project a, .publication a {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* GRIDS & CONTAINERS: Centered for symmetry */
+.grid, .grid-2, .grid-3,
+.featured-section, .expertise-section,
+.container, .container-narrow {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Sections centered */
+section {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+[style*="color: var(--primary-600)"],
+[style*="color: var(--secondary-600)"],
+[style*="color: #0ea5e9"],
+[style*="color: #a855f7"] {
+  color: #1d1d1f !important;
+}

@@ -1,135 +1,1613 @@
 <!DOCTYPE html>
-<html lang="en"><script src="https://d3js.org/d3.v7.min.js"></script> <body><header class="site-header" role="banner">
+<html lang="en">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Geoffrey Manda | Data Scientist</a><nav class="site-nav">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://formspree.io">
+
+  <!-- Primary Meta Tags --><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About | Home</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="About" />
+<meta name="author" content="Geoffrey Manda" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary University of London. Editor of CausalAtlas.org with expertise in biostatistics, causal inference, and global health research." />
+<meta property="og:description" content="Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary University of London. Editor of CausalAtlas.org with expertise in biostatistics, causal inference, and global health research." />
+<link rel="canonical" href="http://localhost:4000/about/" />
+<meta property="og:url" content="http://localhost:4000/about/" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Geoffrey Manda"},"description":"Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary University of London. Editor of CausalAtlas.org with expertise in biostatistics, causal inference, and global health research.","headline":"About","name":"Home","url":"http://localhost:4000/about/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/about/">
+  <meta property="og:title" content="About | Home">
+  <meta property="og:description" content="Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary University of London. Editor of CausalAtlas.org with expertise in biostatistics, causal inference, and global health research.">
+  <meta property="og:image" content="http://localhost:4000/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://localhost:4000/about/">
+  <meta property="twitter:title" content="About | Home">
+  <meta property="twitter:description" content="Learn about Geoffrey Manda, PhD Research Fellow at Queen Mary University of London. Editor of CausalAtlas.org with expertise in biostatistics, causal inference, and global health research.">
+  <meta property="twitter:image" content="http://localhost:4000/assets/images/og-image.jpg">
+  <meta name="twitter:creator" content="@geoffreymanda">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="http://localhost:4000/about/">
+
+  <!-- Theme Color for mobile browsers -->
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1d1d1f" media="(prefers-color-scheme: dark)">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+  <!-- Stylesheets with performance optimization -->
+  <link rel="preload" href="/assets/css/style.css" as="style">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/world-class-design.css">
+  <link rel="stylesheet" href="/assets/css/clean-override.css">
+  <link rel="stylesheet" href="/assets/css/apple-force.css">
+  <link rel="stylesheet" href="/assets/css/nuclear-override.css">
+
+  <!-- RSS Feed --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" /><!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Geoffrey Manda",
+    "jobTitle": "PhD Research Fellow in Biostatistics & Epidemiology",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Queen Mary University of London"
+    },
+    "url": "http://localhost:4000",
+    "sameAs": [
+      "https://www.linkedin.com/in/geoffreymanda/",
+      "https://github.com/GeoffreyManda",
+      "https://scholar.google.com/citations?user=7-Sy11kAAAAJ",
+      "https://twitter.com/geoffreymanda"
+    ],
+    "description": "Biostatistician and epidemiologist specializing in causal inference, clinical trials, and public health research"
+  }
+  </script>
+
+  <!-- Analytics --></head>
+
+
+  <body>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+  <div class="wrapper"><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
+        <label for="nav-trigger" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Geoffrey Manda</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/ai-projects/">AI Projects</a><a class="page-link" href="/tutorials/">Tutorials</a><a class="page-link" href="/biostatistics/">Biostatistics</a><a class="page-link" href="/epidemiology/">Epidemiology</a><a class="page-link" href="/contact/">Contact</a></div>
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/research/">Research &amp; Projects</a><a class="page-link" href="/contact/">Contact</a></div>
       </nav></div>
 </header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post">
+
+
+    <main class="page-content" aria-label="Content" id="main-content">
+      <article class="post">
 
   <header class="post-header">
     <h1 class="post-title">About</h1>
   </header>
 
   <div class="post-content">
-    <h1 id="about">About</h1>
+    <style>
+/* Hide the automatic page title from Minima theme */
+.page-heading {
+  display: none !important;
+}
 
-<h2 id="geoffrey-manda">Geoffrey Manda</h2>
+/* Hide any h1 that's not our hero title */
+.page-content > h1:first-of-type {
+  display: none !important;
+}
 
-<p>I am a researcher and data analyst specializing in epidemiology, survival analysis, and healthcare outcomes. My work focuses on developing and applying robust statistical methodologies to answer important research questions in clinical and public health settings.</p>
+header.post-header {
+  display: none !important;
+}
 
-<h2 id="research-interests">Research Interests</h2>
+.post-title {
+  display: none !important;
+}
 
-<p>My primary research interests include:</p>
+.hero-section-bold-black {
+  background: #000000 !important;
+  padding: 8rem 2rem;
+  margin: -2rem -2rem 2rem -2rem !important;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% + 4rem) !important;
+}
 
-<ul>
-  <li><strong>Survival Analysis</strong> - Developing and applying methods for time-to-event data</li>
-  <li><strong>Healthcare Analytics</strong> - Statistical approaches to understanding clinical outcomes</li>
-  <li><strong>Epidemiological Methods</strong> - Study design and analysis for public health research</li>
-  <li><strong>Mixed-Effects Modeling</strong> - Accounting for hierarchical structures in medical data</li>
-</ul>
+.hero-section-bold-black::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 113, 227, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
 
-<h2 id="education">Education</h2>
+.hero-title-bold-white {
+  color: #ffffff !important;
+  font-size: 3.5rem;
+  font-weight: 900 !important;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin: 0 0 1.5rem 0;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  opacity: 1 !important;
+}
 
-<ul>
-  <li><strong>PhD/Master’s in [Field]</strong> - [University Name], [Year]</li>
-  <li><strong>Bachelor’s in [Field]</strong> - [University Name], [Year]</li>
-</ul>
+.hero-subtitle-bold-white {
+  color: #ffffff !important;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 1 !important;
+}
 
-<h2 id="professional-experience">Professional Experience</h2>
+@media (max-width: 768px) {
+  .hero-section-bold-black {
+    padding: 4rem 1.5rem;
+  }
 
-<ul>
-  <li><strong>[Current Position]</strong> - [Organization], [Dates]</li>
-  <li><strong>[Previous Position]</strong> - [Organization], [Dates]</li>
-</ul>
+  .hero-title-bold-white {
+    font-size: 2.5rem;
+  }
 
-<h2 id="skills">Skills</h2>
+  .hero-subtitle-bold-white {
+    font-size: 1.125rem;
+  }
+}
 
-<ul>
-  <li><strong>Statistical Software</strong>: R, SAS, STATA</li>
-  <li><strong>Programming</strong>: R, Python, SQL</li>
-  <li><strong>Data Visualization</strong>: ggplot2, Tableau</li>
-  <li><strong>Research Methods</strong>: Survival analysis, longitudinal data analysis, mixed-effects modeling</li>
-  <li><strong>Other</strong>: Git, LaTeX, Markdown</li>
-</ul>
+@media (max-width: 480px) {
+  .hero-title-bold-white {
+    font-size: 2rem;
+  }
 
-<h2 id="publications">Publications</h2>
+  .hero-subtitle-bold-white {
+    font-size: 1rem;
+  }
+}
+</style>
 
-<ol>
-  <li>[Publication 1]</li>
-  <li>[Publication 2]</li>
-  <li>[Publication 3]</li>
-</ol>
+<div class="hero-section-bold-black">
+  <div class="hero-content">
+    <h1 class="hero-title-bold-white">Who am I?</h1>
+  </div>
+</div>
 
-<h2 id="teaching">Teaching</h2>
+<section class="cv-carousel-section">
+  <h2 id="dynamic-carousel-title" class="section-title-center">Professional Summary</h2>
 
-<p>I enjoy teaching statistical methods and research methodology. Some of the courses and workshops I’ve taught include:</p>
+  <div class="cv-carousel-container">
+      <button class="cv-carousel-btn cv-carousel-btn-prev" aria-label="Previous milestone">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 12L18 24L30 36" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
 
-<ul>
-  <li>[Course/Workshop 1]</li>
-  <li>[Course/Workshop 2]</li>
-  <li>[Course/Workshop 3]</li>
-</ul>
+      <div class="cv-carousel-stage">
+        <div class="cv-carousel-track">
+          <!-- Professional Summary -->
+          <div class="cv-card" data-type="summary" data-title="Professional Summary">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2024–Present</div>
+              <div class="cv-summary-badge">Overview</div>
+              <h3>PhD Research Fellow</h3>
+              <p class="cv-institution">Queen Mary University of London</p>
+              <div class="cv-mini-tiles">
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">Research Focus</div>
+                  <div class="mini-tile-text">Causal Inference &amp; Discovery</div>
+                </div>
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="1" x2="12" y2="23" />
+                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">Fellowship</div>
+                  <div class="mini-tile-text">CREATE PhD (£74K)</div>
+                </div>
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="20" x2="18" y2="10" />
+                      <line x1="12" y1="20" x2="12" y2="4" />
+                      <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">Methods</div>
+                  <div class="mini-tile-text">State Transition Models</div>
+                </div>
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="2" y1="12" x2="22" y2="12" />
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">Platform</div>
+                  <div class="mini-tile-text">CausalAtlas.org Editor</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<h2 id="this-website">This Website</h2>
+          <!-- PhD -->
+          <div class="cv-card" data-type="education" data-title="Education">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2025–2029</div>
+              <div class="cv-degree-badge">PhD</div>
+              <h3>PhD in Nutrition (Biostatistics &amp; Epidemiology)</h3>
+              <p class="cv-institution">Queen Mary University of London</p>
+              <div class="cv-details">
+                <p><strong>Thesis:</strong> Integrating Causal Inference, Causal Discovery, and State Transition Modelling</p>
+                <p><strong>Advisors:</strong> Prof. Andrew Prendergast &amp; Prof. Melanie Smuk</p>
+                <p><strong>Funding:</strong> CREATE PhD Fellowship (£74,000)</p>
+              </div>
+            </div>
+          </div>
 
-<p>This website serves as a central hub for my data analysis projects and research. Each project has its own dedicated GitHub repository containing detailed documentation, code, and results.</p>
+          <!-- Editor -->
+          <div class="cv-card" data-type="position" data-title="Current Position">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2024–Present</div>
+              <div class="cv-position-badge">Editor</div>
+              <h3>Editor, CausalAtlas.org</h3>
+              <p class="cv-institution">CausalAtlas.org</p>
+              <div class="cv-details">
+                <p>Leading editorial efforts for a comprehensive resource platform providing tutorials, tools, and methodological guidance on causality, causal inference, and causal discovery for researchers and practitioners.</p>
+                <a href="https://causalatlas.org" target="_blank" rel="noopener" class="cv-link">Visit CausalAtlas.org →</a>
+              </div>
+            </div>
+          </div>
 
-<h2 id="contact">Contact</h2>
+          <!-- Biostatistical Consultant -->
+          <div class="cv-card" data-type="position" data-title="Consulting Experience">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2024–2025</div>
+              <div class="cv-position-badge">Consultant</div>
+              <h3>Biostatistical Consultant</h3>
+              <p class="cv-institution">Ripple Global Health Research Institute</p>
+              <div class="cv-details">
+                <p>Leading statistical analysis for nutrition clinical trials in Mali and Malawi, applying GAMs, SEM, and causal methods to inform program optimization.</p>
+              </div>
+            </div>
+          </div>
 
-<p>Feel free to reach out with questions, collaboration proposals, or project ideas:</p>
+          <!-- WHO Consultant -->
+          <div class="cv-card" data-type="position" data-title="WHO Experience">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2022–2023</div>
+              <div class="cv-position-badge">Consultant</div>
+              <h3>Systematic Review Consultant</h3>
+              <p class="cv-institution">World Health Organization (WHO)</p>
+              <div class="cv-details">
+                <p>Conducted systematic reviews and meta-analyses that directly informed the 2023 WHO guideline updates on management of acute malnutrition.</p>
+              </div>
+            </div>
+          </div>
 
-<ul>
-  <li><strong>GitHub</strong>: <a href="https://github.com/GeoffreyManda">GeoffreyManda</a></li>
-  <li><strong>Email</strong>: [Your email if you want to share it]</li>
-</ul>
+          <!-- Commonwealth Scholarship -->
+          <div class="cv-card" data-type="award" data-title="Awards &amp; Recognition">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2021</div>
+              <div class="cv-award-badge">Award</div>
+              <h3>Commonwealth Masters Scholarship</h3>
+              <p class="cv-institution">UK FCDO</p>
+              <div class="cv-details">
+                <p>UK Foreign, Commonwealth &amp; Development Office (FCDO) award for outstanding scholars from Commonwealth countries (£40,000).</p>
+              </div>
+            </div>
+          </div>
 
-<h2 id="license">License</h2>
+          <!-- MSc -->
+          <div class="cv-card" data-type="education" data-title="Education">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2020–2021</div>
+              <div class="cv-degree-badge">MSc</div>
+              <h3>MSc in Public Health</h3>
+              <p class="cv-institution">London School of Hygiene &amp; Tropical Medicine</p>
+              <div class="cv-details">
+                <p><strong>Thesis:</strong> Determinants of neonatal mortality in Malawi, 2019-2020</p>
+                <p><strong>Supervisors:</strong> Prof. Kelias Msyamboza (WHO) &amp; Prof. Eric Ohuma (LSHTM)</p>
+                <p><strong>GPA:</strong> 4.0/5.0</p>
+              </div>
+            </div>
+          </div>
 
-<p>Unless otherwise noted, the content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+          <!-- ESO-SIOP Award -->
+          <div class="cv-card" data-type="award" data-title="Awards &amp; Recognition">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2018</div>
+              <div class="cv-award-badge">Award</div>
+              <h3>ESO-SIOP Europe Masterclass Travel Award</h3>
+              <p class="cv-institution">ESO-SIOP Europe</p>
+              <div class="cv-details">
+                <p>Competitive honour for outstanding early-career clinicians to attend the 7th Pediatric Oncology Masterclass in Europe (£10,000).</p>
+              </div>
+            </div>
+          </div>
 
-<p><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg" alt="License: CC BY-NC-ND 4.0" /></a></p>
+          <!-- Warwick Award -->
+          <div class="cv-card" data-type="award" data-title="Awards &amp; Recognition">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2014</div>
+              <div class="cv-award-badge">Award</div>
+              <h3>Warwick Medical School Summer Scholarship</h3>
+              <p class="cv-institution">Warwick Medical School</p>
+              <div class="cv-details">
+                <p>Immersive research and clinical experience at Warwick Medical School, UK (£10,000).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- MBBS -->
+          <div class="cv-card" data-type="education" data-title="Education">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">2010–2015</div>
+              <div class="cv-degree-badge">MBBS</div>
+              <h3>MBBS (Bachelor of Medicine, Bachelor of Surgery)</h3>
+              <p class="cv-institution">University of Malawi, College of Medicine</p>
+              <div class="cv-details">
+                <p><strong>Thesis:</strong> Cancer survival in Malawi: A retrospective cohort study (Distinction grade)</p>
+                <p><em>US Doctor of Medicine (MD) Equivalent</em></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Affiliations -->
+          <div class="cv-card" data-type="affiliations" data-title="Professional Affiliations">
+            <div class="cv-card-inner">
+              <div class="cv-year-badge">Current</div>
+              <div class="cv-affiliations-badge">Memberships</div>
+              <h3>Professional Affiliations</h3>
+              <p class="cv-institution">International &amp; National Organizations</p>
+              <div class="cv-mini-tiles cv-mini-tiles-3col">
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">International</div>
+                  <div class="mini-tile-text">Clinical Biostatisticians</div>
+                </div>
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">International</div>
+                  <div class="mini-tile-text">Statistical Institute</div>
+                </div>
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 16v-4" />
+                      <path d="M12 8h.01" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">International</div>
+                  <div class="mini-tile-text">Public Health Nutrition</div>
+                </div>
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                      <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">National</div>
+                  <div class="mini-tile-text">Public Health Society, UK</div>
+                </div>
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">National</div>
+                  <div class="mini-tile-text">Medical Assoc. of Malawi</div>
+                </div>
+                <div class="mini-tile">
+                  <div class="mini-tile-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="3" />
+                      <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.25M15.54 15.54l4.24 4.25M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24" />
+                    </svg>
+                  </div>
+                  <div class="mini-tile-label">National</div>
+                  <div class="mini-tile-text">Commonwealth Alumni Panel</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="cv-carousel-btn cv-carousel-btn-next" aria-label="Next milestone">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 12L30 24L18 36" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="cv-carousel-dots"></div>
+</section>
+
+<style>
+/* Center title */
+.section-title-center {
+  text-align: center;
+  color: #1d1d1f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+/* CV Carousel Container - 20% wider than home (900px * 1.2 = 1080px) */
+.cv-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto 3rem;
+  padding: 2rem 0;
+}
+
+/* Carousel Stage - 3D Perspective */
+.cv-carousel-stage {
+  perspective: 2400px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-carousel-track {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CV Cards - iTunes Album Style (20% wider: 400px * 1.2 = 480px) */
+.cv-card {
+  position: absolute;
+  width: 480px;
+  max-width: 90%;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.cv-card-inner {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+              0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  transition: all 0.6s ease;
+  height: 100%;
+}
+
+/* Card States - Cover Flow Style */
+.cv-card[data-position="center"] {
+  transform: translateX(0) translateZ(0) scale(1);
+  z-index: 3;
+  opacity: 1;
+}
+
+.cv-card[data-position="center"] .cv-card-inner {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 16px 48px rgba(0, 113, 227, 0.3),
+              0 0 0 2px rgba(0, 113, 227, 0.5) inset;
+  border-color: rgba(0, 113, 227, 0.4);
+}
+
+.cv-card[data-position="left"] {
+  transform: translateX(-336px) translateZ(-200px) rotateY(35deg) scale(0.85);
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.cv-card[data-position="right"] {
+  transform: translateX(336px) translateZ(-200px) rotateY(-35deg) scale(0.85);
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.cv-card[data-position="hidden-left"],
+.cv-card[data-position="hidden-right"] {
+  transform: translateX(0) translateZ(-600px) scale(0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Text colors - black on white cards */
+.cv-card h3 {
+  color: #1d1d1f;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.cv-institution {
+  color: #0071e3;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.cv-details {
+  text-align: left;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e5e7;
+  margin-top: auto;
+}
+
+.cv-details p {
+  color: #48484a;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.cv-details strong {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+.cv-link {
+  color: #0071e3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cv-link:hover {
+  color: #005bb5;
+}
+
+/* Badges - solid colors like home page */
+.cv-year-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+  color: #1d1d1f;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.cv-card[data-position="center"] .cv-year-badge {
+  background: linear-gradient(135deg, #0071e3 0%, #005bb5 100%);
+  color: #ffffff;
+}
+
+.cv-degree-badge,
+.cv-position-badge,
+.cv-award-badge,
+.cv-affiliations-badge,
+.cv-summary-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.cv-degree-badge {
+  background: linear-gradient(135deg, #0071e3 0%, #005bb5 100%);
+  color: #ffffff;
+}
+
+.cv-position-badge {
+  background: linear-gradient(135deg, #34c759 0%, #30b350 100%);
+  color: #ffffff;
+}
+
+.cv-award-badge {
+  background: linear-gradient(135deg, #ff9500 0%, #ff8c00 100%);
+  color: #ffffff;
+}
+
+.cv-affiliations-badge {
+  background: linear-gradient(135deg, #5e5ce6 0%, #4a4ad9 100%);
+  color: #ffffff;
+}
+
+.cv-summary-badge {
+  background: linear-gradient(135deg, #1d1d1f 0%, #48484a 100%);
+  color: #ffffff;
+}
+
+/* Navigation buttons - clean white style */
+.cv-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  border: 2px solid #d1d1d6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.cv-carousel-btn:hover {
+  background: #0071e3;
+  border-color: #0071e3;
+  box-shadow: 0 8px 24px rgba(0, 113, 227, 0.3);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.cv-carousel-btn:hover svg {
+  color: #ffffff;
+}
+
+.cv-carousel-btn svg {
+  color: #1d1d1f;
+  transition: color 0.3s ease;
+}
+
+.cv-carousel-btn-prev {
+  left: 10px;
+}
+
+.cv-carousel-btn-next {
+  right: 10px;
+}
+
+/* Dots - clean style */
+.cv-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.cv-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d1d1d6;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cv-carousel-dot.active {
+  background: #0071e3;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Keep contact section white */
+.contact-preview {
+  background: #ffffff !important;
+}
+
+/* Professional Summary Card */
+.summary-card {
+  background: #ffffff;
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.summary-intro {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1d1d1f;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.summary-card p {
+  color: #48484a;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.summary-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Education Cards */
+.education-card {
+  background: #ffffff;
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  margin-top: 2rem;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.education-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.education-badge {
+  display: inline-block;
+  background: #0071e3;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.education-card h3 {
+  color: #1d1d1f;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.education-institution {
+  color: #1d1d1f;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.education-period {
+  color: #48484a;
+  font-size: 0.9375rem;
+  margin-bottom: 1.25rem;
+}
+
+.education-details {
+  border-top: 1px solid #e5e5e7;
+  padding-top: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.education-details p {
+  color: #48484a;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.education-details p:last-child {
+  margin-bottom: 0;
+}
+
+.education-details strong {
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
+/* Awards Section */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.award-card {
+  background: #ffffff;
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.award-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.award-year {
+  display: inline-block;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.award-card h3 {
+  color: #1d1d1f;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.award-card p {
+  color: #48484a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Icons */
+.expertise-icon-visual {
+  width: 64px;
+  height: 64px;
+  background: #f5f5f7;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  border: 2px solid #d1d1d6;
+  color: #0071e3;
+}
+
+/* Contact Preview Section */
+.contact-preview {
+  background: #f5f5f7;
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.contact-preview h2 {
+  color: #1d1d1f;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-preview p {
+  color: #48484a;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+/* CV Carousel - iTunes Cover Flow Style */
+.section-title-center {
+  text-align: center;
+  color: #1d1d1f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.cv-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto 3rem;
+  padding: 3rem 0;
+}
+
+.cv-carousel-stage {
+  perspective: 3000px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-carousel-track {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CV Cards */
+.cv-card {
+  position: absolute;
+  width: 945px;
+  max-width: 95%;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.cv-card-inner {
+  background: #ffffff;
+  border: 2px solid #d1d1d6;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  transition: all 0.6s ease;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Positioning */
+.cv-card[data-position="center"] {
+  transform: translateX(0) translateZ(0) scale(1);
+  z-index: 3;
+  opacity: 1;
+}
+
+.cv-card[data-position="center"] .cv-card-inner {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  border-color: #0071e3;
+  border-width: 3px;
+}
+
+.cv-card[data-position="left"] {
+  transform: translateX(-600px) translateZ(-220px) rotateY(40deg) scale(0.75);
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.cv-card[data-position="right"] {
+  transform: translateX(600px) translateZ(-220px) rotateY(-40deg) scale(0.75);
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.cv-card[data-position="hidden-left"],
+.cv-card[data-position="hidden-right"] {
+  transform: translateX(0) translateZ(-500px) scale(0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Badge Styles */
+.cv-year-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+  color: #1d1d1f;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.cv-card[data-position="center"] .cv-year-badge {
+  background: linear-gradient(135deg, #0071e3 0%, #005bb5 100%);
+  color: #ffffff;
+}
+
+.cv-degree-badge,
+.cv-position-badge,
+.cv-award-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.cv-degree-badge {
+  background: linear-gradient(135deg, #0071e3 0%, #005bb5 100%);
+  color: #ffffff;
+}
+
+.cv-position-badge {
+  background: linear-gradient(135deg, #34c759 0%, #30b350 100%);
+  color: #ffffff;
+}
+
+.cv-award-badge {
+  background: linear-gradient(135deg, #ff9500 0%, #ff8c00 100%);
+  color: #ffffff;
+}
+
+.cv-affiliations-badge {
+  background: linear-gradient(135deg, #5e5ce6 0%, #4a4ad9 100%);
+  color: #ffffff;
+}
+
+.cv-summary-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, #1d1d1f 0%, #48484a 100%);
+  color: #ffffff;
+}
+
+/* Card Content */
+.cv-card h3 {
+  color: #1d1d1f;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.cv-institution {
+  color: #0071e3;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.cv-details {
+  text-align: left;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e5e7;
+  margin-top: auto;
+}
+
+.cv-details p {
+  color: #48484a;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.cv-details p:last-child {
+  margin-bottom: 0;
+}
+
+.cv-details strong {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+.cv-link {
+  display: inline-block;
+  color: #0071e3;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.cv-link:hover {
+  color: #005bb5;
+}
+
+/* Navigation Buttons */
+.cv-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  border: 2px solid #d1d1d6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.cv-carousel-btn:hover {
+  background: #0071e3;
+  border-color: #0071e3;
+  box-shadow: 0 8px 24px rgba(0, 113, 227, 0.3);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.cv-carousel-btn:hover svg {
+  color: #ffffff;
+}
+
+.cv-carousel-btn svg {
+  color: #1d1d1f;
+  transition: color 0.3s ease;
+}
+
+.cv-carousel-btn-prev {
+  left: 10px;
+}
+
+.cv-carousel-btn-next {
+  right: 10px;
+}
+
+/* Carousel Dots */
+.cv-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.cv-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d1d1d6;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cv-carousel-dot.active {
+  background: #0071e3;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Mini-tile grid within carousel cards */
+.cv-mini-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cv-mini-tiles-3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mini-tile {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mini-tile:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(0, 113, 227, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 113, 227, 0.2);
+}
+
+.mini-tile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.mini-tile-icon svg {
+  color: #0071e3;
+  transition: color 0.2s ease;
+}
+
+.mini-tile:hover .mini-tile-icon svg {
+  color: #005bb5;
+}
+
+.mini-tile-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #86868b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.mini-tile-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  line-height: 1.3;
+}
+
+/* Responsive */
+@media (max-width: 1440px) {
+  .cv-card {
+    width: 800px;
+  }
+
+  .cv-card-inner {
+    min-height: 450px;
+  }
+
+  .cv-card[data-position="left"] {
+    transform: translateX(-500px) translateZ(-210px) rotateY(38deg) scale(0.75);
+  }
+
+  .cv-card[data-position="right"] {
+    transform: translateX(500px) translateZ(-210px) rotateY(-38deg) scale(0.75);
+  }
+}
+
+@media (max-width: 1024px) {
+  .cv-card {
+    width: 600px;
+  }
+
+  .cv-card[data-position="left"] {
+    transform: translateX(-450px) translateZ(-220px) rotateY(38deg) scale(0.75);
+  }
+
+  .cv-card[data-position="right"] {
+    transform: translateX(450px) translateZ(-220px) rotateY(-38deg) scale(0.75);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title-center {
+    font-size: 2rem;
+  }
+
+  .cv-carousel-stage {
+    min-height: 420px;
+  }
+
+  .cv-carousel-track {
+    height: 380px;
+  }
+
+  .cv-card {
+    width: 380px;
+  }
+
+  .cv-card-inner {
+    padding: 2rem 1.5rem;
+    min-height: 350px;
+  }
+
+  .cv-card[data-position="left"] {
+    transform: translateX(-250px) translateZ(-180px) rotateY(35deg) scale(0.7);
+  }
+
+  .cv-card[data-position="right"] {
+    transform: translateX(250px) translateZ(-180px) rotateY(-35deg) scale(0.7);
+  }
+
+  .cv-carousel-btn {
+    width: 56px;
+    height: 56px;
+  }
+
+  .cv-carousel-btn svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .cv-carousel-btn-prev {
+    left: 8px;
+  }
+
+  .cv-carousel-btn-next {
+    right: 8px;
+  }
+
+  .cv-card h3 {
+    font-size: 1.125rem;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const cvTrack = document.querySelector('.cv-carousel-track');
+  const cvCards = Array.from(document.querySelectorAll('.cv-card'));
+  const cvPrevBtn = document.querySelector('.cv-carousel-btn-prev');
+  const cvNextBtn = document.querySelector('.cv-carousel-btn-next');
+  const cvDotsContainer = document.querySelector('.cv-carousel-dots');
+
+  if (!cvTrack || cvCards.length === 0) return;
+
+  let cvCurrentIndex = 0;
+
+  // Generate dots
+  cvCards.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.classList.add('cv-carousel-dot');
+    dot.setAttribute('aria-label', `Go to milestone ${index + 1}`);
+    if (index === 0) dot.classList.add('active');
+    cvDotsContainer.appendChild(dot);
+  });
+
+  const cvDots = Array.from(cvDotsContainer.children);
+
+  // Update card positions
+  function updateCVCards() {
+    cvCards.forEach((card, index) => {
+      card.removeAttribute('data-position');
+
+      const diff = index - cvCurrentIndex;
+
+      if (diff === 0) {
+        card.setAttribute('data-position', 'center');
+      } else if (diff === -1 || (cvCurrentIndex === 0 && index === cvCards.length - 1)) {
+        card.setAttribute('data-position', 'left');
+      } else if (diff === 1 || (cvCurrentIndex === cvCards.length - 1 && index === 0)) {
+        card.setAttribute('data-position', 'right');
+      } else if (diff < -1) {
+        card.setAttribute('data-position', 'hidden-left');
+      } else {
+        card.setAttribute('data-position', 'hidden-right');
+      }
+    });
+
+    // Update dots
+    cvDots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === cvCurrentIndex);
+    });
+
+    // Update dynamic title based on current card's data-title attribute
+    const currentCard = cvCards[cvCurrentIndex];
+    const titleText = currentCard.getAttribute('data-title') || 'Academic Journey';
+    const titleElement = document.getElementById('dynamic-carousel-title');
+    if (titleElement) {
+      titleElement.textContent = titleText;
+    }
+  }
+
+  // Next button
+  cvNextBtn.addEventListener('click', () => {
+    cvCurrentIndex = (cvCurrentIndex + 1) % cvCards.length;
+    updateCVCards();
+  });
+
+  // Previous button
+  cvPrevBtn.addEventListener('click', () => {
+    cvCurrentIndex = (cvCurrentIndex - 1 + cvCards.length) % cvCards.length;
+    updateCVCards();
+  });
+
+  // Dot navigation
+  cvDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      cvCurrentIndex = index;
+      updateCVCards();
+    });
+  });
+
+  // Auto-play carousel - advance every 10 seconds
+  let autoPlayInterval = setInterval(() => {
+    cvNextBtn.click();
+  }, 10000);
+
+  // Pause auto-play on hover
+  const carouselContainer = document.querySelector('.cv-carousel-container');
+  carouselContainer.addEventListener('mouseenter', () => {
+    clearInterval(autoPlayInterval);
+  });
+
+  // Resume auto-play when mouse leaves
+  carouselContainer.addEventListener('mouseleave', () => {
+    autoPlayInterval = setInterval(() => {
+      cvNextBtn.click();
+    }, 10000);
+  });
+
+  // Pause auto-play when user interacts
+  [cvPrevBtn, cvNextBtn, ...cvDots].forEach(element => {
+    element.addEventListener('click', () => {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = setInterval(() => {
+        cvNextBtn.click();
+      }, 10000);
+    });
+  });
+
+  // Initialize
+  updateCVCards();
+});
+</script>
+
 
   </div>
 
 </article>
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+    </main>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Geoffrey Manda | Data Scientist</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">{&quot;name&quot;=&gt;&quot;Geoffrey Manda&quot;, &quot;github&quot;=&gt;&quot;GeoffreyManda&quot;, &quot;email&quot;=&gt;&quot;your.email@example.com&quot;}</li></ul>
+    <footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- About Section -->
+      <div class="footer-section footer-about">
+        <h4>Geoffrey Manda</h4>
+        <p>PhD Research Fellow in Biostatistics & Causal Inference at Queen Mary University of London. Advancing statistical methods for global health research.</p>
+        <p class="footer-editor">Editor, <a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a></p>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
-</div>
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="/about">About & CV</a></li>
+          <li><a href="/research">Research</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/tutorials">Tutorials</a></li>
+        </ul>
+      </div>
 
-      <div class="footer-col footer-col-3">
-        <p>Statistical analysis, AI research, and epidemiological studies</p>
+      <!-- Research Areas -->
+      <div class="footer-section">
+        <h4>Research</h4>
+        <ul class="footer-links">
+          <li><a href="/research">Publications</a></li>
+          <li><a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://causalatlas.org" target="_blank" rel="noopener">CausalAtlas.org</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="/contact">Contact Me</a></li>
+          <li><a href="https://github.com/GeoffreyManda" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=7-Sy11kAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/geoffreymanda" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
       </div>
     </div>
 
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>&copy; 2025 Geoffrey Manda. All rights reserved.</p>
+      </div>
+    </div>
   </div>
-
 </footer>
-</body>
+
+
+    <!-- Floating Contact Button -->
+    <a href="/contact" class="contact-fab" aria-label="Contact" title="Get in touch">
+      <svg class="fab-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8" />
+        <path d="M4 7l8 6l8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+      <svg class="fab-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        <path d="M6 11l6-6l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+      // Back to Top Button
+      const backToTop = document.getElementById('back-to-top');
+
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // Premium entrance animation
+      document.body.style.opacity = '0';
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.body.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.6, 1)';
+          document.body.style.opacity = '1';
+        }, 50);
+      });
+
+      // Active Page Navigation Indicator
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll('.page-link');
+
+      navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (currentPath === linkPath || currentPath.startsWith(linkPath + '/')) {
+          link.classList.add('active');
+        }
+      });
+
+      // Loading State for Links
+      const allLinks = document.querySelectorAll('a:not([href^="#"]):not([target="_blank"])');
+      allLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          if (!this.classList.contains('no-loading')) {
+            this.style.opacity = '0.6';
+            this.style.pointerEvents = 'none';
+          }
+        });
+      });
+    </script>
+
+  </body>
 
 </html>
