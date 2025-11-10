@@ -40,8 +40,7 @@ Replace the current `<form>` section with:
   height="800"
   frameborder="0"
   marginheight="0"
-  marginwidth="0"
-  style="border-radius: 16px; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.12);">
+  marginwidth="0">
   Loading…
 </iframe>
 ```

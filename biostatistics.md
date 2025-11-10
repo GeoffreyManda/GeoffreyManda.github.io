@@ -2,9 +2,10 @@
 layout: page
 title: Biostatistics
 permalink: /biostatistics/
+description: Advanced biostatistical methods for clinical research including survival analysis, clinical trials methodology, longitudinal data analysis, and Bayesian approaches.
 ---
 
-<div class="hero-section">
+<div class="hero-section hero-section--centered">
   <div class="hero-content">
     <h1>Biostatistics Research</h1>
     <p>Advanced statistical methods for clinical research, survival analysis, and healthcare data</p>
@@ -23,7 +24,7 @@ permalink: /biostatistics/
       <div class="feature-card">
         <h3>Survival Analysis</h3>
         <p>Time-to-event analysis including Kaplan-Meier estimation, Cox proportional hazards models, parametric survival models, and competing risks analysis for clinical outcomes research.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">Kaplan-Meier</span>
           <span class="tag">Cox Models</span>
           <span class="tag">Competing Risks</span>
@@ -33,7 +34,7 @@ permalink: /biostatistics/
       <div class="feature-card">
         <h3>Clinical Trials</h3>
         <p>Study design, sample size determination, randomization methods, interim analyses, and statistical approaches for analyzing randomized controlled trials and observational studies.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">RCTs</span>
           <span class="tag">Adaptive Design</span>
           <span class="tag">Power Analysis</span>
@@ -43,7 +44,7 @@ permalink: /biostatistics/
       <div class="feature-card">
         <h3>Longitudinal Data Analysis</h3>
         <p>Mixed-effects models, generalized estimating equations (GEE), and growth curve modeling for repeated measurements and clustered data in healthcare settings.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">Mixed Models</span>
           <span class="tag">GEE</span>
           <span class="tag">Growth Curves</span>
@@ -53,7 +54,7 @@ permalink: /biostatistics/
       <div class="feature-card">
         <h3>Regression Methods</h3>
         <p>Linear regression, logistic regression, Poisson regression, and advanced regression techniques including penalized regression and machine learning methods for prediction.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">GLM</span>
           <span class="tag">Logistic</span>
           <span class="tag">LASSO</span>
@@ -63,7 +64,7 @@ permalink: /biostatistics/
       <div class="feature-card">
         <h3>Missing Data Methods</h3>
         <p>Multiple imputation, inverse probability weighting, and sensitivity analyses for handling missing data in clinical research and observational studies.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">Multiple Imputation</span>
           <span class="tag">IPW</span>
           <span class="tag">Sensitivity</span>
@@ -73,7 +74,7 @@ permalink: /biostatistics/
       <div class="feature-card">
         <h3>Bayesian Methods</h3>
         <p>Bayesian inference, prior specification, MCMC methods, and Bayesian adaptive trial designs for incorporating prior knowledge and uncertainty quantification.</p>
-        <div style="margin-top: 1.5rem;">
+        <div>
           <span class="tag">MCMC</span>
           <span class="tag">Prior Elicitation</span>
           <span class="tag">Stan</span>
@@ -108,7 +109,7 @@ permalink: /biostatistics/
 
   <section class="recent-section">
     <h2>Applications in Health Research</h2>
-    <p style="text-align: center; max-width: 720px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
+    <p>
       Biostatistical methods applied across diverse areas of health research
     </p>
     <div class="update-timeline">
@@ -146,7 +147,7 @@ permalink: /biostatistics/
 <section class="contact-preview">
   <h2>Statistical Consulting</h2>
   <p>Available for biostatistical consulting on research design, data analysis, and statistical methodology.</p>
-  <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+  <div>
     <a href="/contact" class="btn-primary">Get in Touch</a>
     <a href="/about#publications" class="btn-secondary">View Publications</a>
   </div>
